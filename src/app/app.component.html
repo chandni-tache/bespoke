@@ -1,16 +1,16 @@
 <header class="header-section">
 
-  <nav class="navbar " style="position: fixed!important;">
-    <a class="navbar-brand" class="site-logo">
+  <nav class="navbar" style="width:100%; position: fixed!important;">
+    <a routerLink="/home" class="navbar-brand site-logo"  style="width:33.3%">
       <!--<img src="img/logo.png" alt="logo" width="105px;">-->
       <h3>BACE</h3>
     </a>
-    <div class="middle-section">
-      <a href="#">
+    <div class="middle-section" style="width:33.3%" >
+      <a (click)=show_hide_features()>
         <img src="../assets/img/bespoke_logo.png" width="80px;" />
       </a>
     </div>
-    <div class="user-panel">
+    <div class="user-panel" style="width:33.3%">
       <div class="up-item">
         <div class="shopping-card">
           <i class="flaticon-bag"></i>
@@ -21,6 +21,46 @@
     </div>
   </nav>
 
+<!-- feature section -->
+  <section [class.show]='show'  class="features-section">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-3 p-0 feature">
+          <div (click)="navigate_to_feature('shop_skincare')" class="feature-inner">
+            <!-- <div class="feature-icon-icon"> -->
+              <img class="feature-image" src="../assets/img/30mlBottleOutline-01.png" alt="#">
+            <!-- </div> -->
+            <h3 class="menu-bar">Shop Skincare</h3>
+          </div>
+        </div>
+        <div class="col-md-3 p-0 feature">
+          <div (click)="navigate_to_feature('custom_skincare')" class="feature-inner">
+            <!--<div class="feature-icon">-->
+            <img class="feature-image" src="../assets/img/30mlBottleOutline-01.png" alt="#">
+          <!--  </div>-->
+            <h3 class="menu-bar">Custom Skincare</h3>
+          </div>
+        </div>
+        <div class="col-md-3 p-0 feature">
+          <div (click)="navigate_to_feature('faceprint')" class="feature-inner">
+            <!--<div class="feature-icon">-->
+            <img class="feature-image" src="../assets/img/Asset 12@8x.png" alt="#">
+          <!--  </div>-->
+            <h3 class="menu-bar">Faceprint</h3>
+          </div>
+        </div>
+        <div class="col-md-3 p-0 feature">
+          <div (click)="navigate_to_feature('ingredients')" class="feature-inner">
+            <!--<div class="feature-icon">-->
+              <img class="feature-image" src="../assets/img/30mlBottleOutline-01.png" alt="#">
+          <!--  </div>-->
+            <h3 class="menu-bar">Ingredients</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- feature section -->
 </header>
 
 <router-outlet></router-outlet>

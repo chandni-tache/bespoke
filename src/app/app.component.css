@@ -1,0 +1,17 @@
+.show{display: block;}
+
+.navbar-brand{
+  width: 33%;
+    text-align: center;
+    margin-right: 0px;
+}
+
+.middle-section{
+  width: 33.3%;
+  text-align: center;
+}
+
+.user-panel{
+  width: 33.3%;
+  text-align: center;
+}

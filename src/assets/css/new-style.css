@@ -2,7 +2,7 @@
 	margin: 0px;
 	padding: 0px;
 	box-sizing: border-box;
-	/*font-family: Okomito!important;*/
+	font-family: Okomito!important;
 }
 
 .new-thing{
@@ -11,7 +11,7 @@
 	width: 100%;
 }
 .recent-post{
-	
+
 	background-color: #f2f2f2;
 	height: 350px;
 	width: 100%;
@@ -46,7 +46,7 @@
 	padding-left: 14px;
     padding-right: 14px;
     margin-left: 0px!important;
-	
+
 }
 .main-b{
 	background-color: #66B59C;
@@ -80,13 +80,13 @@
 .navbar{
 	padding-right: 0px !important;
 	padding-left: 0px !important;
-	
-	
+
+
 }
 .footer-section{
-	
+
 	background-color:#E2E2E2;
-	
+
 }
 .social-links-warp{
 	border-top:0px !important;
@@ -98,11 +98,11 @@
 }
 h2{
 	color: #FF9D47!important;
-	
-	
+
+
 }
 .header-section{
-	
+
 }
 .navbar {
   overflow: hidden;
@@ -113,7 +113,7 @@ h2{
   clear: both;
   top: 0px;
   z-index: 100;
-  
+
 }
 .menu-bar{
 	font-weight: normal!important;
@@ -122,6 +122,8 @@ h2{
 }
 .feature {
 	background-color: #EDEDED!important;
+	width: 25%;
+	padding: 10px!important;
 }
 .features-sec{
 	background-color: #F2F2F2;
@@ -132,7 +134,20 @@ margin-bottom: auto;
 }
 .feature .feature-inner {
     padding: 15px 5px!important;
-    }
+		text-align: center;
+}
+
+.feature .feature-inner h3{
+	margin-top: 60px;
+}
+.feature-image{
+	position: absolute;
+  height: 50px;
+  top: 15px;
+}
+.features-section{
+	display:none;
+}
 .features-section-main{
 	background-color: #EDEDED!important;
 	width: 100%!important;
@@ -141,7 +156,7 @@ margin-bottom: auto;
 	font-size:20px;
 }
 .anytime{
-	
+
 	font-size:8px;
 	color: #BFBFBF;
 	font-weight: bold;
@@ -158,7 +173,7 @@ margin-bottom: auto;
     overflow: hidden;
 }
 .span-border{
-	
+
 	border: 1px solid #f7f7f7;
 }
 .header-section{

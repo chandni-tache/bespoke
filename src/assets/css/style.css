@@ -384,7 +384,7 @@ ol {
 }
 
 .user-panel .up-item:first-child {
-	margin-right: 29px;
+	/* margin-right: 29px; */
 }
 
 .shopping-card {
@@ -766,8 +766,7 @@ ol {
 }
 
 .feature .feature-icon {
-	display: inline-block;
-	margin-right: 15px;
+
 }
 
 .feature h2 {
