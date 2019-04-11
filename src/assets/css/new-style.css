@@ -65,17 +65,6 @@
 	color: #fff;
 	outline: none;
 	border: none;
-}.main-e{
-	background-color: #A8A8A8;
-	color: #fff;
-	outline: none;
-	border: none;
-}
-.main-f{
-	background-color: #A8A8A8;
-	color: #fff;
-	outline: none;
-	border: none;
 }
 .navbar{
 	padding-right: 0px !important;
@@ -117,7 +106,7 @@ h2{
 }
 .menu-bar{
 	font-weight: normal!important;
-	text-transform: lowercase;
+	text-transform: capitalize;
 	font-size: 15px!important;
 }
 .feature {

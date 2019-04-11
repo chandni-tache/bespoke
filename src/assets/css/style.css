@@ -1004,7 +1004,7 @@ ol {
 
 .footer-section {
 	background: #282828;
-	padding-top: 60px;
+
 }
 
 .footer-logo {
@@ -1125,7 +1125,7 @@ ol {
 
 .social-links-warp {
 	border-top: 2px solid #3b3535;
-	padding: 46px 0;
+	padding-bottom: 25px;
 }
 
 .social-links a {

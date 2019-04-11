@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { AngularFontAwesomeModule } from 'angular-font-awesome'
 
 import { ApproutesModule } from './approutes.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -24,9 +25,10 @@ import { CartComponent } from './cart/cart.component';
   ],
   imports: [
     BrowserModule,
-    ApproutesModule
+    ApproutesModule,
+    AngularFontAwesomeModule
   ],
-  providers: [],
+  providers: [], 
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -11,9 +11,9 @@
     "postinstall": "ng build --aot --prod"
   },
   "engines": {
-   "node": "8.10.0",
-   "npm": "6.8.0"
- },
+    "node": "8.10.0",
+    "npm": "6.8.0"
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "^6.1.0",
@@ -25,12 +25,15 @@
     "@angular/platform-browser": "^6.1.0",
     "@angular/platform-browser-dynamic": "^6.1.0",
     "@angular/router": "^6.1.0",
+    "@fortawesome/fontawesome-free": "^5.8.1",
+    "angular-font-awesome": "^3.1.2",
+    "bootstrap": "^4.3.1",
     "core-js": "^2.5.4",
     "express": "^4.16.4",
     "path": "^0.12.7",
     "rxjs": "6.3.0",
-    "zone.js": "~0.8.26",
-    "typescript": "~2.7.2"
+    "typescript": "~2.7.2",
+    "zone.js": "~0.8.26"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.7.0",

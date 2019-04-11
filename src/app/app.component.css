@@ -2,8 +2,11 @@
 
 .navbar-brand{
   width: 33%;
-    text-align: center;
-    margin-right: 0px;
+  text-align: left;
+  margin-right: 0px;
+  position: relative;
+  top: 10px;
+  left: 20px;
 }
 
 .middle-section{
@@ -13,5 +16,6 @@
 
 .user-panel{
   width: 33.3%;
-  text-align: center;
+  text-align: right;
+  padding-right: 20px;
 }
