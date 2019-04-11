@@ -1,0 +1,103 @@
+.cart_heading{
+  font-size: 34px;
+  font-weight: 500;
+  float: left;
+      top: -30px;
+      position: relative;
+}
+
+.bach_button_cart_account{
+  position: absolute;
+  top: 102px;
+  right: 30px;
+  width: 199px;
+  border-radius: 25px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.cart-section{
+  padding:20px;
+}
+
+.image_cart_item{
+  float: left;
+  width: 20%;
+  margin: 0;
+  clear: left;
+  margin-top: 30px;
+}
+.details_item{
+  width: 80%;
+margin-left: 30%;
+clear: right;
+margin-top: 50px;
+padding:0;
+}
+
+.fa-plus, .fa-minus{
+  color:#fff;
+}
+
+.cart_info{
+  font-size: 17px;
+}
+
+.show_details{
+  color: #6495ed!important;
+}
+
+.pc-title{
+  /* margin-bottom:25px; */
+}
+
+.input-group{width:120px;}
+
+.send_weeks{
+  padding: 5px; font-size:18px;
+}
+
+.card-right .table th, .card-right .table td {
+    padding: 0.5rem;
+}
+@media only screen and (min-width:500px){
+  .sub_box{
+        margin-top: 50px;
+  }
+
+}
+
+@media only screen and (min-width:614px){
+
+
+  .sub_box{margin-left: 30%;}
+}
+
+@media only screen and (max-width:500px){
+  /* .quantity-left-minus, .quantity-right-plus{
+    height: 30px;
+    width:30px;
+  } */
+  .sub_box{
+        margin-top: 30px;
+  }
+  .btn{
+    padding: 0.1rem 0.4rem;
+
+  }
+  .input-group{width:90px;}
+  .send_weeks{
+    padding: 5px; font-size:14px;
+  }
+  .anytime {
+
+    font-size: 10px;
+  }
+  .card-right .site-btn , .card-right .site-btnn{padding:20px 0;}
+}
+
+@media only screen and (max-width:400px){
+  .card-right .site-btn , .card-right .site-btnn{
+    width: 98%
+  }
+}

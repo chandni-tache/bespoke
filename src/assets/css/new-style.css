@@ -2,7 +2,7 @@
 	margin: 0px;
 	padding: 0px;
 	box-sizing: border-box;
-	font-family: Okomito!important;
+	font-family: Okomito;
 }
 
 .new-thing{
@@ -29,43 +29,7 @@
 	width: 100%;
 	background-color: #fff;
 }
-.button{
-	text-align: center;
-	margin-left: 15px;
-	margin-top: 20px;
-	border-radius: 20px;
-	text-align: right;
-	display: inline-block;
-}
-.main-a{
-	background-color: #A8A8A8;
-	color: #fff;
-	outline: none;
-	border: none;
-	font-size: 23px;
-	padding-left: 14px;
-    padding-right: 14px;
-    margin-left: 0px!important;
 
-}
-.main-b{
-	background-color: #66B59C;
-	color: #fff;
-	outline: none;
-	border: none;
-}
-.main-c{
-	background-image: linear-gradient(to right, #EAA299 10%, #7D8AB7  51%, #EBD9AC  100%);
-	color: #fff;
-	outline: none;
-	border: none;
-}
-.main-d{
-	background-color: #A8A8A8;
-	color: #fff;
-	outline: none;
-	border: none;
-}
 .navbar{
 	padding-right: 0px !important;
 	padding-left: 0px !important;

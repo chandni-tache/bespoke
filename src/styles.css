@@ -1,6 +1,196 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~font-awesome/css/font-awesome.css";
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
 .component-starts{
   margin-top: 80px;
+  
+}
 
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: Okomito;
+}
+
+.new-thing{
+	background-color: #f2f2f2;
+	height: 350px;
+	width: 100%;
+}
+.recent-post{
+
+	background-color: #f2f2f2;
+	height: 350px;
+	width: 100%;
+}
+.new-thing-h{
+	text-align: center;
+	/*line-height: 2.6;
+	*/
+}
+.recent-post-h{
+	text-align: center;
+}
+.space{
+	height: 30px;
+	width: 100%;
+	background-color: #fff;
+}
+
+.navbar{
+	padding-right: 0px !important;
+	padding-left: 0px !important;
+
+
+}
+
+.clear{
+  clear:both;
+}
+.footer-section{
+
+	background-color:#E2E2E2;
+
+}
+.social-links-warp{
+	border-top:0px !important;
+}
+.text-black{
+	color:#3F4D60!important;
+	text-align: center;
+	font-size: 20px!important;
+}
+h2{
+	color: #FF9D47!important;
+
+
+}
+.header-section{
+
+}
+.navbar {
+  overflow: hidden;
+ background-color: #fff;
+  /*position: fixed;*/
+  height: 80px;
+  width: 100%;
+  clear: both;
+  top: 0px;
+  z-index: 100;
+
+}
+.menu-bar{
+	font-weight: normal!important;
+	text-transform: capitalize;
+	font-size: 15px!important;
+}
+.feature {
+	background-color: #EDEDED!important;
+	width: 25%;
+	padding: 10px!important;
+}
+.features-sec{
+	background-color: #F2F2F2;
+	height: 100vh;
+	width: auto;
+	margin-top: auto;
+margin-bottom: auto;
+}
+.feature .feature-inner {
+    padding: 15px 5px!important;
+		text-align: center;
+}
+
+.feature .feature-inner h3{
+	margin-top: 60px;
+}
+.feature-image{
+	position: absolute;
+  height: 50px;
+  top: 15px;
+}
+.features-section{
+	display:none;
+}
+.features-section-main{
+	background-color: #EDEDED!important;
+	width: 100%!important;
+}
+.table-p{
+	font-size:20px;
+}
+.anytime{
+
+
+	color: #BFBFBF;
+	font-weight: bold;
+}
+.btn-grey{
+	background-color:#BFBFBF;
+	color: #fff;
+	color: #fff;
+}
+.cart-table {
+    padding: 41px 40px 0!important;
+    background: #f0f0f0;
+    border-radius: 27px;
+    overflow: hidden;
+}
+.span-border{
+
+	border: 1px solid #f7f7f7;
+}
+.header-section{
+	    position: fixed;
+    overflow: hidden;
+    width: 100%;
+    z-index: 100;
+    background-color: #fff;
+}
+
+.card-right .site-btn , .card-right .site-btnn {
+    margin-bottom: 14px;
+    width: 48%;
+    margin-left:1%;
+    margin-right: 1%;
+    min-height: 57px;
+    padding: 23px 20px 14px;
+}
+
+
+
+.site-btn {
+    display: inline-block;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    min-width: 167px;
+    padding: 18px 47px 14px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    background:  #60A1C4!important;
+    color: #fff;
+    line-height: normal;
+    cursor: pointer;
+    text-align: center;
+}
+.site-btnn{
+    display: inline-block;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    min-width: 167px;
+    padding: 18px 47px 14px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    background:  #9B9B9B;
+    color: #fff;
+    line-height: normal;
+    cursor: pointer;
+    text-align: center;
+}
+.cart-table .product-col .pc-title h4 {
+    font-size: 16px!important;
 }

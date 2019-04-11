@@ -1,3 +1,25 @@
-<div class="component-starts"><p>
-  shop-skincare works!
-</p></div>
+<div class="component-starts">
+
+  <div class="itmes_box">
+    <div class="title_shop"> BACE SKINCARE  </div>
+
+    <div class="item_div_top" *ngFor="let i of items">
+      <img [src]="i.src" alt="image" />
+      <span class="item_div_info" style="padding:10px;">{{i.info}}</span><br>
+      <span class="item_div_title">{{i.title}}</span><br>
+    </div>
+
+    <button type="button" class="btn clear show_all">Show All</button>
+  </div>
+
+  <div class="space"></div>
+  <section class="new-thing">
+    <div class="container">
+      <div class="banner set-bg" data-setbg="#">
+        <h2 class="new-thing-h" style="margin-top: 30%;"> New Thing Container</h2>
+      </div>
+    </div>
+  </section>
+  <div class="space"></div>
+
+</div>

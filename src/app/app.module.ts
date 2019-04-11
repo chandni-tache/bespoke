@@ -2,7 +2,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { AngularFontAwesomeModule } from 'angular-font-awesome'
 
 import { ApproutesModule } from './approutes.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -11,6 +10,8 @@ import { CustomSkincareComponent } from './custom-skincare/custom-skincare.compo
 import { FaceprintComponent } from './faceprint/faceprint.component';
 import { IngredientsComponent } from './ingredients/ingredients.component';
 import { CartComponent } from './cart/cart.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { MaterialModuleModule } from './app-material.module';
 
 
 @NgModule({
@@ -26,9 +27,10 @@ import { CartComponent } from './cart/cart.component';
   imports: [
     BrowserModule,
     ApproutesModule,
-    AngularFontAwesomeModule
+    BrowserAnimationsModule,
+    MaterialModuleModule
   ],
-  providers: [], 
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
