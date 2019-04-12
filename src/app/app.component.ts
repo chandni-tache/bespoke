@@ -22,7 +22,7 @@ export class AppComponent {
   navigate_to_feature(value){
 
     if (value === 'shop_skincare') this.route.navigate(['/bespoke']);
-    else if (value === 'custom_skincare') this.route.navigate(['/bespoke/crete']);
+    else if (value === 'custom_skincare') this.route.navigate(['/bespoke/create']);
     else if (value === 'faceprint') this.route.navigate(['/faceprint']);
     else if (value === 'ingredients') this.route.navigate(['/bespoke/ingredients']);
   }

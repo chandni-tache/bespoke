@@ -15,7 +15,7 @@ const approutes : Routes = [
   {path : '', redirectTo : 'home', pathMatch: 'full'},
   {path : 'home', component : DashboardComponent},
   {path : 'bespoke', component : ShopSkincareComponent},
-  {path : 'bespoke/crete', component : CustomSkincareComponent},
+  {path : 'bespoke/create', component : CustomSkincareComponent},
   {path : 'faceprint', component : FaceprintComponent},
   {path : 'bespoke/ingredients', component : IngredientsComponent},
   {path : 'cart', component : CartComponent},
