@@ -3,8 +3,8 @@
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
 .component-starts{
-  margin-top: 80px;
-  
+  margin-top: 100px;
+
 }
 
 *{
@@ -21,7 +21,7 @@
 .mb-20{
   margin-bottom:20px;
  }
- 
+
 .new-thing{
 	background-color: #f2f2f2;
 	height: 350px;
@@ -82,7 +82,7 @@ h2{
   overflow: hidden;
  background-color: #fff;
   /*position: fixed;*/
-  height: 80px;
+  height: 100px;
   width: 100%;
   clear: both;
   top: 0px;
@@ -202,3 +202,48 @@ margin-bottom: auto;
 .cart-table .product-col .pc-title h4 {
     font-size: 16px!important;
 }
+
+/* find skincare */
+
+
+.find_skincare .fa-angle-left, .find_skincare .fa-angle-right{
+  color: #007bff;
+  font-size: 35px;
+  position: relative;
+  bottom: 46px;
+  margin-right: 1%;
+  margin-left: 1%;
+  width: 2%;
+}
+
+.find_skincare_1{
+  background-image: url('assets/img/lines.png');
+}
+
+.find_skincare_2{
+  background-image: url('assets/img/strength.png');
+}
+
+.find_skincare_3{
+  background-image: url('assets/img/antioxidant.png');
+}
+
+.find_skincare_4{
+  background-image: url('assets/img/brightening.png');
+}
+
+.find_skincare div{
+  width:21%;
+  margin-left:1%;
+  margin-right:1%;
+  height: 120px;
+  border-radius: 10px;
+  display: inline-block;
+  background-color: #EFEFEF;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+}
+
+/* find skincare ends */

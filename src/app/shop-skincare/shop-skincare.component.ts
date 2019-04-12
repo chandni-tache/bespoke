@@ -16,6 +16,15 @@ export class ShopSkincareComponent implements OnInit {
     {title:'Serum', info:"5% Hyaluronic Acid +3% Acetyl Glucosmaine", src:"assets/img/shop_bespoke.png"},
   ]
 
+  items_CREATIONS = [
+    {title:'Serum', info:"5% Hyaluronic Acid +3% Acetyl Glucosmaine", src:"assets/img/bottle_cart.png", price:'$399.99'},
+    {title:'Serum', info:"5% Hyaluronic Acid +3% Acetyl Glucosmaine", src:"assets/img/bottle_cart.png", price:'$399.99'},
+    {title:'Serum', info:"5% Hyaluronic Acid +3% Acetyl Glucosmaine", src:"assets/img/bottle_cart.png", price:'$399.99'},
+    {title:'Serum', info:"5% Hyaluronic Acid +3% Acetyl Glucosmaine", src:"assets/img/bottle_cart.png", price:'$399.99'},
+    {title:'Serum', info:"5% Hyaluronic Acid +3% Acetyl Glucosmaine", src:"assets/img/bottle_cart.png", price:'$399.99'},
+    {title:'Serum', info:"5% Hyaluronic Acid +3% Acetyl Glucosmaine", src:"assets/img/bottle_cart.png", price:'$399.99'}
+  ]
+
   constructor() { }
 
   ngOnInit() {

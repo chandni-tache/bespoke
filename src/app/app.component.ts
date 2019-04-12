@@ -19,6 +19,10 @@ export class AppComponent {
 
   }
 
+  onClickedOutside_middle(){
+    this.show = false;
+  }
+
   navigate_to_feature(value){
 
     if (value === 'shop_skincare') this.route.navigate(['/bespoke']);

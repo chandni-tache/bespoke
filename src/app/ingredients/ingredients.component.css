@@ -1,0 +1,210 @@
+.ingre_titl_box{
+  text-align: center;
+}
+
+.ingre_titl{
+  font-size: 34px;
+}
+
+.ingre_title_filter{
+  font-size: 21px;
+}
+
+.search_input_box{
+  position: relative;
+  margin-top: 20px;
+}
+
+.search_input_box .fa{
+  position: relative;
+  left: 15%;
+  top: 46px;
+  font-size: 22px;
+  color: #6c757de3;
+}
+
+.search_input{
+  text-indent: 65px;
+  width: 80%;
+  margin: auto;
+  background: #EFEFEF;
+  height: 65px;
+  border-radius: 22px;
+  border: none;
+  outline: none;
+  font-size: 22px;
+}
+
+.sort_button{
+  width: 80%;
+  margin: 20px 0 20px 10%;
+  background: #EFEFEF;
+  border-radius: 16px;
+  border: none;
+  outline: none;
+  font-size: 25px;
+  color: #6c757d;
+  text-align: left;
+  padding: 12px 38px;
+}
+
+.sort_button i{
+  position: relative;
+  left: 80%;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.popular_box{
+  text-align: center;
+  margin: 40px 10px;
+}
+
+.image_box_box{
+  text-align: center;
+  margin: 10px;
+}
+
+.title_ingredient_sections{
+  font-size: 28px;
+  margin-bottom:20px;
+  font-weight: 500;
+}
+
+.popular_image_box{
+  width: 30%;
+  margin-left: 1.5%;
+  margin-right:1.5%;
+  float: left;
+}
+
+.add_anchor{
+  position: relative;
+  bottom: 30px;
+  color: #346faf;
+  font-weight: 500;
+}
+
+.popular_image_box span{
+  font-size: 28px;
+  position: relative;
+  bottom: 30px;
+}
+
+.add_anchor a{
+  font-size: 22px;
+}
+
+.add_anchor i{
+  font-size: 35px;
+  top: 4px;
+  position: relative;
+  margin-left: 10px;
+  font-weight: 600;
+}
+
+.discover_box_ing{
+  width:100%;
+  /* background-image: linear-gradient(to right, #E8E9FC 10%, #FDE5D8 51%, #E2F2DF 100%); */
+  font-size:22px;
+  margin-top: 20px;
+  padding-top: 20px;
+  text-align: center;
+  background-image: url('../../assets/img/ingredient_background.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.left_discover_ing{
+  width: 25%;
+}
+.left_discover_ing img{
+  vertical-align: middle;
+  border-style: none;
+  float: left;
+  padding-top: 10%;
+  margin-top: 26px;
+}
+
+.right_discover_ing{
+  width:75%;
+  margin-left:25%;
+  text-align: left;
+  margin-top: 40px;
+}
+
+.discover_box_ing .disc_ques{
+      font-size: 30px;
+}
+
+.faceprint_head_ing{
+  font-size: 34px;
+  font-weight: 700;
+  transition: uppercase;
+}
+
+.faceprint_head_info_ing{
+  font-size: 26px;
+  font-weight: 500;
+}
+
+
+.discover_begin{
+  margin: 20px 20px 10px;
+  width: 45%;
+  border-radius: 35px;
+  text-align: center;
+  padding: 10px 20px;
+  font-size: 26px;
+  background-color: #343a40bd;
+}
+
+.discover_begin i{
+  font-size: 32px;
+  left: 22%;
+  position: relative;
+  font-weight: 600;
+
+}
+
+.discover_discover{
+  margin: 10px 20px 20px ;
+  width: 45%;
+  border-radius: 35px;;
+  border: 1px solid;
+  font-size: 26px;
+  padding: 10px 20px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 988px){
+ .left_discover img{width:120px; height:120px;}
+ .discover_box{    font-size:30px; }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  .search_input{text-indent: 55px;}
+ }
+
+@media only screen and (max-width: 480px) {
+  .search_input{text-indent: 45px;}
+  .ingre_titl{font-size: 23px;}
+  .popular_image_box span{  font-size: 23px;  bottom: 20px;}
+  .add_anchor{  bottom: 20px;}
+  .add_anchor a {  font-size: 14px;}
+  .add_anchor i {  font-size: 26px;top: 3px;  margin-left: 4px;font-weight: 500;}
+  .discover_box_ing .disc_ques{  font-size: 19px;}
+  .faceprint_head_ing{  font-size: 28px;font-weight: 600;}
+  .faceprint_head_info_ing{  font-size: 18px;  font-weight: 400;}
+  .left_discover_ing{width: 30%;}
+  .discover_begin{ width: 60%; padding: 7px 18px;font-size: 20px;}
+  .discover_discover{margin: 10px 20px 20px 37PX;  width: 60%;font-size: 16px;}
+ }
+
+ @media only screen and (max-width: 400px) {
+   .popular_image_box span{  font-size: 20px;  bottom: 20px;}
+   .discover_begin{ width: 80%; }
+   .discover_discover { margin: 10px 20px 20px 20PX; width: 80%;}
+   .add_anchor a {  font-size: 11px;}
+   .add_anchor i {  font-size: 20px;top: 2px;margin-left: 2px;font-weight: 500;}
+ }

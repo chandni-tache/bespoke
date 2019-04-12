@@ -12,7 +12,7 @@ import { IngredientsComponent } from './ingredients/ingredients.component';
 import { CartComponent } from './cart/cart.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { MaterialModuleModule } from './app-material.module';
-
+import { ClickOutsideModule } from 'ng-click-outside';
 
 @NgModule({
   declarations: [
@@ -28,7 +28,8 @@ import { MaterialModuleModule } from './app-material.module';
     BrowserModule,
     ApproutesModule,
     BrowserAnimationsModule,
-    MaterialModuleModule
+    MaterialModuleModule,
+    ClickOutsideModule
   ],
   providers: [],
   bootstrap: [AppComponent]

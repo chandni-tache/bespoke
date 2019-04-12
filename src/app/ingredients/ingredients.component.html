@@ -1,3 +1,103 @@
-<div class="component-starts"><p>
-  ingredients works!
-</p></div>
+<div class="component-starts">
+  <div class="ingre_titl_box">
+    <span class="ingre_titl">Bespoke Skincare Ingredients</span><br>
+    <p class="ingre_title_filter">Filter by Skin Benefit</p>
+  </div>
+
+  <div class="col-md-12 find_skincare ">
+    <i class="fa fa-angle-left"></i>
+    <div class="find_skincare_1"></div>
+    <div class="find_skincare_2"></div>
+    <div class="find_skincare_3"></div>
+    <div class="find_skincare_4"></div>
+    <i class="fa fa-angle-right"></i>
+  </div>
+
+  <div class="search_input_box">
+    <i class="fa fa-search"></i>
+    <input class=" search_input form-control" placeholder="Search Ingredients" />
+  </div>
+
+  <button class="btn btn-light sort_button">Sort by... <i class="fa fa-angle-down"></i></button>
+
+  <!-- Popular section starts -->
+  <div class="popular_box">
+    <span class="title_ingredient_sections">Popular</span>
+  </div>
+
+  <div class="image_box_box">
+    <div class="popular_image_box" *ngFor="let item of images" >
+      <img src="assets/img/allantoin_2.png"/>
+      <span class="popular_title">Allantoin</span>
+      <div class="add_anchor"><a >Add to Bespoke</a><i class="fa fa-angle-right"></i></div>
+    </div>
+  </div>
+  <!-- Popular section ends -->
+
+  <div class="col-md-12 discover_box_ing clear">
+    <span class="disc_ques"> Not sure what ingredients suit your skin?</span>
+    <div class="left_discover_ing">
+      <img src='../../assets/img/ingredients_faceprint.png'/>
+    </div>
+    <div class="right_discover_ing">
+      <span class="faceprint_head_ing">FACEPRINT</span><br>
+      <span class="faceprint_head_info_ing">Allow Faceprint to intelligently create custom skincare for you.</span><br>
+      <button class="btn btn-dark discover_begin">Begin <i class="fa fa-angle-right "></i>
+      </button><br>
+      <button class="btn discover_discover">Discover More</button>
+    </div>
+  </div>
+
+  <!-- Plant Extracts section starts -->
+  <div class="popular_box clear">
+    <span class="title_ingredient_sections">Plant Extracts</span>
+  </div>
+
+  <div class="image_box_box">
+    <div class="popular_image_box" *ngFor="let item of images" >
+      <img src="assets/img/allantoin_2.png"/>
+      <span class="popular_title">Allantoin</span>
+      <div class="add_anchor"><a >Add to Bespoke</a><i class="fa fa-angle-right"></i></div>
+    </div>
+  </div>
+  <!-- Plant Extracts section ends -->
+
+  <!-- Antioxidants section starts -->
+  <div class="popular_box clear">
+    <span class="title_ingredient_sections">Antioxidants</span>
+  </div>
+
+  <div class="image_box_box">
+    <div class="popular_image_box" *ngFor="let item of images" >
+      <img src="assets/img/allantoin_2.png"/>
+      <span class="popular_title">Allantoin</span>
+      <div class="add_anchor"><a >Add to Bespoke</a><i class="fa fa-angle-right"></i></div>
+    </div>
+  </div>
+  <!-- Antioxidants section ends -->
+
+  <!-- Recent Post Container starts-->
+  <div class="space clear"></div>
+  <section class="new-thing">
+    <div class="container">
+      <div class="banner set-bg" data-setbg="#">
+        <h2 class="new-thing-h" > New Thing Container</h2>
+      </div>
+    </div>
+  </section>
+  <div class="space"></div>
+  <!-- Recent Post Container ends-->
+
+  <!-- Recent Post Container starts-->
+  <div class="space"></div>
+  <section class="new-thing">
+    <div class="container">
+      <div class="banner set-bg" data-setbg="#">
+        <h2 class="new-thing-h" > Recent Post Container</h2>
+      </div>
+    </div>
+  </section>
+  <div class="space"></div>
+  <!-- Recent Post container ends-->
+
+</div>
