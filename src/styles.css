@@ -247,3 +247,62 @@ margin-bottom: auto;
 }
 
 /* find skincare ends */
+
+/* cart options starts*/
+
+.cart_heading{
+  font-size: 34px;
+  font-weight: 500;
+  float: left;
+      top: -20px;
+      position: relative;
+}
+
+.bach_button_cart_account{
+  position: absolute;
+  top: 112px;
+  right: 30px;
+  min-width: 199px;
+  width: 40%;
+  border-radius: 25px!important;
+  font-size: 20px!important;
+  font-weight: 500!important;
+  background-color: #BFBFBF!important;
+  border: none!important;
+}
+
+.image_cart_item{
+  float: left;
+  width: 20%;
+  margin: 0;
+  clear: left;
+  margin-top: 30px;
+}
+.cart_details_item{
+  width: 80%;
+  margin-left: 20%;
+  clear: right;
+  margin-top: 50px;
+  padding:0;
+}
+.product-col{padding: 10px;}
+
+.pc-title{
+  font-size: 16px;
+}
+
+.pc-title img{ width: 30px;}
+/* cart options end */
+
+.grey_col{color:#7f8083}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .bach_button_cart_account{ font-size: 29px!important;}
+  .cart_heading{font-size: 60px; top: -33px;  }
+  a.site-logo h3{font-size: 50px;}
+  .cart_info, .cart_details_item{font-size: 34px!important;}
+  .pc-title{ font-size: 30px;padding: 10px;}
+  .pc-title span:first-child, .pc-title span.cart_info{     font-weight: 600;}
+  .total-col-cart{padding:15px;}
+  .pc-title img{ width: 45px;}
+}

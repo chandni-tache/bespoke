@@ -1,18 +1,25 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { AppComponent } from './app.component';
+// packages
+import { ClickOutsideModule } from 'ng-click-outside';
 
+// modules
 import { ApproutesModule } from './approutes.module';
+import { MaterialModuleModule } from './app-material.module';
+
+// components
+import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ShopSkincareComponent } from './shop-skincare/shop-skincare.component';
 import { CustomSkincareComponent } from './custom-skincare/custom-skincare.component';
 import { FaceprintComponent } from './faceprint/faceprint.component';
 import { IngredientsComponent } from './ingredients/ingredients.component';
 import { CartComponent } from './cart/cart.component';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import { MaterialModuleModule } from './app-material.module';
-import { ClickOutsideModule } from 'ng-click-outside';
+import { CartDetailsComponent } from './cart-details/cart-details.component';
+import { CheckoutCartComponent } from './checkout-cart/checkout-cart.component';
 
 @NgModule({
   declarations: [
@@ -22,14 +29,17 @@ import { ClickOutsideModule } from 'ng-click-outside';
     CustomSkincareComponent,
     FaceprintComponent,
     IngredientsComponent,
-    CartComponent
+    CartComponent,
+    CartDetailsComponent,
+    CheckoutCartComponent
   ],
   imports: [
     BrowserModule,
     ApproutesModule,
     BrowserAnimationsModule,
     MaterialModuleModule,
-    ClickOutsideModule
+    ClickOutsideModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]

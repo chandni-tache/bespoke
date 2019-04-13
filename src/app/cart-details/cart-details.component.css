@@ -1,0 +1,20 @@
+.cart-detail-section{
+    padding: 20px;
+    background: #F4F4F4;
+}
+
+.total-col-cart{  
+    vertical-align: baseline;
+}
+
+.hide_link{
+    font-size: 25px;
+    color:#95D9F2!important;
+}
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+    .cart-detail-section{min-height: 450px;}  
+}
+
+@media only screen and (max-width: 567px) {
+    .hide_link {font-size: 18px;}
+}

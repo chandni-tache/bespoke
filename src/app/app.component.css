@@ -499,9 +499,9 @@
 	border: none;
 	font-size: 23px;
 	padding-left: 14px;
-    padding-right: 14px;
-    margin-left: 0px!important;
-
+	padding-right: 14px;
+	margin-left: 0px!important;
+	
 }
 .main-b{
 	background-color: #66B59C;
@@ -524,28 +524,30 @@
 
 
 @media only screen and (max-width:480px){
-  .main-a{
-    width: 222px;
-    text-align: center
-  }
-    .main-b{
-        width: 55%;
-        text-align: center;
-        margin-left: 2.5%;
-        margin-right: 2.5%;
-    }
+	.main-a {	width: 50%;text-align: center; min-width: 222px;}
+		.responsibility-mention-button{width:100%;}
+		.support-bace-legal-button{width:100%;}
+		.main-b{width:55%; margin-left:2.5%; margin-right:2.5%;text-align: center;}
+		.main-c{width:35%; margin-left:2.5%; margin-right:2.5%;text-align: center;}
+		.main-d{width: 30%; text-align: center; margin-left: 1.5%; margin-right: 1.5%;}
+}
 
-    .main-c{
-        width: 35%;
-        text-align: center;
-        margin-left: 2.5%;
-        margin-right: 2.5%;
-    }
+/* find skincare ends */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
 
-    .main-d{
-        width: 30%;
-        text-align: center;
-        margin-left: 1.5%;
-        margin-right: 1.5%;
-    }
+	.main-a {	width: 50%;text-align: center;}
+	.responsibility-mention-button{width:100%;}
+	.support-bace-legal-button{width:100%;}
+	.main-b{width:55%; margin-left:2.5%; margin-right:2.5%;text-align: center;}
+	.main-c{width:35%; margin-left:2.5%; margin-right:2.5%;text-align: center;}
+	.main-d{width: 30%; text-align: center; margin-left: 1.5%; margin-right: 1.5%;}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+	.main-a {width: 50%;text-align: center;    font-size: 24px;}
+	.responsibility-mention-button{width:100%;}
+	.support-bace-legal-button{width:100%;}
+	.main-b{width:52%; margin-left:4%; margin-right:4%;text-align: center;    font-size: 24px;}
+	.main-c{width:32%; margin-left:4%; margin-right:4%;text-align: center;    font-size: 24px;}
+	.main-d{width: 30%; text-align: center; margin-left: 1.5%; margin-right: 1.5%;    font-size: 24px;}
 }

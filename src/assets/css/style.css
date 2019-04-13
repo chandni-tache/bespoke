@@ -1367,12 +1367,12 @@ ol {
 }
 
 .cart-table .size-col,
-.cart-table .total-col {
+.cart-table .total-col-cart {
 	text-align: center;
 }
 
 .cart-table .size-col h4,
-.cart-table .total-col h4 {
+.cart-table .total-col-cart h4 {
 	font-size: 18px;
 	color: #414141;
 	font-weight: 400;
@@ -1920,6 +1920,7 @@ ol {
 		right: 0;
 		top: 0;
 	}
+	
 }
 
 /* Small Mobile :320px. */

@@ -102,7 +102,8 @@ padding-top: 20px;
 
 .discover_create{
   margin: 20px 20px 10px;
-  width: 170px;
+  min-width: 170px;
+  width: 45%;
   border-radius: 35px;
   text-align: center;
   padding: 10px 20px;
@@ -111,7 +112,8 @@ padding-top: 20px;
 
 .discover_discover{
   margin: 10px 20px 20px ;
-  width: 45px;
+  width: 45%;
+  min-width: 170px;
   border-radius: 35px;;
   border: 1px solid;
   font-size: 20px;

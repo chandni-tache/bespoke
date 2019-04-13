@@ -8,8 +8,8 @@ import { CustomSkincareComponent } from './custom-skincare/custom-skincare.compo
 import { FaceprintComponent } from './faceprint/faceprint.component';
 import { IngredientsComponent } from './ingredients/ingredients.component';
 import { CartComponent } from './cart/cart.component';
-
-
+import { CartDetailsComponent } from './cart-details/cart-details.component';
+import { CheckoutCartComponent } from './checkout-cart/checkout-cart.component';
 
 const approutes : Routes = [
   {path : '', redirectTo : 'home', pathMatch: 'full'},
@@ -19,10 +19,12 @@ const approutes : Routes = [
   {path : 'faceprint', component : FaceprintComponent},
   {path : 'bespoke/ingredients', component : IngredientsComponent},
   {path : 'cart', component : CartComponent},
+  {path : 'cart_details', component : CartDetailsComponent},
+  {path : 'cart_checkout', component : CheckoutCartComponent},
 ];
 
 @NgModule({
-  imports: [ CommonModule, RouterModule.forRoot(approutes) ],
+  imports: [ CommonModule, RouterModule.forRoot(approutes, {scrollPositionRestoration: 'enabled'}) ],
   exports:[RouterModule]
 })
 
