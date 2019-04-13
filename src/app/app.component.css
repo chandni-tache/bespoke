@@ -535,6 +535,11 @@
 	border: none;
 }
 
+.features-section{
+  margin-top:20px;
+}
+
+  .feature-image {top: 35px!important;}
 
 @media only screen and (max-width:480px){
 	.main-a {	width: 50%;text-align: center; min-width: 222px;}

@@ -30,6 +30,23 @@
     padding: 0.5rem;
 }
 
+table td{
+  padding-top: 0!important;
+}
+
+table th{
+ padding-bottom: 0!important;
+}
+
+.card-right .subtotal_bottom{
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.card-right td{
+  font-size: 18px;
+}
+
 @media only screen and (min-width:500px){
   .sub_box{ margin-top: 50px; }
 
@@ -46,6 +63,13 @@
   .send_weeks{ padding: 5px; font-size:14px; }
   .anytime { font-size: 10px; }
   .card-right .site-btn , .card-right .site-btnn{padding:20px 0;}
+  .card-right td { font-size: 12px;}
+  .card-right .subtotal_bottom{  font-size: 20px;  font-weight: 500;}
+
+  .cart_heading { left: 10px; top:0;}
+
+  .cart-section{padding:0}
+  .table{margin-top:20px;}
 }
 
 @media only screen and (max-width:400px){
