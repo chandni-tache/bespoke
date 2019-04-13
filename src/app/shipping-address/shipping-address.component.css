@@ -78,6 +78,8 @@ a{
     .cart_shipping_body_button_box i { left: 77%;  font-size: 25px;  padding-top: 22px;}
     .cart_shipping_body_button_box .add_new_button{  font-size: 20px;}
     .cart_shipping_body_button_box .add_new_button_i{ padding-top: 13px;}
+    .cart_shipping_body {margin-top: 10px;}
+    .cart_shipping_heading { font-size: 26px; padding: 20px;}
 }
 
 /* @media only screen and (min-width:468px) and (max-width:767px){

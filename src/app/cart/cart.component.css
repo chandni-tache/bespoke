@@ -3,6 +3,11 @@
   padding:20px;
 }
 
+.hide_link{
+    font-size: 25px;
+    color:#95D9F2!important;
+}
+
 .fa-plus, .fa-minus{
   color:#fff;
 }

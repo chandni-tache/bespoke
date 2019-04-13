@@ -42,25 +42,31 @@ a{
 }
 
 .cart_login_body_input i{
-    color: #63A2C5;
-    font-size: 35px;
-    position: absolute;
-    left: 72%;
-    padding-top: 5px;
+  color: #63A2C5;
+font-size: 35px;
+position: absolute;
+left: 77%;
+padding-top: 10px;
 }
 
 .cart_login_body_input input{
-    width: 55%;
-    display: inline;
-    border: none;
-    border-radius: 12px;
-    margin-bottom: 10px;
+  width: 70%;
+  display: inline;
+  border: none;
+  border-radius: 12px;
+  height: 60px;
+  font-size: 23px;
+  margin: auto;
+  margin-bottom: 10px;
 }
 
 
 @media only screen and (max-width:467px){
-    .cart_login_body_input i{     left: 67%;font-size: 30px;padding-top: 7px;}
-    a,.cart_login_body .cart_login_body_info{ width: 100%;    font-size: 16px;}
+    .cart_login_body_input i{     left: 72%;font-size: 30px;padding-top: 15px;}
+    a,.cart_login_body .cart_login_body_info{ width: 100%;    font-size: 18px;}
+    .cart_login_body_input input{  width: 70%; font-size: 18px}
+    .cart_login_body {  margin-top: 20px;}
+    .cart_login_heading {font-size: 30px;    padding: 20px}
 }
 
 /* @media only screen and (min-width:468px) and (max-width:767px){

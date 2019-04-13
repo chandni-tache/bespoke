@@ -565,4 +565,6 @@
 	.main-d{width: 30%; text-align: center; margin-left: 1.5%; margin-right: 1.5%;    font-size: 24px;}
   .feature-image {height: 75px;}
   .feature .feature-inner h3 {margin-top: 90px;}
+  .user-panel img{ position: relative; top: 6px; left: 25%; height: 90px;}
+  .user-panel span {  position: relative;  bottom: 29px; left: -46px;  font-size: 28px;top: 3px;}
 }

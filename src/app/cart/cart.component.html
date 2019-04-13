@@ -21,8 +21,20 @@
                   <span class="cart_info">Serum</span><br>
                   <img src="assets/img/bespoke_logo.png"  />
                   <span>Created by you</span><br>
-                  <a routerLink='/cart_details' class="cart_info show_details">Show Details</a>
+                  <a (click)="show_hide_details('show_1')"  *ngIf=" show_details != 'show_1'" class="cart_info show_details">Show Details</a>
 
+                  <div *ngIf="show_details == 'show_1'">
+                    <span class="grey_col">3% Acetyl Glucosamine</span><br>
+                    <span class="grey_col">5% Hyaluronic Acids</span><br>
+                    <span class="grey_col">3% Soy Amino Acids</span><br>
+                    <span class="grey_col">3% Phospholipids</span><br>
+                    <span class="grey_col">5% Glycoprotein</span><br>
+                    <span class="grey_col">3% Ceramides</span><br>
+                    <span class="grey_col">4% Panthenol</span><br>
+                    <span class="grey_col">2% Green Tea</span><br>
+                    <span class="grey_col">30 ml Airless Pump</span><br>
+                    <a (click)="show_hide_details('not hide')" class="hide_link">Hide</a>
+                  </div>
                 </div>
               </td>
               <td class="total-col-cart"><span>$45.90</span></td>
@@ -140,7 +152,20 @@ border-radius: 50%; outline: none;">
                   <span class="cart_info">Serum</span><br>
                   <img src="assets/img/bespoke_logo.png"  />
                   <span>Created by you</span><br>
-                  <a routerLink='/cart_details' class="cart_info show_details">Show Details</a>
+                  <a (click)="show_hide_details('show_2')"  *ngIf="show_details != 'show_2'" class="cart_info show_details">Show Details</a>
+
+                  <div *ngIf="show_details == 'show_2'">
+                    <span class="grey_col">3% Acetyl Glucosamine</span><br>
+                    <span class="grey_col">5% Hyaluronic Acids</span><br>
+                    <span class="grey_col">3% Soy Amino Acids</span><br>
+                    <span class="grey_col">3% Phospholipids</span><br>
+                    <span class="grey_col">5% Glycoprotein</span><br>
+                    <span class="grey_col">3% Ceramides</span><br>
+                    <span class="grey_col">4% Panthenol</span><br>
+                    <span class="grey_col">2% Green Tea</span><br>
+                    <span class="grey_col">30 ml Airless Pump</span><br>
+                    <a (click)="show_hide_details('not hide')" class="hide_link">Hide</a>
+                  </div>
                 </div>
               </td>
               <td class="total-col-cart"><span>$45.90</span></td>

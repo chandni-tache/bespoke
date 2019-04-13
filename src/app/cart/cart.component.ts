@@ -7,9 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CartComponent implements OnInit {
 
+  show_details='';
+  show_details_btn = true;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  show_hide_details(action){
+
+    if(action == 'not hide'){
+      this.show_details = 'hide';
+    }else {
+      this.show_details = action;
+    }
   }
 
 }
