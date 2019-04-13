@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Router } from "@angular/router";
+import { Router, NavigationEnd } from "@angular/router";
 
 @Component({
   selector: 'app-root',
@@ -9,8 +9,11 @@ import { Router } from "@angular/router";
 export class AppComponent {
   title = 'bespoke';
   show = false;
+  footer = true;
 
-  constructor(public route:Router){}
+  constructor(public route:Router){
+        this.getting_route();
+  }
 
   show_hide_features(){
 
@@ -30,4 +33,26 @@ export class AppComponent {
     else if (value === 'faceprint') this.route.navigate(['/faceprint']);
     else if (value === 'ingredients') this.route.navigate(['/bespoke/ingredients']);
   }
+
+  getting_route(){
+    this.route.events.subscribe((event)  => {
+      if (event instanceof NavigationEnd) {
+        switch (event.url) {
+          case('/signup') :
+          case('/login') :
+          case('/cart_checkout') :
+          case('/shipping_address') :
+            this.footer = false;
+            break;
+          case('/home') :
+            console.log( 'dashboard');
+            break;
+          default:
+            this.footer = true;
+        }
+      }
+    });
+  }
+
+
 }

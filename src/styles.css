@@ -305,4 +305,5 @@ margin-bottom: auto;
   .pc-title span:first-child, .pc-title span.cart_info{     font-weight: 600;}
   .total-col-cart{padding:15px;}
   .pc-title img{ width: 45px;}
+  .cart_checkout_body_input{text-indent: 20px;}
 }

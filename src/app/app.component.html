@@ -10,7 +10,7 @@
         <img src="../assets/img/bespoke_logo.png" width="80px;" />
       </a>
     </div>
-    <div class="user-panel" style="width:33.3%">
+    <div routerLink="/cart" class="user-panel" style="width:33.3%">
       <!-- <i class="fa fa-shopping-cart"></i> -->
       <div class="up-item">
         <div class="shopping-card">
@@ -18,6 +18,7 @@
           <span>0</span>
         </div>
         <a routerLink="/cart">Cart</a>
+        <!-- <img  src="assets/img/cart.png" /><span>0</span> -->
       </div>
     </div>
   </nav>
@@ -29,7 +30,7 @@
         <div class="p-0 feature">
           <div (click)="navigate_to_feature('shop_skincare')" class="feature-inner">
             <!-- <div class="feature-icon-icon"> -->
-              <img class="feature-image" src="../assets/img/30mlBottleOutline-01.png" alt="#">
+              <img class="feature-image" src="../assets/img/shop_skincare_.png" alt="#">
             <!-- </div> -->
             <h3 class="menu-bar">Shop Skincare</h3>
           </div>
@@ -37,7 +38,8 @@
         <div class=" p-0 feature">
           <div (click)="navigate_to_feature('custom_skincare')" class="feature-inner">
             <!--<div class="feature-icon">-->
-            <img class="feature-image" src="../assets/img/30mlBottleOutline-01.png" alt="#">
+            <img class="feature-image" src="../assets/img/custom_skincare.png" alt="#">
+            <!-- <div class="feature-image custom_skincare"></div> -->
           <!--  </div>-->
             <h3 class="menu-bar">Custom Skincare</h3>
           </div>
@@ -53,7 +55,7 @@
         <div class=" p-0 feature">
           <div (click)="navigate_to_feature('ingredients')" class="feature-inner">
             <!--<div class="feature-icon">-->
-              <img class="feature-image" src="../assets/img/30mlBottleOutline-01.png" alt="#">
+              <img class="feature-image" src="../assets/img/ingredients.png" alt="#">
           <!--  </div>-->
             <h3 class="menu-bar">Ingredients</h3>
           </div>
@@ -67,7 +69,7 @@
 <router-outlet></router-outlet>
 
 <!-- Footer section -->
-<section class="footer-section clear mt-20">
+<section *ngIf="footer" class="footer-section clear mt-20">
   <div class="container">
     <!-- <div class="footer-logo text-center ">
       <a href="index.html">

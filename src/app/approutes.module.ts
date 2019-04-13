@@ -10,6 +10,8 @@ import { IngredientsComponent } from './ingredients/ingredients.component';
 import { CartComponent } from './cart/cart.component';
 import { CartDetailsComponent } from './cart-details/cart-details.component';
 import { CheckoutCartComponent } from './checkout-cart/checkout-cart.component';
+import { LoginComponent } from './login/login.component';
+import { ShippingAddressComponent } from './shipping-address/shipping-address.component';
 
 const approutes : Routes = [
   {path : '', redirectTo : 'home', pathMatch: 'full'},
@@ -21,6 +23,8 @@ const approutes : Routes = [
   {path : 'cart', component : CartComponent},
   {path : 'cart_details', component : CartDetailsComponent},
   {path : 'cart_checkout', component : CheckoutCartComponent},
+  {path : 'login', component : LoginComponent},
+  {path : 'shipping_address', component : ShippingAddressComponent},
 ];
 
 @NgModule({

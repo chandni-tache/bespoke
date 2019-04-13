@@ -1,0 +1,85 @@
+.component-starts{
+    padding:20px;
+    background: #EDEDED;
+    min-height: 100vh;
+}
+
+a{
+    color: #69A2C6;
+    font-size: 20px;
+}
+
+.back_to_cart{
+
+    font-size: 20px;
+}
+
+.back_to_cart i{
+    margin-right: 10px;
+    font-size: 26px;
+    top: 2px;
+    position: relative;
+}
+
+.cart_shipping_heading{
+    font-size: 40px;
+    padding: 30px;
+    font-weight: 500;
+}
+
+.cart_shipping_body{
+    text-align: center;
+    font-size: 26px;
+    margin-top: 60px;
+    padding: 20px;
+    margin-bottom: 30%;
+}
+
+.cart_shipping_body .cart_shipping_body_info{
+    width: 75%;
+    margin:auto;
+    text-align: center;
+}
+
+.cart_shipping_body_button_box i{
+    color: #63A2C5;
+    font-size: 35px;
+    position: absolute;
+    left: 71%;
+    padding-top: 17px;
+
+}
+
+.cart_shipping_body_button_box button{
+    width: 55%;
+    border: none;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    background: #fff;
+    font-size: 15px;
+    text-align: left;
+    padding: 15px;
+}
+
+.cart_shipping_body_button_box .add_new_button{
+  font-size: 25px;
+  background-color: #63A2C5;
+  color: #fff;
+}
+
+.cart_shipping_body_button_box .add_new_button_i{
+  color: #fff;
+}
+
+
+@media only screen and (max-width:467px){
+    a,.cart_shipping_body .cart_shipping_body_info{ width: 100%;    font-size: 16px;}
+    .cart_shipping_body_button_box button{font-size: 10px;  width: 80%; padding:10px;}
+    .cart_shipping_body_button_box i { left: 77%;  font-size: 25px;  padding-top: 22px;}
+    .cart_shipping_body_button_box .add_new_button{  font-size: 20px;}
+    .cart_shipping_body_button_box .add_new_button_i{ padding-top: 13px;}
+}
+
+/* @media only screen and (min-width:468px) and (max-width:767px){
+    .cart_shipping_body_button_box i{right: 10%;}
+} */
