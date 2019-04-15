@@ -43,7 +43,7 @@
     color: white;
     padding: 10px;
     font-size: 30px;
-    cursor: pointer; 
+    cursor: pointer;
 }
 
 .customize_product_btn_box img{
@@ -93,4 +93,181 @@
     width: 70%;
     margin: auto;
     color:  #60A1C5;
+}
+
+.bruce_gurantee a{
+  font-weight: 600;
+}
+
+.new-thing .container{
+  text-align: center;
+}
+
+.new-thing i{
+  color: #BABABA;
+}
+
+.new-thing i.fa-volume-up{
+  position: relative;
+  left: 90%;
+  top:10px;
+  font-size: 36px;
+}
+
+.new-thing i.fa-play-circle{
+  position: relative;
+  top: 50px;
+  font-size: 70px;
+}
+
+.main_benfits{
+  text-align: center;
+}
+
+.main_benfits .main_benfits_head{
+  font-size: 30px;
+
+}
+
+.find_skincare div{
+  background: inherit;
+}
+
+.review_ingredient_htu_box{
+  font-size: 35px;
+  font-weight: 500;
+  height: 150px;
+  padding: 20px;
+  background: #f2f2f2;
+  color: #515151;
+  margin-bottom: 20px;
+}
+
+.review_ingredient_htu_box  i{
+  float: right;
+  color: #ffc107;
+  margin-left: 10px;
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.review_ingredient_htu_box i.fa-angle-right{
+  color: #515151;
+  margin-left: 50px;
+}
+
+.review_ingredient_htu_items{
+  position: relative;
+  top: 28px;
+}
+
+.buyers_also_liked{
+  font-size: 35px;
+  text-align: center;;
+}
+
+.buyers_also_liked i{
+  margin-left: 1%;
+  margin-right: 1%;
+  width: 2%;
+  font-size: 34px;
+  font-weight: 700;
+  top: 330px;
+  position: relative;
+}
+
+.creations_items_div{
+  width: 42%;
+  float: left;
+  padding-left: 20px;
+  padding-top: 20px;
+  background: #EFEFEF;
+  margin-left: 2%;
+  margin-right: 2%;
+  border-radius: 15px;
+  margin-top: 20px;
+  padding: 12px;
+  text-align: center;
+  position: relative;
+}
+
+.creations_items_div img{
+    height: 400px;
+    margin-bottom: 22px;
+}
+
+.creations_items_div img.green_tick{
+  margin: 0;
+  height: 35px;
+  position: absolute;
+  color: #fff;
+  top: 92%;
+  width: auto;
+  left: 20px;
+}
+
+.buyers_also_liked .buyers_also_liked_head{
+
+}
+
+.buyers_also_liked .creations_items_div .fa-plus{
+  position: absolute;
+  color: #fff;
+  font-size: 45px;
+  left: 80%;
+  margin: 0;
+  width: auto;
+  top: 20px;
+}
+
+.bace_responsibility_green{
+  background-color: #84D1BC;
+  font-size: 28px;
+  color: #fff;
+  padding: 30px 50px;
+
+}
+
+.bace_responsibility_green img{
+  width: 60px;
+  margin-right: 20px;
+  float: left;
+  position: relative;
+  top: 15px;
+}
+
+.bace_Responsibilty{
+  border-radius: 30px;
+  font-size: 30px;
+  background: #66B59C;
+  padding: 10px 20px;
+  border: none;
+  margin-top: 20px;
+  width: 50%;
+}
+
+.add_to_cart_bottom{
+    height: 450px;
+}
+
+.add_to_cart_bottom .add_to_cart_bottom_left{
+  display: inline-block;
+  width: 30%;
+}
+
+.add_to_cart_bottom .add_to_cart_bottom_left img{
+  height: 350px
+}
+
+.add_to_cart_bottom .add_to_cart_bottom_right{
+  text-align: left;
+  display: inline-block;
+  width: 70%;
+  padding: 20px;
+  height: 400px;
+  font-size: 26px;
+}
+
+.add_to_cart_bottom .add_to_cart_bottom_right button{
+  width: 90%;
 }
