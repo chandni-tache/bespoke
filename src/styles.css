@@ -3,8 +3,7 @@
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
 .component-starts{
-  margin-top: 100px;
-
+  margin-top: 125px!important;
 }
 
 *{
@@ -271,7 +270,7 @@ margin-bottom: auto;
 
 .bach_button_cart_account{
   position: absolute;
-  top: 112px;
+  top: 135px;
   right: 30px;
   min-width: 199px;
   width: 40%;

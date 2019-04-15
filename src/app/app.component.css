@@ -536,10 +536,13 @@
 }
 
 .features-section{
-  margin-top:20px;
+  position: absolute;
+  width: 100%;
+  top: 125px;
+  z-index: 3;
 }
 
-  .feature-image {top: 35px!important;}
+  .feature-image {top: 10px!important;}
 
 @media only screen and (max-width:480px){
 	.main-a {	width: 50%;text-align: center; min-width: 222px;}
@@ -600,6 +603,7 @@
     top: 0;
     background: #fff;
     height: 125px;
+    z-index: 2;
      }
    }
    .nav.navbar-nav a {
