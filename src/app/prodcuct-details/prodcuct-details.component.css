@@ -14,6 +14,7 @@
 .back_to_bespoke{
     color: #69A2C6;
     font-size: 20px;
+    padding: 10px 20px;
 }
 
 .back_to_bespoke i{
@@ -270,4 +271,30 @@
 
 .add_to_cart_bottom .add_to_cart_bottom_right button{
   width: 90%;
+}
+
+@media only screen and (max-width: 480px){
+  .product_box img{ width:17%}
+  .prduct_div_price { font-size: 20px;  margin-top: 10px;}
+  .prduct_div_info { font-size: 20px;}
+  .add_to_cart_product { width: 70%; font-size: 22px;}
+  .customize_product_btn_box{font-size: 20px; }
+  .customize_product_btn_box img{ width: 24px;  left: 4px;}
+  .customize_product_btn_box i{font-size: 25px; top: 3px;}
+  .created_by_bruce { font-size: 20px;}
+  .bruce_gurantee {  font-size: 16px; }
+
+  .main_benfits .main_benfits_head {  font-size: 23px; }
+  .find_skincare div { width: 23%;}
+  .find_skincare div span { font-size: 14px;}
+  .find_skincare div img { width: 80%;}
+
+  .review_ingredient_htu_box { font-size: 20px;}
+  .review_ingredient_htu_box i{ margin-left: 5px; font-size: 30px;}
+  .review_ingredient_htu_box i.fa-angle-right{  margin-left: 20px;}
+  .review_ingredient_htu_items { top: 38px;}
+
+  .buyers_also_liked {  font-size: 30px;}
+
+
 }

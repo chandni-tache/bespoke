@@ -1,26 +1,40 @@
 <header class="header-section">
-
-  <nav class="navbar" style="width:100%; position: fixed!important; height: 100px;">
+</header>
+  <!-- <nav class="navbar" style="width:100%; position: fixed!important; height: 100px;">
     <a routerLink="/home" class="navbar-brand site-logo"  style="width:33.3%">
-      <!--<img src="img/logo.png" alt="logo" width="105px;">-->
       <h3>BACE</h3>
     </a>
     <div class="middle-section" style="width:33.3%" >
       <a (clickOutside)="onClickedOutside_middle()" (click)=show_hide_features()>
         <img src="../assets/img/bespoke_logo.png" width="80px;" />
+        <p class="bespoke_header_text"> Bespoke</p>
       </a>
     </div>
-    <div routerLink="/cart" class="user-panel" style="width:33.3%">
-      <!-- <i class="fa fa-shopping-cart"></i> -->
-      <!-- <div class="up-item">
-        <div class="shopping-card">
-          <i class="flaticon-bag"></i>
-          <span>0</span>
+    <div routerLink="/cart" class="user-panel" style="width:33.3%; outline:none;">
+      <div class="up-item">
+
+          <img  src="assets/img/cart.png" /><span>0</span>
         </div>
-        <a routerLink="/cart">Cart</a> -->
-        <img  src="assets/img/cart.png" /><span>0</span>
-      <!-- </div> -->
+        <p class="cart_header_text"> Cart</p>
+
     </div>
+  </nav> -->
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+     <div class="container">
+       <div class="nav navbar-nav navbar-left">
+           <a routerLink="/home"><img class="bace_logo_img" src="assets/img/logo.png" alt="" /></a>
+       </div>
+         <div class="nav navbar-nav navbar-center">
+             <a (clickOutside)="onClickedOutside_middle()" (click)=show_hide_features()><img src="assets/img/bespoke_logo.png" alt="" height="80"></a>
+             <span>Bespoke</span>
+         </div>
+         <div routerLink="/cart" class="nav navbar-nav navbar-right">
+             <a routerLink="/cart" class="navbar-left">  <img  src="assets/img/cart.png"  height="80" /></a>
+             <span>Cart</span>
+         </div>
+
+     </div>
   </nav>
 
 <!-- feature section -->
@@ -64,7 +78,7 @@
     </div>
   </section>
 <!-- feature section -->
-</header>
+
 
 <router-outlet></router-outlet>
 

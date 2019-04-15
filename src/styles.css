@@ -4,7 +4,7 @@
 
 .component-starts{
   margin-top: 100px;
-  
+
 }
 
 *{
@@ -47,12 +47,12 @@
 	background-color: #fff;
 }
 
-.navbar{
+/* .navbar{
 	padding-right: 0px !important;
 	padding-left: 0px !important;
 
 
-}
+} */
 
 .clear{
   clear:both;
@@ -78,17 +78,17 @@ h2{
 .header-section{
 
 }
-.navbar {
+/* .navbar {
   overflow: hidden;
  background-color: #fff;
-  /*position: fixed;*/
+
   height: 100px;
   width: 100%;
   clear: both;
   top: 0px;
   z-index: 100;
 
-}
+} */
 .menu-bar{
 	font-weight: normal!important;
 	text-transform: capitalize;
@@ -242,7 +242,7 @@ margin-bottom: auto;
   text-align: center;
   background-color: #EFEFEF;
   padding: 15px;
-  
+
 }
 
 .find_skincare div img{
