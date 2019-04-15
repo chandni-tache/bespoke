@@ -4,7 +4,7 @@
     <div class="title_shop"> BACE SKINCARE  </div>
 
     <div class="item_div_top" *ngFor="let i of items">
-      <img [src]="i.src" alt="image" />
+      <a routerLink="/prodcuct_details"> <img [src]="i.src" alt="image" /></a>
       <span class="item_div_info" style="padding:10px;">{{i.info}}</span><br>
       <span class="item_div_title">{{i.title}}</span><br>
     </div>
@@ -26,10 +26,22 @@
 
   <div class="col-md-12 find_skincare ">
     <i class="fa fa-angle-left"></i>
-    <div class="find_skincare_1"></div>
-    <div class="find_skincare_2"></div>
-    <div class="find_skincare_3"></div>
-    <div class="find_skincare_4"></div>
+    <div class="find_skincare_1">
+      <img src=" assets/img/lines.png" />
+      <span>Lines</span>
+    </div>
+    <div class="find_skincare_2">
+      <img src=" assets/img/strength.png" />
+      <span>Strength</span>
+    </div>
+    <div class="find_skincare_3">
+      <img src=" assets/img/antioxidant.png" />
+      <span>Antioxidants</span>
+    </div>
+    <div class="find_skincare_4">
+      <img src=" assets//img/brightening.png" />
+      <span>Brightening</span>
+    </div>
     <i class="fa fa-angle-right"></i>
   </div>
 
@@ -40,7 +52,7 @@
 
   <div class="col-md-12 discover_box">
     <div class="left_discover">
-      <img src='../../assets/img/bespoke_logo.png'/>
+      <img src=' assets/img/bespoke_logo.png'/>
     </div>
     <div class="right_discover">
       <span>Bace Bespoke is the world's first truly custom skincare.</span><br>
@@ -50,6 +62,7 @@
     </div>
   </div>
 
+  <!-- Top User Skincare Creations starts -->
   <div class="col-md-12 mt-20 skincare_creations">
     <span CLASS="title_shop_sections">Top User Skincare Creations</span>
 
@@ -60,9 +73,9 @@
       <span class="item_div_title">{{i.title}}</span><br>
       <span class="item_div_title">{{i.price}}</span><br>
     </div>
-
-
   </div>
+  <!-- Top User Skincare Creations ends -->
+
   <div class="col-md-12">
     <button style="margin-left:22%;" class="btn btn-dark clear show_more_btn"> Show 4 More</button>
   </div>

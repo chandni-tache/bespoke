@@ -22,6 +22,7 @@ import { CartDetailsComponent } from './cart-details/cart-details.component';
 import { CheckoutCartComponent } from './checkout-cart/checkout-cart.component';
 import { LoginComponent } from './login/login.component';
 import { ShippingAddressComponent } from './shipping-address/shipping-address.component';
+import { ProdcuctDetailsComponent } from './prodcuct-details/prodcuct-details.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { ShippingAddressComponent } from './shipping-address/shipping-address.co
     CartDetailsComponent,
     CheckoutCartComponent,
     LoginComponent,
-    ShippingAddressComponent
+    ShippingAddressComponent,
+    ProdcuctDetailsComponent
   ],
   imports: [
     BrowserModule,

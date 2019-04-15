@@ -4,7 +4,7 @@
 
 .component-starts{
   margin-top: 100px;
-
+  
 }
 
 *{
@@ -216,7 +216,7 @@ margin-bottom: auto;
   width: 2%;
 }
 
-.find_skincare_1{
+/* .find_skincare_1{
   background-image: url('assets/img/lines.png');
 }
 
@@ -230,7 +230,7 @@ margin-bottom: auto;
 
 .find_skincare_4{
   background-image: url('assets/img/brightening.png');
-}
+} */
 
 .find_skincare div{
   width:21%;
@@ -239,10 +239,21 @@ margin-bottom: auto;
   height: 120px;
   border-radius: 10px;
   display: inline-block;
+  text-align: center;
   background-color: #EFEFEF;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
+  padding: 15px;
+  
+}
+
+.find_skincare div img{
+  width: 40%;
+  height: 50px;
+}
+
+.find_skincare div span{
+  display: block;
+  margin-top: 10px;
+  font-size: 20px;
 
 }
 
@@ -295,6 +306,26 @@ margin-bottom: auto;
 /* cart options end */
 
 .grey_col{color:#7f8083}
+
+
+/* product details starts*/
+
+.prduct_div_info{
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.prduct_div_title{
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.prduct_div_price{
+  font-size: 24px;
+  font-weight: 600;
+  margin-top:20px;
+}
+/* product details ends*/
 
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
   .bach_button_cart_account{ font-size: 29px!important;}
