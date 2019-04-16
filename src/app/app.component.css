@@ -641,25 +641,55 @@
      }
 
      .nav.navbar-nav img {
-         width: 70%;
-         height:70%;
+       width: 34px;
+       height: 32px;
      }
      .nav.navbar-nav .bace_logo_img{
        width: 70px;
-        height: 30px;
+        height: 20px;
         position: relative;
         right: 20px;
      }
      .nav .navbar-left img{
-       width: 45%;
+       width: 23px;
+      height: 29px;
 
      }
 
-     .navbar{
-       /* height: 0; */
+     .navbar span{
+       font-size: 9px;
      }
+
+       .navbar-right{position: relative; left: 35px;}
+       .navbar-center{  position: relative;  left: 20px;}
+
+}
+
+@media (max-width: 350px) {
+  .navbar-right{position: relative; left: 33px;}
 }
 
 @media only screen and (min-width: 992px){
   .feature-inner .menu-bar{ font-size: 30px!important;}
+}
+
+
+.nav.navbar-nav img {
+  width: 34px;
+  height: 32px;
+}
+.nav.navbar-nav .bace_logo_img{
+  width: 70px;
+   height: 20px;
+   position: relative;
+   right: 20px;
+}
+.nav .navbar-left img{
+  width: 23px;
+ height: 29px;
+
+}
+
+.navbar span{
+  font-size: 9px;
 }

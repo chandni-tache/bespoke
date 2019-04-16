@@ -2,8 +2,12 @@
 @import "~font-awesome/css/font-awesome.css";
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
-.component-starts{
+/* .component-starts{
   margin-top: 125px;
+} */
+
+.component-starts{
+  margin-top: 70px;
 }
 
 *{
@@ -347,7 +351,7 @@ margin-bottom: auto;
   .find_skincare div span {font-size: 10px;}
   .find_skincare div{ padding: 20px 10px;}
   .find_skincare .fa-angle-left, .find_skincare .fa-angle-right{bottom:20px; font-size: 30px;}
-  .component-starts{	    margin-top: 95px;}
+  .component-starts{	    margin-top: 62px;}
   .discover_create{font-size: 22px;}
   .right_discover .fa{left:20%;}
 
