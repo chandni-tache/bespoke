@@ -24,7 +24,7 @@
 
   <div class="title_shop_sections"> Find Skincare by Benefit </div>
 
-  <div class="col-md-12 find_skincare ">
+  <!-- <div class="col-md-12 find_skincare ">
     <i class="fa fa-angle-left"></i>
     <div class="find_skincare_1">
       <img src=" assets/img/lines.png" />
@@ -43,6 +43,32 @@
       <span>Brightening</span>
     </div>
     <i class="fa fa-angle-right"></i>
+  </div> -->
+
+  <div class="find_skincare ">
+    <i class="fa fa-angle-left"></i>
+
+    <div class="card" >
+      <img src="assets/img/lines.png" class="card-img-top" alt="...">
+      <span>Lines</span>
+    </div>
+    <div class="card" >
+      <img src="assets/img/strength.png" class="card-img-top" alt="...">
+      <span>Strength</span>
+    </div>
+    <div class="card" >
+      <img src="assets/img/antioxidant.png" class="card-img-top" alt="...">
+      <span>Antioxidants</span>
+    </div>
+    <div class="card" >
+      <img src="assets//img/brightening.png" class="card-img-top" alt="...">
+      <span>Brightening</span>
+     </div>
+
+
+
+
+    <i class="fa fa-angle-right"></i>
   </div>
 
   <div class="search_input_box">
@@ -58,18 +84,22 @@
       <span>Bace Bespoke is the world's first truly custom skincare.</span><br>
       <button class="btn btn-info discover_create">Create <i class="fa fa-angle-right "></i>
       </button><br>
+      <!-- <a href="#" class="next round">next &#8250;</a> -->
       <button class="btn discover_discover">Discover More</button>
     </div>
   </div>
 
   <!-- Top User Skincare Creations starts -->
+
   <div class="col-md-12 mt-20 skincare_creations">
     <span CLASS="title_shop_sections">Top User Skincare Creations</span>
+  </div>
+  <div class="col-md-12 mt-20 skincare_creations">
 
     <div class=" creations_items_div" *ngFor="let i of items_CREATIONS">
       <i class="fa fa-plus"></i>
       <img style="margin-bottom: 22px;" [src]="i.src" alt="image" />
-      <span class="item_div_info" style="padding:10px;">{{i.info}}</span><br>
+      <span class="item_div_info" style="padding:8px;">{{i.info}}</span><br>
       <span class="item_div_title">{{i.title}}</span><br>
       <span class="item_div_title">{{i.price}}</span><br>
     </div>

@@ -91,7 +91,7 @@ h2{
 .menu-bar{
 	font-weight: normal!important;
 	text-transform: capitalize;
-	font-size: 15px!important;
+	font-size: 15px;
 }
 .feature {
 	background-color: #EDEDED!important;
@@ -209,7 +209,7 @@ margin-bottom: auto;
   color: #007bff;
   font-size: 35px;
   position: relative;
-  bottom: 46px;
+      bottom: 28px;
   margin-right: 1%;
   margin-left: 1%;
   width: 2%;
@@ -245,7 +245,7 @@ margin-bottom: auto;
 }
 
 .find_skincare div img{
-  width: 40%;
+  width: auto;
   height: 50px;
 }
 
@@ -297,6 +297,8 @@ margin-bottom: auto;
 }
 .product-col{padding: 10px;}
 
+.right_discover .fa{left:30%;}
+
 .pc-title{
   font-size: 16px;
 }
@@ -341,13 +343,25 @@ margin-bottom: auto;
 
 @media only screen and (max-width: 468px) {
   .component-starts{  margin-top: 0;}
-  .find_skincare div img {  width: 80%;}
-  .find_skincare div span {font-size: 11px;}
+  /* .find_skincare div img {  width: 80%;} */
+  .find_skincare div span {font-size: 10px;}
   .find_skincare div{ padding: 20px 10px;}
-  .find_skincare .fa-angle-left, .find_skincare .fa-angle-right{bottom:20px;}
+  .find_skincare .fa-angle-left, .find_skincare .fa-angle-right{bottom:20px; font-size: 30px;}
+  .component-starts{	    margin-top: 95px;}
+  .discover_create{font-size: 22px;}
+  .right_discover .fa{left:20%;}
 
 }
 
 @media only screen and (min-width: 992px) {
-  .component-starts{  margin-top: 0;}
+  /* .component-starts{  margin-top: 0;} */
 }
+
+
+@media only screen and (max-width:370px){
+  .find_skincare div span {font-size: 8px;}
+}
+
+/* @media only screen and (min-width:3px) and (max-width: 468px){
+  .find_skincare div span {font-size: 10px;}
+} */

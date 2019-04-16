@@ -301,11 +301,15 @@ padding-top: 20px;
 
 
  /* Large devices (laptops/desktops, 992px and up) */
- /* @media only screen and (min-width: 992px) {
-  .example {background: orange;}
- }  */
-
- /* Extra large devices (large laptops and desktops, 1200px and up) */
- /* @media only screen and (min-width: 1200px) {
-  .example {background: pink;}
- } */
+ @media only screen and (min-width: 992px) {
+  .left_discover img{width:60%}
+  .item_div_info{ font-size:30px;}
+  .item_div_title{ font-size: 30px;}
+  .right_discover, .show_more_btn, .discover_create, .discover_discover{ font-size: 30px;}
+  .find_skincare div span{font-size: 27px;}
+  .add_bespoke_right h3{font-size: 40px}
+  .add_bespoke_right span{font-size: 27px;}
+  .show_all {font-size: 30px; border: 3px solid #fff;}
+  .add_bespoke_right .add_anchor a{font-size: 27px;}
+  
+}
