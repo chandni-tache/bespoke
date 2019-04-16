@@ -4,8 +4,8 @@
 }
 
 .title_shop{
-  font-size: 30px;
-  transition: uppercase;
+  font-size: 19px;
+  padding-top: 24px;
 }
 
 .item_div_top{
@@ -13,6 +13,11 @@
   float: left;
   padding-left: 20px;
 padding-top: 20px;
+}
+
+.item_div_top_1{
+  position: relative;
+  bottom: 53px;
 }
 
 .show_all{
@@ -40,7 +45,7 @@ padding-top: 20px;
 }
 
 .title_shop_sections{
-  font-size: 24px;
+  font-size: 19px;
   text-align: center;
   margin-bottom:20px;
 }
@@ -73,7 +78,7 @@ padding-top: 20px;
 .discover_box{
   width:100%;
   background-image: linear-gradient(to right, #E8E9FC 10%, #FDE5D8 51%, #E2F2DF 100%);
-  font-size:22px;
+  font-size:16px;
   margin-top: 20px;
   padding-top: 20px;
 
@@ -101,22 +106,21 @@ padding-top: 20px;
 }
 
 .discover_create{
-  margin: 20px 20px 10px;
-  min-width: 170px;
   width: 45%;
-  border-radius: 35px;
-  text-align: center;
-  padding: 10px 20px;
-  font-size: 24px;
+  min-width: 160px;
+  border-radius: 30px;
+  padding: 10px;
+  margin: 15px 0;
+  font-size: 20.51px;
 }
 
 .discover_discover{
-  margin: 10px 20px 20px ;
   width: 45%;
-  min-width: 170px;
-  border-radius: 35px;;
-  border: 1px solid;
-  font-size: 20px;
+min-width: 160px;
+border-radius: 30px;
+padding: 5px;
+margin-bottom: 15px ;
+font-size: 14px;
 
 }
 
@@ -135,13 +139,20 @@ padding-top: 20px;
   border-radius: 15px;
   margin-top: 20px;
   padding: 12px;
+  position: relative;
+
+}
+
+.creations_items_div img{
+  height:196px;
+  width:auto;
 }
 
 .creations_items_div .fa{
-  position: relative;
+  position: absolute;
   color: #fff;
   font-size: 30px;
-  left: 40%;
+  left: 75%;
 }
 
 .show_more_btn{
@@ -158,6 +169,8 @@ padding-top: 20px;
 .bespoke_ingredients{
   background: #EFEFEF;
   text-align: center;
+  padding-top: 20px;
+
 }
 
 .add_bespoke_left{
@@ -179,12 +192,17 @@ padding-top: 20px;
   padding: 10px;
   margin-top: 20px;
   text-align: left;
+  font-size:12px;
+}
+
+.add_bespoke_right h3{
+  font-size:21px;
 }
 
 .add_bespoke .add_anchor{
   color: #346faf;
   text-align: right;
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 500;
 }
 
@@ -213,9 +231,13 @@ padding-top: 20px;
 
 .add_bespoke_list .add_anchor{
   color: #346faf;
-    font-size: 24px;
+    font-size: 8px;
     font-weight: 500;
 }
+
+.add_bespoke_list .add_anchor a{
+  color: #346faf;
+    font-size: 8px;}
 
 .add_bespoke_list .add_anchor .fa-angle-right{
   font-size: 22px;
@@ -229,8 +251,25 @@ padding-top: 20px;
   position: relative;
     top: 20px;
     left: 5px;
+    height: 74px;
+width: auto;
 }
 
+.add_bespoke_list_box .add_bespoke_list h3{
+  font-size:16px;
+}
+
+.top_item_div_title{
+  font-size:7.97px;
+  line-height: 0.1rem;
+}
+.top_item_div_info{
+  font-size:11px;
+  line-height: 0.1rem;
+}
+
+.bespoke_btn img{width: 23px;}
+.bespoke_btn{width: 60%}
 
 
 @media only screen and (min-width: 480px) {
@@ -271,20 +310,48 @@ padding-top: 20px;
   .add_bespoke_list .add_anchor .fa-angle-right{ font-size: 20px; top:2px;margin-left: 5px;}
   .add_bespoke_list .add_anchor{ font-size: 14px !important; }
   .show_more_btn {  font-size: 16px!important;}
+  .bespoke_btn {font-size: 13px!important;}
   .search_input{text-indent: 45px;}
-  .title_shop {  font-size: 25px;}
-  .title_shop_sections {  font-size: 22px;}
-  .item_div_info{padding: 5px;}
+  .title_shop {  font-size: 19px;}
+  .title_shop_sections {  font-size: 19px;
+}
+  .item_div_info{padding: 5px; font-size:16.35px;}
+  .item_div_title{ font-size:14px;}
+  .item_div_top{
+  height: 355px;
+  }
+  .top_item_div_title{
+    font-size:7.97px;
+  }
  }
 
 @media only screen and (max-width: 400px) {
+    .item_div_info{padding: 5px; font-size:12.35px;}
+    .item_div_title{ font-size:10px;}
   .add_bespoke_list .add_anchor{font-size: 11px;}
   .show_more_btn {  font-size: 13px;}
   .add_bespoke_list h3{  font-size: 1.2rem;}
+  .item_div_top{
+  height: 310px;
+  }
+  .top_item_div_title{
+    font-size:7.97px;
+  }
+  .top_item_div_info{
+    font-size:11px;
+  }
 }
-/* @media only screen and (max-width:480px){
-  .new-thing-h{ margin-top:30%; }
-} */
+
+@media only screen and (max-width:370px){
+  .item_div_top{
+  height: 280px;
+  }
+  .creations_items_div{
+
+  }
+}
+
+
 
 
 /* Extra small devices (phones, 600px and down) */
@@ -304,12 +371,12 @@ padding-top: 20px;
  @media only screen and (min-width: 992px) {
   .left_discover img{width:60%}
   .item_div_info{ font-size:30px;}
-  .item_div_title{ font-size: 30px;}
+  .item_div_title{ font-size: 28px;}
   .right_discover, .show_more_btn, .discover_create, .discover_discover{ font-size: 30px;}
   .find_skincare div span{font-size: 27px;}
   .add_bespoke_right h3{font-size: 40px}
   .add_bespoke_right span{font-size: 27px;}
   .show_all {font-size: 30px; border: 3px solid #fff;}
   .add_bespoke_right .add_anchor a{font-size: 27px;}
-  
+
 }

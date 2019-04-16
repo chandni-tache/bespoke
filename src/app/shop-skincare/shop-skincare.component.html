@@ -1,12 +1,14 @@
 <div class="component-starts">
 
   <div class="itmes_box">
-    <div class="title_shop"> BACE SKINCARE  </div>
+    <div class="title_shop"> Bace Skincare </div>
 
     <div class="item_div_top" *ngFor="let i of items">
       <a routerLink="/prodcuct_details"> <img [src]="i.src" alt="image" /></a>
-      <span class="item_div_info" >{{i.info}}</span><br>
-      <span class="item_div_title">{{i.title}}</span><br>
+      <div class="item_div_top_1">
+        <span class="item_div_info" >{{i.info}}</span><br>
+        <span class="item_div_title">{{i.title}}</span><br>
+      </div>
     </div>
 
     <button type="button" class="btn clear show_all">Show All</button>
@@ -78,10 +80,17 @@
     </div>
     <div class="right_discover">
       <span>Bace Bespoke is the world's first truly custom skincare.</span><br>
-      <button class="btn btn-info discover_create">Create <i class="fa fa-angle-right "></i>
-      </button><br>
-      <!-- <a href="#" class="next round">next &#8250;</a> -->
-      <button class="btn discover_discover">Discover More</button>
+      <!-- <button class="btn btn-info discover_create">Create <i class="fa fa-angle-right "></i>
+      </button><br> -->
+      <div class="row">
+        <div class="col-sm-6">
+          <button class="btn btn-lg btn-primary discover_create">Create<i class="fa fa-angle-right "></i></button>
+        </div>
+        <div class="col-sm-6">
+        <button class="btn btn-lg btn-outline-info discover_discover">Discover More</button></div>
+      </div>
+      <!--discover_discover discover_create <a href="#" class="next round">next &#8250;</a> -->
+
     </div>
   </div>
 
@@ -90,14 +99,14 @@
   <div class="col-md-12 mt-20 skincare_creations">
     <span CLASS="title_shop_sections">Top User Skincare Creations</span>
   </div>
-  <div class="col-md-12 mt-20 skincare_creations">
+  <div class="col-md-12 mt-20 skincare_creations" >
 
     <div class=" creations_items_div" *ngFor="let i of items_CREATIONS">
       <i class="fa fa-plus"></i>
       <img style="margin-bottom: 22px;" [src]="i.src" alt="image" />
-      <span class="item_div_info" style="padding:8px;">{{i.info}}</span><br>
-      <span class="item_div_title">{{i.title}}</span><br>
-      <span class="item_div_title">{{i.price}}</span><br>
+      <span class="top_item_div_info" style="">{{i.info}}</span><br>
+      <span class="top_item_div_title">{{i.title}}</span><br>
+      <span class="top_item_div_title">{{i.price}}</span><br>
     </div>
   </div>
   <!-- Top User Skincare Creations ends -->
@@ -107,7 +116,7 @@
   </div>
 
   <div class="bespoke_ingredients">
-    <span class="title_shop_sections"> New Bespoke Ingredients</span>
+    <span class="title_shop_sections mt-4" > New Bespoke Ingredients</span>
 
     <div class="add_bespoke">
       <div class="add_bespoke_left">
@@ -157,7 +166,8 @@
 
     </div>
 
-    <button class="btn btn-dark clear show_more_btn"> Bespoke Ingredients</button>
+    <button class="btn btn-dark clear show_more_btn bespoke_btn">
+      <img src="assets/img/ingredient_icon.png" /> Bespoke Ingredients</button>
 
   </div>
 

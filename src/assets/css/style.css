@@ -13,9 +13,7 @@
 html,
 body {
 	height: 100%;
-	font-family: 'Josefin Sans', sans-serif;
-	-webkit-font-smoothing: antialiased;
-	font-smoothing: antialiased;
+	font-family: 'okomito';
 }
 
 h1,
@@ -1906,7 +1904,7 @@ ol {
 		margin-top: 70px;
 	}
 
-	
+
 }
 
 /* Medium Mobile :480px. */

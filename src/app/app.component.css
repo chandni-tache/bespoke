@@ -543,17 +543,18 @@
 }
 
 .features-section{
-  position: fixed;
+  position: relative;
   width: 100%;
-  top: 125px;
-  z-index: 3;
+  top: 65px;
+  z-index: 1;
 }
 
   .feature-image {
     position: absolute;
     height: 27px;
     top: 10px;
-    top: 10px!important;
+
+
   }
 
   nav.navbar{
@@ -643,7 +644,7 @@
        margin: 0 auto;
    }
    .nav.navbar-nav span{
-     font-size: 22px;
+     font-size: 9px;
    }
 
 

@@ -3,11 +3,11 @@
 }
 
 .ingre_titl{
-  font-size: 34px;
+  font-size: 21px;
 }
 
 .ingre_title_filter{
-  font-size: 21px;
+  font-size: 22px;
 }
 
 .search_input_box{
@@ -66,7 +66,7 @@
 }
 
 .title_ingredient_sections{
-  font-size: 28px;
+  font-size: 23px;
   margin-bottom:20px;
   font-weight: 500;
 }
@@ -148,6 +148,8 @@
   font-size: 26px;
   font-weight: 500;
 }
+.discover_box_ing .disc_ques{  font-size: 20px;}
+
 
 
 .discover_begin{
@@ -177,6 +179,10 @@
   padding: 10px 20px;
 }
 
+.faceprint_head_ing{  font-size: 28px;font-weight: 600;}
+.faceprint_head_info_ing{  font-size: 18px;  font-weight: 400;}
+
+
 @media only screen and (min-width: 768px) and (max-width: 988px){
  .left_discover img{width:120px; height:120px;}
  .discover_box{    font-size:30px; }
@@ -187,18 +193,35 @@
  }
 
 @media only screen and (max-width: 480px) {
+  .ingre_title_filter{
+    font-size: 11px;
+  }
+  .title_ingredient_sections{
+    font-size: 14px;
+    margin-bottom:10px;
+    font-weight: 500;
+  }
+  .popular_title{
+    font-size: 11px;
+  }
+  .add_anchor{
+    font-size:8px;
+  }
   .search_input{text-indent: 45px;}
-  .ingre_titl{font-size: 23px;}
-  .popular_image_box span{  font-size: 23px;  bottom: 20px;}
+  .ingre_titl{font-size: 21px;}
+  .popular_image_box span{  font-size: 11px;  bottom: 20px;}
   .add_anchor{  bottom: 20px;}
   .add_anchor a {  font-size: 14px;}
   .add_anchor i {  font-size: 26px;top: 3px;  margin-left: 4px;font-weight: 500;}
-  .discover_box_ing .disc_ques{  font-size: 19px;}
-  .faceprint_head_ing{  font-size: 28px;font-weight: 600;}
-  .faceprint_head_info_ing{  font-size: 18px;  font-weight: 400;}
+  .discover_box_ing .disc_ques{  font-size: 15px;}
+  .faceprint_head_ing{  font-size: 17.32px;font-weight: 600;}
+  .faceprint_head_info_ing{  font-size: 12px;  font-weight: 400;}
   .left_discover_ing{width: 30%;}
-  .discover_begin{ width: 60%; padding: 7px 18px;font-size: 20px;}
-  .discover_discover{margin: 10px 20px 20px 37PX;  width: 60%;font-size: 16px;}
+  .discover_begin{ width: 60%; padding: 7px 18px;font-size: 18.4px;}
+  .discover_begin i{
+    font-size:23px;
+  }
+  .discover_discover{margin: 10px 20px 20px 37PX;  width: 60%;font-size: 13.82px;}
   .sort_button i {  left: 60%;}
  }
 
@@ -208,9 +231,9 @@
    .discover_discover { margin: 10px 20px 20px 20PX; width: 80%;}
    .add_anchor a {  font-size: 11px;}
    .add_anchor i {  font-size: 20px;top: 2px;margin-left: 2px;font-weight: 500;}
-   .find_skincare div span { font-size: 9px;}
+   /* .find_skincare div span { font-size: 9px;} */
    .sort_button i {     left: 55%;  font-size: 25px;}
-   .search_input{font-size:18px; height: auto;}
-   .sort_button{font-size: 18px;      padding: 7px 20px;}
+   .search_input{font-size:20px; height: auto;}
+   .sort_button{font-size: 20px;      padding: 7px 20px;}
    .search_input_box .fa{    top: 34px; font-size: 20px;}
  }
