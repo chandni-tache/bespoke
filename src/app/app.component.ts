@@ -16,6 +16,7 @@ export class AppComponent {
   }
 
   show_hide_features(){
+    window.scroll(0,0);
 
     if(this.show) this.show = false;
     else this.show = true;

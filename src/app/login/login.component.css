@@ -10,7 +10,6 @@ a{
 }
 
 .back_to_cart{
-
     font-size: 20px;
 }
 
@@ -63,10 +62,14 @@ padding-top: 10px;
 
 @media only screen and (max-width:467px){
     .cart_login_body_input i{     left: 72%;font-size: 30px;padding-top: 15px;}
-    a,.cart_login_body .cart_login_body_info{ width: 100%;    font-size: 18px;}
-    .cart_login_body_input input{  width: 70%; font-size: 18px}
+    .cart_login_body .cart_login_body_info{ width: 100%;    font-size: 18px;}
+    .cart_login_body_input input{  width: 90%; font-size: 18px}
     .cart_login_body {  margin-top: 20px;}
-    .cart_login_heading {font-size: 30px;    padding: 20px}
+    .cart_login_heading {font-size: 32px;    padding: 20px}
+    .back_to_cart a{font-size: 13px;}
+    .back_to_cart i{font-size: 20px;top: 0px;}
+    .forgot_link{  font-size: 13px; }
+
 }
 
 /* @media only screen and (min-width:468px) and (max-width:767px){
