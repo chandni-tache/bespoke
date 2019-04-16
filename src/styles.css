@@ -115,12 +115,11 @@ margin-bottom: auto;
 }
 
 .feature .feature-inner h3{
-	margin-top: 60px;
+	margin-top: 30px;
 }
 .feature-image{
-	position: absolute;
-  height: 50px;
-  top: 15px;
+	position: relative;
+  width: 20px;
 }
 .features-section{
 	display:none;

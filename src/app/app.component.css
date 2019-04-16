@@ -458,6 +458,7 @@
 	color: #111111;
 }
 
+.chatbot{    width: 27px;}
 .product-item .pi-text p {
 	font-size: 16px;
 	color: #111111;
@@ -512,7 +513,7 @@
 	color: #fff;
 	outline: none;
 	border: none;
-	font-size: 23px;
+	font-size: 20px;
 	padding-left: 14px;
 	padding-right: 14px;
 	margin-left: 0px!important;
@@ -523,12 +524,16 @@
 	color: #fff;
 	outline: none;
 	border: none;
+
 }
 .main-c{
 	background-image: linear-gradient(to right, #EAA299 10%, #7D8AB7  51%, #EBD9AC  100%);
-	color: #fff;
+  /* background-image: url('../assets/img/button_background.png'); */
+ 	color: #fff;
 	outline: none;
 	border: none;
+      background-size: cover;
+      background-repeat: no-repeat;
 }
 .main-d{
 	background-color: #A8A8A8;
@@ -544,7 +549,12 @@
   z-index: 3;
 }
 
-  .feature-image {top: 10px!important;}
+  .feature-image {
+    position: absolute;
+    height: 27px;
+    top: 10px;
+    top: 10px!important;
+  }
 
   nav.navbar{
     position: fixed!important;
@@ -555,41 +565,52 @@
    z-index: 2;
     }
 
+    .made_in_aus{color: #3F4D60!important;font-size: 20px;}
+
 @media only screen and (max-width:480px){
-	.main-a {	width: 50%;text-align: center; min-width: 222px;}
-		.responsibility-mention-button{width:100%;}
-		.support-bace-legal-button{width:100%;}
-		.main-b{width:55%; margin-left:2.5%; margin-right:2.5%;text-align: center;}
-		.main-c{width:35%; margin-left:2.5%; margin-right:2.5%;text-align: center;}
-		.main-d{width: 30%; text-align: center; margin-left: 1.5%; margin-right: 1.5%;}
-    .menu-bar{    	font-size: 15px!important;}
-    .features-section{top:90px;}
+	.main-a {	width: 40%;text-align: center; min-width: 150px;font-size:14px;}
+  .chatbot{    width: 15px;}
+	.responsibility-mention-button{width:100%;}
+	.support-bace-legal-button{width:100%;}
+	.main-b{width:55%; margin-left:2.5%; margin-right:2.5%;text-align: center;font-size:14px;}
+	.main-c{width:35%; margin-left:2.5%; margin-right:2.5%;text-align: center;font-size:14px;}
+	.main-d{width: 30%; text-align: center; margin-left: 1.5%; margin-right: 1.5%; font-size:14px;}
+  .menu-bar{    	font-size: 9px!important;}
+  .features-section{top:62px;}
 }
 
 /* find skincare ends */
 @media only screen and (min-width: 576px) and (max-width: 767px) {
 
-	.main-a {	width: 50%;text-align: center;}
+	.main-a {	width: 40%;text-align: center;font-size: 22px;}
 	.responsibility-mention-button{width:100%;}
 	.support-bace-legal-button{width:100%;}
-	.main-b{width:55%; margin-left:2.5%; margin-right:2.5%;text-align: center;}
-	.main-c{width:35%; margin-left:2.5%; margin-right:2.5%;text-align: center;}
-	.main-d{width: 30%; text-align: center; margin-left: 1.5%; margin-right: 1.5%;}
+  .chatbot{width: 27px;}
+	.main-b{width:55%; margin-left:2.5%; margin-right:2.5%;text-align: center;font-size: 22px;}
+	.main-c{width:35%; margin-left:2.5%; margin-right:2.5%;text-align: center;font-size: 22px;}
+	.main-d{width: 30%; text-align: center; margin-left: 1.5%; margin-right: 1.5%;font-size: 22px;}
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
-	.main-a {width: 50%;text-align: center;    font-size: 24px;}
+	.main-a {width: 40%;text-align: center;    font-size: 28px;}
 	.responsibility-mention-button{width:100%;}
 	.support-bace-legal-button{width:100%;}
-	.main-b{width:52%; margin-left:4%; margin-right:4%;text-align: center;    font-size: 24px;}
-	.main-c{width:32%; margin-left:4%; margin-right:4%;text-align: center;    font-size: 24px;}
-	.main-d{width: 30%; text-align: center; margin-left: 1.5%; margin-right: 1.5%;    font-size: 24px;}
-  .feature-image {height: 75px;}
-  .feature .feature-inner h3 {margin-top: 90px;}
+	.main-b{width:52%; margin-left:4%; margin-right:4%;text-align: center;    font-size: 26px;}
+	.main-c{width:32%; margin-left:4%; margin-right:4%;text-align: center;    font-size: 26px;}
+	.main-d{width: 30%; text-align: center; margin-left: 1.5%; margin-right: 1.5%;    font-size: 26px;}
+  /* .chatbot{width: :33px} */
+  .feature .feature-inner h3 {margin-top: 30px;}
   .middle-section .bespoke_header_text{font-size: 20px;}
   .user-panel img{ left: 70px; position: relative; top: 6px; width:50px;}
   .user-panel .cart_header_text{font-size: 20px; position: relative; left: 60px;}
   .user-panel span {  position: relative;  left: 40px;  font-size: 25px;  top: 15px;}
+}
+
+@media only screen and (min-width: 992px) {
+  	.main-a {width: 40%;text-align: center;    font-size: 34px;}
+  .main-b{width:52%; margin-left:4%; margin-right:4%;text-align: center;    font-size: 30px;}
+  .main-c{width:32%; margin-left:4%; margin-right:4%;text-align: center;    font-size: 30px;}
+  .main-d{width: 30%; text-align: center; margin-left: 1.5%; margin-right: 1.5%;    font-size: 30px;}
 }
 
 @media (min-width: 768px) {
@@ -670,16 +691,25 @@
 }
 
 @media only screen and (min-width: 992px){
-  .feature-inner .menu-bar{ font-size: 30px!important;}
+  .feature-inner .menu-bar{ font-size: 9px!important;}
+  .made_in_aus{font-size: 28px}
 }
+
+
 
 
 .nav.navbar-nav img {
   width: 34px;
   height: 32px;
 }
+
+/* .nav.navbar-nav img {
+  width: 50%;
+  height: 50%;
+} */
+
 .nav.navbar-nav .bace_logo_img{
-  width: 70px;
+   width: 70px;
    height: 20px;
    position: relative;
    right: 20px;
