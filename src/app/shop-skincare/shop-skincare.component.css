@@ -272,6 +272,9 @@ padding-top: 20px;
   .add_bespoke_list .add_anchor{ font-size: 14px !important; }
   .show_more_btn {  font-size: 16px!important;}
   .search_input{text-indent: 45px;}
+  .title_shop {  font-size: 25px;}
+  .title_shop_sections {  font-size: 22px;}
+  .item_div_info{padding: 5px;}
  }
 
 @media only screen and (max-width: 400px) {

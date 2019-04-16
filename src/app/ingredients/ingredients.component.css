@@ -199,6 +199,7 @@
   .left_discover_ing{width: 30%;}
   .discover_begin{ width: 60%; padding: 7px 18px;font-size: 20px;}
   .discover_discover{margin: 10px 20px 20px 37PX;  width: 60%;font-size: 16px;}
+  .sort_button i {  left: 60%;}
  }
 
  @media only screen and (max-width: 400px) {
@@ -207,4 +208,9 @@
    .discover_discover { margin: 10px 20px 20px 20PX; width: 80%;}
    .add_anchor a {  font-size: 11px;}
    .add_anchor i {  font-size: 20px;top: 2px;margin-left: 2px;font-weight: 500;}
+   .find_skincare div span { font-size: 9px;}
+   .sort_button i {     left: 55%;  font-size: 25px;}
+   .search_input{font-size:18px; height: auto;}
+   .sort_button{font-size: 18px;      padding: 7px 20px;}
+   .search_input_box .fa{    top: 34px; font-size: 20px;}
  }

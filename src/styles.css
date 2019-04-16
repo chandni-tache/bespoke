@@ -3,7 +3,7 @@
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
 .component-starts{
-  margin-top: 125px!important;
+  margin-top: 125px;
 }
 
 *{
@@ -41,7 +41,7 @@
 	text-align: center;
 }
 .space{
-	height: 30px;
+	height: 20px;
 	width: 100%;
 	background-color: #fff;
 }
@@ -336,4 +336,18 @@ margin-bottom: auto;
   .total-col-cart{padding:15px;}
   .pc-title img{ width: 45px;}
   .cart_checkout_body_input{text-indent: 20px;}
+
+}
+
+@media only screen and (max-width: 468px) {
+  .component-starts{  margin-top: 0;}
+  .find_skincare div img {  width: 80%;}
+  .find_skincare div span {font-size: 11px;}
+  .find_skincare div{ padding: 20px 10px;}
+  .find_skincare .fa-angle-left, .find_skincare .fa-angle-right{bottom:20px;}
+
+}
+
+@media only screen and (min-width: 992px) {
+  .component-starts{  margin-top: 0;}
 }
