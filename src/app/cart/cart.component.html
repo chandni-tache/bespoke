@@ -1,284 +1,165 @@
-<div class="component-starts" style="background-color: #F7f7f7;">
+<div class="component-starts" style="background-color: #F7f7f7; width:auto; padding-bottom:180px;">
 
-  <section class="cart-section">
-    <div class="cart_heading"> Cart </div>
-
-    <button class="btn btn-secondary bach_button_cart_account">Bach Account</button>
-
-    <div class="clear">
-    <div class=" image_cart_item">
-      <img src="assets/img/8e914a4259d58d5225196e760702.png" alt="">
-    </div>
-
-    <div class=" cart_details_item">
-      <div class="cart-table-warp">
-        <table>
-          <tbody>
-            <tr>
-              <td class="product-col">
-                <div class="pc-title">
-                  <span>5% Hyaluronic Acid +3% Acetyl Glucosmaine</span><br>
-                  <span class="cart_info">Serum</span><br>
-                  <img src="assets/img/bespoke_logo.png"  />
-                  <span>Created by you</span><br>
-                  <a (click)="show_hide_details('show_1')"  *ngIf=" show_details != 'show_1'" class="cart_info show_details">Show Details</a>
-
-                  <div *ngIf="show_details == 'show_1'">
-                    <span class="grey_col">3% Acetyl Glucosamine</span><br>
-                    <span class="grey_col">5% Hyaluronic Acids</span><br>
-                    <span class="grey_col">3% Soy Amino Acids</span><br>
-                    <span class="grey_col">3% Phospholipids</span><br>
-                    <span class="grey_col">5% Glycoprotein</span><br>
-                    <span class="grey_col">3% Ceramides</span><br>
-                    <span class="grey_col">4% Panthenol</span><br>
-                    <span class="grey_col">2% Green Tea</span><br>
-                    <span class="grey_col">30 ml Airless Pump</span><br>
-                    <a (click)="show_hide_details('not hide')" class="hide_link">Hide</a>
-                  </div>
-                </div>
-              </td>
-              <td class="total-col-cart"><span>$45.90</span></td>
-            </tr>
-
-
-          </tbody>
-        </table>
-      </div>
-
-    </div>
-    </div>
-    <div class="row sub_box">
-      <div class="" style="width:60%; display:inline;">
-        <table style="background-color: #fff;border-radius: 10px;padding: 10px;">
-          <thead>
-            <tr>
-              <th colspan="3" style="padding: 5px;">
-                <div class="custom-control custom-checkbox">
-                  <input type="checkbox" class="custom-control-input" id="customCheck" style="line-break: 1rem;">
-                  <label class="custom-control-label" for="customCheck" style="font-size:20px">Subscribe</label>
-                </div>
-
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-
-            <tr>
-              <td class="send_weeks">Send every</td>
-
-              <td style="padding: 5px;">
-                <div class="input-group">
-                  <span class="input-group-btn">
-                    <button type="button" class="quantity-left-minus btn btn-grey btn-number" data-type="minus"
-                      data-field="" style="   background: #c6c6c6; border-radius: 50%;
-outline: none;">
-                      <i class="fa fa-minus" aria-hidden="true"></i>
-                    </button>
-                  </span>
-                  <input type="text" id="quantity" name="quantity" class="form-control input-number" value="6" min="1"
-                    max="100" style="border: none;">
-                  <span class="input-group-btn">
-                    <button type="button" class="quantity-right-plus btn btn-grey btn-number" data-type="plus"
-                      data-field="" style="background: #c6c6c6;
-border-radius: 50%; outline: none;">
-                      <i class="fa fa-plus" aria-hidden="true"></i>
-                    </button>
-                  </span>
-                </div>
-              </td>
-              <td class="send_weeks">weeks</td>
-              <!-- <td class="total-col-cart" style="padding: 5px;"><p>weeks</p></td> -->
-            </tr>
-            <tr>
-              <td>
-                <p class="anytime">Cancel anytime</p>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="" style="width:40%; display:inline;padding-top: 30px;  padding-left: 25px;">
-        <table>
-          <thead>
-            <th>quanity</th>
-          </thead>
-          <tbody>
-            <tr>
-              <td>
-                <div class="input-group">
-                  <span class="input-group-btn">
-                    <button type="button" class="quantity-left-minus btn btn-grey btn-number" data-type="minus"
-                      data-field="" style="  background: #c6c6c6;  border-radius: 50%;outline: none;">
-                      <i class="fa fa-minus" aria-hidden="true"></i>
-                    </button>
-                  </span>
-                  <input type="text" id="quantity" name="quantity" class="form-control input-number" value="1" min="1"
-                    max="100" style="border: none;">
-                  <span class="input-group-btn">
-                    <button type="button" class="quantity-right-plus btn btn-grey btn-number" data-type="plus"
-                      data-field="" style="  background: #c6c6c6;  border-radius: 50%; outline: none;">
-                      <i class="fa fa-plus" aria-hidden="true"></i>
-                    </button>
-                  </span>
-                </div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-
-  </section>
-  <!-- cart section end -->
-
-  <section class="cart-section" style="    margin-top: -50px;">
-
-    <div class="clear">
-    <div class=" image_cart_item" style="margin-top:75px;">
-        <img src="assets/img/8e914a4259d58d5225196e760702.png" alt="">
-    </div>
-    <div class=" cart_details_item">
-
-
-      <div class="cart-table-warp">
-        <table>
-          <tbody>
-            <tr>
-              <td class="product-col">
-                <img src="img/8e914a4259d58d5225196e760702.png" alt="">
-                <div class="pc-title">
-                  <span >5% Hyaluronic Acid +3% Acetyl Glucosmaine</span><br>
-                  <span class="cart_info">Serum</span><br>
-                  <img src="assets/img/bespoke_logo.png"  />
-                  <span>Created by you</span><br>
-                  <a (click)="show_hide_details('show_2')"  *ngIf="show_details != 'show_2'" class="cart_info show_details">Show Details</a>
-
-                  <div *ngIf="show_details == 'show_2'">
-                    <span class="grey_col">3% Acetyl Glucosamine</span><br>
-                    <span class="grey_col">5% Hyaluronic Acids</span><br>
-                    <span class="grey_col">3% Soy Amino Acids</span><br>
-                    <span class="grey_col">3% Phospholipids</span><br>
-                    <span class="grey_col">5% Glycoprotein</span><br>
-                    <span class="grey_col">3% Ceramides</span><br>
-                    <span class="grey_col">4% Panthenol</span><br>
-                    <span class="grey_col">2% Green Tea</span><br>
-                    <span class="grey_col">30 ml Airless Pump</span><br>
-                    <a (click)="show_hide_details('not hide')" class="hide_link">Hide</a>
-                  </div>
-                </div>
-              </td>
-              <td class="total-col-cart"><span>$45.90</span></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-    </div>
-    </div>
-    <div class="row sub_box">
-      <div class="" style="width:60%; display:inline;">
-        <table style="background-color: #fff;border-radius: 10px;padding: 10px;">
-          <thead>
-            <tr>
-              <th colspan="3" style="padding: 5px;">
-                <div class="custom-control custom-checkbox">
-                  <input type="checkbox" class="custom-control-input" id="customCheck" style="line-break: 1rem;">
-                  <label class="custom-control-label" for="customCheck" style="font-size:20px">Subscribe</label>
-                </div>
-
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-
-            <tr>
-              <td class="send_weeks">Send every</td>
-
-              <td style="padding: 5px;">
-                <div class="input-group">
-                  <span class="input-group-btn">
-                    <button type="button" class="quantity-left-minus btn btn-grey btn-number" data-type="minus"
-                      data-field="" style="   background: #c6c6c6; border-radius: 50%;
-outline: none;">
-                      <i class="fa fa-minus" aria-hidden="true"></i>
-                    </button>
-                  </span>
-                  <input type="text" id="quantity" name="quantity" class="form-control input-number" value="6" min="1"
-                    max="100" style="border: none;">
-                  <span class="input-group-btn">
-                    <button type="button" class="quantity-right-plus btn btn-grey btn-number" data-type="plus"
-                      data-field="" style="background: #c6c6c6;
-border-radius: 50%; outline: none;">
-                      <i class="fa fa-plus" aria-hidden="true"></i>
-                    </button>
-                  </span>
-                </div>
-              </td>
-              <td class="send_weeks">weeks</td>
-              <!-- <td class="total-col-cart" style="padding: 5px;"><p>weeks</p></td> -->
-            </tr>
-            <tr>
-              <td>
-                <p class="anytime">Cancel anytime</p>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="" style="width:40%; display:inline;padding-top: 30px;  padding-left: 25px;">
-        <table>
-          <thead>
-            <th>quanity</th>
-          </thead>
-          <tbody>
-            <tr>
-              <td>
-                <div class="input-group">
-                  <span class="input-group-btn">
-                    <button type="button" class="quantity-left-minus btn btn-grey btn-number" data-type="minus"
-                      data-field="" style="  background: #c6c6c6;  border-radius: 50%;outline: none;">
-                      <i class="fa fa-minus" aria-hidden="true"></i>
-                    </button>
-                  </span>
-                  <input type="text" id="quantity" name="quantity" class="form-control input-number" value="1" min="1"
-                    max="100" style="border: none;">
-                  <span class="input-group-btn">
-                    <button type="button" class="quantity-right-plus btn btn-grey btn-number" data-type="plus"
-                      data-field="" style="  background: #c6c6c6;  border-radius: 50%; outline: none;">
-                      <i class="fa fa-plus" aria-hidden="true"></i>
-                    </button>
-                  </span>
-                </div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-
-  </section>
-  <!-- cart section end -->
-
-
-  <div class=" card-right" style="background-color: #E0E0E0; border-radius: 27px;   ">
-    <table class="table">
-      <thead class="subtotal_bottom">
-        <th>Subtotal</th>
-        <th>$45.00</th>
-      </thead>
-      <tbody>
-
-        <tr>
-          <td>
-            You are $5.00 away from free shipping!
-          </td>
-          <td >inc. GST</td>
-        </tr>
-      </tbody>
-    </table>
-    <a href="" class="site-btnn">Apply Voucher</a>
-    <a routerLink="/cart_checkout" class="site-btn">Proceed to checkout</a>
-
+<div class="container">
+  <div class="row">
+    <div class="cart-heading col-sm-12"><div class="left">Cart</div>
+    <div class="right">
+    <button class="btn btn-secondary bach-account-btn">Bach Account</button></div>
   </div>
+</div>
+</div>
+<div class="product-container">
+
+  <div class="myproduct">
+    <div class="row">
+      <div class="image_cart_item">
+          <img src="assets/img/8e914a4259d58d5225196e760702.png" alt="">
+      </div>
+      <div class="item_desc">
+            <div class="">
+                  <span class="pc-title">5% Hyaluronic Acid +3% Acetyl Glucosmaine</span>
+                  <p class="pc-type">Serum</p>
+                  <img class="bespoke_logo" src="assets/img/bespoke_logo.png"  />
+                  <span class="created_by">Created by you</span>
+                  <p><a (click)="show_hide_details('show')"  *ngIf=" show_details == 'hide'" class="cart_info show_details">Show Details</a></p>
+                  <div *ngIf="show_details == 'show'" class="prod-detail">
+                   <span class="grey_col">3% Acetyl Glucosamine</span><br>
+                   <span class="grey_col">5% Hyaluronic Acids</span><br>
+                   <span class="grey_col">3% Soy Amino Acids</span><br>
+                   <span class="grey_col">3% Phospholipids</span><br>
+                   <span class="grey_col">5% Glycoprotein</span><br>
+                   <span class="grey_col">3% Ceramides</span><br>
+                   <span class="grey_col">4% Panthenol</span><br>
+                   <span class="grey_col">2% Green Tea</span><br>
+                   <span class="grey_col">30 ml Airless Pump</span><br>
+                   <a (click)="show_hide_details('hide')" class="hide_link show_details">Hide</a>
+                 </div>
+            <div class="center ">
+              <div class="row">
+                <div class="subscribe-box">
+                <input type="checkbox" class="subscribe_check form-group"/>
+                <span class="subscribe_box_content">Subscribe</span>
+
+                <table>
+                  <tbody>
+                    <tr class="every_weeks">
+                      <td>Send every</td>
+                      <td>&nbsp;<i class="fa fa-minus"></i>&nbsp;6&nbsp;<i class="fa fa-plus"></i>&nbsp; weeks</td>
+                    </tr>
+                    <tr><td colspan="2" class="cancel_anytime">Cancel Anytime</td></tr>
+
+                    </tbody>
+                </table>
+                </div>
+
+                <div class="right qty_box">
+                    <ul style="text-decoration:none;list-style:none;">
+                      <li>QUANTITY</li>
+                      <li>&nbsp;<i class="fa fa-minus"></i>&nbsp;6&nbsp;<i class="fa fa-plus"></i>&nbsp;</li>
+                    </ul>
+                </div>
+              </div>
+
+            </div>
+
+      </div>
+
+    </div>
+    <div class="item_price">
+          <span>$45.90</span>
+    </div>
+  </div>
+  <hr style="border:1px solid #eee ;width:90%;margin:auto; margin-top:20px;">
+  <div class="myproduct">
+    <div class="row">
+      <div class="image_cart_item">
+          <img src="assets/img/8e914a4259d58d5225196e760702.png" alt="">
+      </div>
+      <div class="item_desc">
+            <div class="">
+                  <span class="pc-title">5% Hyaluronic Acid +3% Acetyl Glucosmaine</span>
+                  <p class="pc-type">Serum</p>
+                  <img class="bespoke_logo" src="assets/img/bespoke_logo.png"  />
+                  <span class="created_by">Created by you</span>
+                  <p><a (click)="show_hide_details('show')"  *ngIf=" show_details == 'hide'" class="cart_info show_details">Show Details</a></p>
+                  <div *ngIf="show_details == 'show'" class="prod-detail">
+                   <span class="grey_col">3% Acetyl Glucosamine</span><br>
+                   <span class="grey_col">5% Hyaluronic Acids</span><br>
+                   <span class="grey_col">3% Soy Amino Acids</span><br>
+                   <span class="grey_col">3% Phospholipids</span><br>
+                   <span class="grey_col">5% Glycoprotein</span><br>
+                   <span class="grey_col">3% Ceramides</span><br>
+                   <span class="grey_col">4% Panthenol</span><br>
+                   <span class="grey_col">2% Green Tea</span><br>
+                   <span class="grey_col">30 ml Airless Pump</span><br>
+                   <a (click)="show_hide_details('hide')" class="hide_link show_details">Hide</a>
+                 </div>
+            </div>
+            <div class="center ">
+              <div class="row">
+                <div class="subscribe-box">
+                <input type="checkbox" class="subscribe_check form-group"/>
+                <span class="subscribe_box_content">Subscribe</span>
+
+                <table>
+                  <tbody>
+                    <tr class="every_weeks">
+                      <td>Send every</td>
+                      <td>&nbsp;<i class="fa fa-minus"></i>&nbsp;6&nbsp;<i class="fa fa-plus"></i>&nbsp; weeks</td>
+                    </tr>
+                    <tr><td colspan="2" class="cancel_anytime">Cancel Anytime</td></tr>
+
+                    </tbody>
+                </table>
+                </div>
+
+                <div class="right qty_box">
+                    <ul style="text-decoration:none;list-style:none;">
+                      <li>QUANTITY</li>
+                      <li>&nbsp;<i class="fa fa-minus"></i>&nbsp;6&nbsp;<i class="fa fa-plus"></i>&nbsp;</li>
+                    </ul>
+                </div>
+
+              </div>
+
+            </div>
+
+      </div>
+      <div class="item_price">
+            <span>$45.90</span>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 </div>
+
+</div>
+
+
+<div class="container-fluid" style="background-color: #E0E0E0; ">
+   <table class="table">
+     <thead class="subtotal_bottom">
+       <th>Subtotal</th>
+       <th>$45.00</th>
+     </thead>
+     <tbody>
+
+       <tr class="shipping-text">
+         <td class="ship_td">
+           You are $5.00 away from free shipping!
+         </td>
+         <td >inc. GST</td>
+       </tr>
+       <tr><td colspan="2">
+         <button class="btn btn-dark voucher_btn">Apply Voucher</button>
+         <button routerLink="/cart_checkout" class="btn btn-primary checkout_btn">Checkout</button></td>
+      </tr>
+     </tbody>
+   </table>
+
+   <!-- <a href="" class="site-btnn">Apply Voucher</a>
+   <a routerLink="/cart_checkout" class="site-btn">Proceed to checkout</a> -->
+
+ </div>

@@ -42,6 +42,9 @@ export class AppComponent {
           case('/signup') :
           case('/login') :
           case('/cart_checkout') :
+          case('/cart'):
+            this.footer=false;
+            break;
           case('/shipping_address') :
             this.footer = false;
             break;
