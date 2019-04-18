@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule } from '@angular/forms';
 
 // packages
 import { ClickOutsideModule } from 'ng-click-outside';
@@ -45,7 +46,8 @@ import { ProdcuctDetailsComponent } from './prodcuct-details/prodcuct-details.co
     BrowserAnimationsModule,
     MaterialModuleModule,
     ClickOutsideModule,
-    RouterModule
+    RouterModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

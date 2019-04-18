@@ -130,6 +130,11 @@
 
 }
 
+.find_skincare div img {
+  width: auto;
+  height: auto;
+}
+
 .find_skincare div{
   background: inherit;
 }
@@ -142,6 +147,7 @@
   background: #f2f2f2;
   color: #515151;
   margin-bottom: 20px;
+  text-align: left;
 }
 
 .review_ingredient_htu_box  i{
@@ -149,12 +155,17 @@
   color: #ffc107;
   margin-left: 10px;
   font-weight: 600;
-  font-size: 40px;
+  font-size: 50px;
 }
 
 .review_ingredient_htu_box i.fa-angle-right{
   color: #515151;
-  margin-left: 50px;
+  margin-right: 10px;
+}
+
+.star_image{
+  margin-left: 38%;
+  width: 210px;
 }
 
 .review_ingredient_htu_items{
@@ -273,28 +284,130 @@
   width: 90%;
 }
 
-@media only screen and (max-width: 480px){
-  .product_box img{ width:17%}
-  .prduct_div_price { font-size: 20px;  margin-top: 10px;}
-  .prduct_div_info { font-size: 20px;}
-  .add_to_cart_product { width: 70%; font-size: 22px;}
-  .customize_product_btn_box{font-size: 20px; }
-  .customize_product_btn_box img{ width: 24px;  left: 4px;}
-  .customize_product_btn_box i{font-size: 25px; top: 3px;}
-  .created_by_bruce { font-size: 20px;}
-  .bruce_gurantee {  font-size: 16px; }
-
-  .main_benfits .main_benfits_head {  font-size: 23px; }
-  .find_skincare div { width: 23%;}
-  .find_skincare div span { font-size: 14px;}
-  .find_skincare div img { width: 80%;}
-
-  .review_ingredient_htu_box { font-size: 20px;}
-  .review_ingredient_htu_box i{ margin-left: 5px; font-size: 30px;}
-  .review_ingredient_htu_box i.fa-angle-right{  margin-left: 20px;}
-  .review_ingredient_htu_items { top: 38px;}
-
-  .buyers_also_liked {  font-size: 30px;}
-
-
+.new_new_thing{
+  background-color: #EAEAEA!important;
+  padding: 200px 50px;
 }
+
+.new-thing-h{
+  padding:75px 20px;
+}
+
+
+
+.card{ border:none;}
+
+@media only screen and (max-width : 329px) {
+
+  .back_to_bespoke{ font-size: 13px;}
+  .back_to_bespoke i{font-size: 20px;}
+  .product_box img { width: 22%; height: 200px;}
+  .prduct_div_info {font-size: 16px;}
+  .prduct_div_title {  font-size: 16px;}
+  .prduct_div_price { font-size: 15px;  margin-top: 5px;}
+  .add_to_cart_product { width: 80%;  font-size: 20px;}
+  .customize_product_btn_box {font-size: 20px;width: 65%; }
+  .customize_product_btn_box img {width: 20px; height: 20px}
+  .created_by_bruce img { width: 20px; height: 20px;}
+  .created_by_bruce{ width: 80%; font-size: 18px;}
+  .bruce_gurantee {  font-size: 14px;  width: 80%;}
+  .new-thing i.fa-volume-up{left: 85%;    font-size: 33px;}
+  .new-thing i.fa-play-circle {  font-size: 60px;}
+  .new-thing-h{font-size: 20px;}
+
+    div.card span {font-size: 9px;}
+
+  .review_ingredient_htu_box { text-align: left;}
+  .review_ingredient_htu_box i { margin-left: 5px;font-size: 20px;position: relative;  top: 5px;}
+  .buyers_also_liked {font-size: 20px;}
+  .creations_items_div img { height: 210px;}
+  .prduct_div_info {  font-size: 12px;}
+  .prduct_div_price, .item_div_title {  font-size: 13px;}
+  .buyers_also_liked i{top:198px;}
+  .buyers_also_liked .creations_items_div .fa-plus {  font-size: 25px; left: 78%;   top: 10px;}
+  .creations_items_div img.green_tick { height: 22px;  left: 10px;} 
+   .bace_responsibility_green img { width: 30px; top: 10px;} 
+  .bace_responsibility_green { font-size: 13px; padding: 30px 12px;}
+  .bace_Responsibilty {width:70%; font-size: 18px;}
+   .bace_responsibility_green img{ width: 30px; top:0;} 
+   .add_to_cart_bottom .add_to_cart_bottom_left img{ height: 201px;}
+  .add_to_cart_bottom .add_to_cart_bottom_right {height:auto;}
+  .add_to_cart_bottom { height: 280px;}
+  .new_new_thing { padding: 80px 50px;}
+  .new-thing-h { padding: 55px 20px;}
+
+  .star_image { margin-left: 30%; width: 82px;}
+    
+  .review_ingredient_htu_box{ font-size: 22px;}
+  .review_ingredient_htu_box i { top: 10px;}
+} 
+
+@media only screen and (min-width : 330px) and (max-width : 660px) {
+
+
+  .back_to_bespoke{ font-size: 13px;}
+  .back_to_bespoke i{font-size: 20px;}
+  .product_box img { width: 22%; height: 215px;}
+  .prduct_div_info {font-size: 16px;}
+  .prduct_div_title {  font-size: 16px;}
+  .prduct_div_price { font-size: 15px;  margin-top: 5px;}
+  .add_to_cart_product { width: 80%;  font-size: 20px;}
+  .customize_product_btn_box {font-size: 20px;width: 65%; }
+  .customize_product_btn_box img {width: 20px; height: 20px}
+  .created_by_bruce img { width: 20px; height: 20px;}
+  .created_by_bruce{ width: 80%; font-size: 18px;}
+  .bruce_gurantee {  font-size: 14px;  width: 80%;}
+  .new-thing i.fa-volume-up{left: 85%;    font-size: 33px;}
+  .new-thing i.fa-play-circle {  font-size: 60px;}
+  .new-thing-h{font-size: 20px;}
+
+    div.card span {font-size: 10px;}
+
+  .review_ingredient_htu_box { text-align: left;font-size: 20px;}
+  .review_ingredient_htu_box i { margin-left: 5px;font-size: 20px;position: relative;  top: 10px;}
+ 
+  .buyers_also_liked {font-size: 20px;}
+  .creations_items_div img { height: 210px;}
+  .prduct_div_info {  font-size: 12px;}
+  .prduct_div_price, .item_div_title {  font-size: 13px;}
+  .buyers_also_liked i{top:198px;}
+  .buyers_also_liked .creations_items_div .fa-plus {  font-size: 25px; left: 78%;   top: 10px;}
+  .creations_items_div img.green_tick { height: 22px;  left: 10px;}
+ 
+  .bace_responsibility_green img { width: 30px; top: 10px;}
+  .bace_responsibility_green { font-size: 15px; padding: 30px 12px;}
+  .bace_Responsibilty {width:70%; font-size: 18px;}
+  /* .bace_responsibility_green img{ width: 30px; top:0;} */
+  .add_to_cart_bottom .add_to_cart_bottom_left img{ height: 201px;}
+  .add_to_cart_bottom .add_to_cart_bottom_right {height:auto;}
+  .add_to_cart_bottom { height: 280px;}
+  .new_new_thing { padding: 80px 50px;}
+  .new-thing-h { padding: 55px 20px;}
+  .star_image { width: 115px; margin-left: 34%;}
+}
+
+@media only screen and (min-width : 661px) and (max-width:759px){}
+
+@media only screen and (min-width : 760px) and (max-width : 1023px) {}
+
+@media only screen and (min-width : 1024px) and (max-width : 1920px) {
+  .product_box img.pro_bottle { width: 22%; height: 600px;}
+
+  .bace_responsibility_green {  font-size: 32px; padding: 40px 60px;}
+  
+  .creations_items_div img.green_tick{ height: 42px; top: 90%;}
+  .back_to_bespoke i{ font-size: 44px;}
+  .back_to_bespoke { font-size: 30px;}
+  .find_skincare div span {  font-size: 24px;}
+  .star_image { margin-left: 52%}
+}
+/* 
+@media only screen and (max-width : 320px) {}
+
+@media only screen and (min-width : 330px) and (max-width : 660px) {}
+
+@media only screen and (min-width : 661px) and (max-width:759px){}
+
+@media only screen and (min-width : 760px) and (max-width : 1024px) {}
+
+@media only screen and (min-width : 1025px) and (max-width : 1920px) {} */
