@@ -24,6 +24,8 @@ import { CheckoutCartComponent } from './checkout-cart/checkout-cart.component';
 import { LoginComponent } from './login/login.component';
 import { ShippingAddressComponent } from './shipping-address/shipping-address.component';
 import { ProdcuctDetailsComponent } from './prodcuct-details/prodcuct-details.component';
+import { AddAddressComponent } from './add-address/add-address.component';
+import { ShippingComponent } from './shipping/shipping.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +40,9 @@ import { ProdcuctDetailsComponent } from './prodcuct-details/prodcuct-details.co
     CheckoutCartComponent,
     LoginComponent,
     ShippingAddressComponent,
-    ProdcuctDetailsComponent
+    ProdcuctDetailsComponent,
+    AddAddressComponent,
+    ShippingComponent
   ],
   imports: [
     BrowserModule,

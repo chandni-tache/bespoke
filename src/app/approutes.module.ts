@@ -13,6 +13,8 @@ import { CheckoutCartComponent } from './checkout-cart/checkout-cart.component';
 import { LoginComponent } from './login/login.component';
 import { ShippingAddressComponent } from './shipping-address/shipping-address.component';
 import { ProdcuctDetailsComponent } from './prodcuct-details/prodcuct-details.component';
+import { AddAddressComponent } from './add-address/add-address.component';
+import { ShippingComponent } from './shipping/shipping.component';
 
 const approutes : Routes = [
   {path : '', redirectTo : 'home', pathMatch: 'full'},
@@ -26,7 +28,10 @@ const approutes : Routes = [
   {path : 'cart_checkout', component : CheckoutCartComponent},
   {path : 'login', component : LoginComponent},
   {path : 'shipping_address', component : ShippingAddressComponent},
-  {path : 'prodcuct_details', component : ProdcuctDetailsComponent},
+  {path : 'product_details', component : ProdcuctDetailsComponent},
+  {path : 'add_address', component : AddAddressComponent},
+  {path : 'shipping', component : ShippingComponent}
+
 ];
 
 @NgModule({

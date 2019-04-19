@@ -12,4 +12,8 @@ export class ShippingAddressComponent implements OnInit {
   ngOnInit() {
   }
 
+  addAddress(){
+    alert("fjgirwjg");
+  }
+
 }
