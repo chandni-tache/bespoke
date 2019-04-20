@@ -307,6 +307,49 @@
 	height: 100%;
 }
 
+
+.feature1 .feature-inner {
+	padding: 20px 25px;
+	display: -ms-flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	height: 100%;
+}
+.feature2 .feature-inner {
+	padding: 20px 25px;
+	display: -ms-flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	height: 100%;
+}
+.feature3 .feature-inner {
+	padding: 20px 25px;
+	display: -ms-flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	height: 100%;
+}
 .feature .feature-icon {
 
 }
@@ -545,7 +588,7 @@
 .features-section{
   position: relative;
   width: 100%;
-  top: 65px;
+  top:85px!important;
   z-index: 1;
 }
 
@@ -577,8 +620,11 @@
 	.main-b{width:55%; margin-left:2.5%; margin-right:2.5%;text-align: center;font-size:14px;}
 	.main-c{width:35%; margin-left:2.5%; margin-right:2.5%;text-align: center;font-size:14px;}
 	.main-d{width: 30%; text-align: center; margin-left: 1.5%; margin-right: 1.5%; font-size:14px;}
-  .menu-bar{    	font-size: 9px!important;}
+  .menu-bar{ font-size: 9px!important;}
   .features-section{top:62px;}
+  .feature1 .feature-inner h3 {margin-top: 30px;}
+  .feature2 .feature-inner h3 {margin-top: 30px;}
+  .feature3 .feature-inner h3 {margin-top: 30px;}
 }
 
 /* find skincare ends */
@@ -602,6 +648,11 @@
 	.main-d{width: 30%; text-align: center; margin-left: 1.5%; margin-right: 1.5%;    font-size: 26px;}
   /* .chatbot{width: :33px} */
   .feature .feature-inner h3 {margin-top: 30px;}
+  .feature1 .feature-inner h3 {margin-top: 30px;}
+  .feature2 .feature-inner h3 {margin-top: 30px;}
+  .feature3 .feature-inner h3 {margin-top: 30px;}
+
+
   .middle-section .bespoke_header_text{font-size: 20px;}
   .user-panel img{ left: 70px; position: relative; top: 6px; width:50px;}
   .user-panel .cart_header_text{font-size: 20px; position: relative; left: 60px;}
@@ -726,6 +777,10 @@
   font-size: 9px;
 }
 
+.navbar-center .header_center_logo{
+  width:23px!important;
+  height:48px!important;
+}
 /* .footer-section{
   position:fixed;
   display: inline-block;

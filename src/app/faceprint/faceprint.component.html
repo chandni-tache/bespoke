@@ -11,8 +11,8 @@
       </div>
     </div>
 
-    <div class="main-con ">
-      <div class="face">
+    <div class="main-con " [@slideInOut]="myStatusExp">
+      <div class="face" >
         <img class="face_img" [src]="selected_cat.img">
       </div>
       <div class="progressbar">
@@ -20,7 +20,7 @@
       </div>
       <div class="main_prog">
 
-        <div class="slidecontainer">
+        <div class="slidecontainer" >
           <input (change)="slider_change_val('oily')" [(ngModel)]=sliderVal type="range" min="0" max="4" class="slider"
             id="myRange">
           <i (click)="changeView('oily')" class="	fa fa-angle-right"></i>

@@ -99,7 +99,19 @@ h2{
 }
 .feature {
 	background-color: #EDEDED!important;
-	width: 25%;
+	width: 33.33%;
+	padding: 10px!important;
+}.feature1 {
+	background-color: #EDEDED!important;
+	width: 33%;
+	padding: 10px!important;
+}.feature2 {
+	background-color: #EDEDED!important;
+	width: 34%;
+	padding: 10px!important;
+}.feature3 {
+	background-color: #EDEDED!important;
+	width: 33%;
 	padding: 10px!important;
 }
 .features-sec{
@@ -344,12 +356,11 @@ margin-bottom: auto;
 }
 
 @media only screen and (max-width: 468px) {
-  .component-starts{  margin-top: 0;}
   /* .find_skincare div img {  width: 80%;} */
   .find_skincare div span {font-size: 10px;}
   .find_skincare div{ padding: 20px 10px;}
   .find_skincare .fa-angle-left, .find_skincare .fa-angle-right{bottom:20px; font-size: 30px;}
-  .component-starts{	    margin-top: 62px;}
+  .component-starts{	    margin-top: 82px;}
   .discover_create{font-size: 22px;}
   .right_discover .fa{left:20%;}
 

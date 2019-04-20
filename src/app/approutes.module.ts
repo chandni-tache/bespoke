@@ -15,6 +15,12 @@ import { ShippingAddressComponent } from './shipping-address/shipping-address.co
 import { ProdcuctDetailsComponent } from './prodcuct-details/prodcuct-details.component';
 import { AddAddressComponent } from './add-address/add-address.component';
 import { ShippingComponent } from './shipping/shipping.component';
+import { IntellectualPropertyComponent } from './intellectual-property/intellectual-property.component';
+import { LegalComponent } from './legal/legal.component';
+import { TermsConditionsComponent } from './terms-conditions/terms-conditions.component';
+import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
+
+
 
 const approutes : Routes = [
   {path : '', redirectTo : 'home', pathMatch: 'full'},
@@ -30,7 +36,11 @@ const approutes : Routes = [
   {path : 'shipping_address', component : ShippingAddressComponent},
   {path : 'product_details', component : ProdcuctDetailsComponent},
   {path : 'add_address', component : AddAddressComponent},
-  {path : 'shipping', component : ShippingComponent}
+  {path : 'shipping', component : ShippingComponent},
+  {path : 'ip', component : IntellectualPropertyComponent},
+  {path : 'legal', component : LegalComponent},
+  {path : 't&c', component : TermsConditionsComponent},
+  {path : 'privacy_policy', component : PrivacyPolicyComponent}
 
 ];
 

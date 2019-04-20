@@ -4,6 +4,7 @@ import { RouterModule } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 
+
 // packages
 import { ClickOutsideModule } from 'ng-click-outside';
 
@@ -26,6 +27,10 @@ import { ShippingAddressComponent } from './shipping-address/shipping-address.co
 import { ProdcuctDetailsComponent } from './prodcuct-details/prodcuct-details.component';
 import { AddAddressComponent } from './add-address/add-address.component';
 import { ShippingComponent } from './shipping/shipping.component';
+import { IntellectualPropertyComponent } from './intellectual-property/intellectual-property.component';
+import { LegalComponent } from './legal/legal.component';
+import { TermsConditionsComponent } from './terms-conditions/terms-conditions.component';
+import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +47,11 @@ import { ShippingComponent } from './shipping/shipping.component';
     ShippingAddressComponent,
     ProdcuctDetailsComponent,
     AddAddressComponent,
-    ShippingComponent
+    ShippingComponent,
+    IntellectualPropertyComponent,
+    LegalComponent,
+    TermsConditionsComponent,
+    PrivacyPolicyComponent
   ],
   imports: [
     BrowserModule,
@@ -51,8 +60,7 @@ import { ShippingComponent } from './shipping/shipping.component';
     MaterialModuleModule,
     ClickOutsideModule,
     RouterModule,
-    FormsModule
-  ],
+    FormsModule  ],
   providers: [],
   bootstrap: [AppComponent]
 })

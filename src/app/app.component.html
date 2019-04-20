@@ -26,8 +26,8 @@
            <a routerLink="/home"><img class="bace_logo_img" src="assets/img/bace_logo.png" alt="" /></a>
        </div>
          <div class="nav navbar-nav navbar-center">
-             <a (clickOutside)="onClickedOutside_middle()" (click)=show_hide_features()><img src="assets/img/bespoke_logo.png" alt="" height="80"></a>
-             <span>Bespoke</span>
+             <a (clickOutside)="onClickedOutside_middle()" (click)=show_hide_features()><img src="../assets/img/shop_skincare_.png" alt="" class="header_center_logo"></a>
+             <span>Skin</span>
          </div>
          <div style="padding-left: 30px;" class="nav navbar-nav navbar-right">
              <a routerLink="/cart" class="navbar-left">  <img  src="assets/img/cart.png"  height="80" /></a>
@@ -41,7 +41,7 @@
   <section [class.show]='show'  class="features-section">
     <div class="container-fluid">
       <div class="row">
-        <img src="../assets/img/v_header_feature.png" style="position: absolute;left: 49%;width: 23px;" />
+        <img src="../assets/img/v_header_feature.png" style="position: absolute;left: 55%;width: 23px;" />
         <div class="p-0 feature">
           <div (click)="navigate_to_feature('shop_skincare')" class="feature-inner">
             <!-- <div class="feature-icon-icon"> -->
@@ -50,15 +50,7 @@
             <h3 class="menu-bar">Shop Skincare</h3>
           </div>
         </div>
-        <div class=" p-0 feature">
-          <div (click)="navigate_to_feature('custom_skincare')" class="feature-inner">
-            <!--<div class="feature-icon">-->
-            <img class="feature-image" src="assets/img/custom_skincare.png" alt="#">
-            <!-- <div class="feature-image custom_skincare"></div> -->
-          <!--  </div>-->
-            <h3 class="menu-bar">Custom Skincare</h3>
-          </div>
-        </div>
+
         <div class=" p-0 feature">
           <div (click)="navigate_to_feature('faceprint')" class="feature-inner">
             <!--<div class="feature-icon">-->
@@ -109,8 +101,7 @@
 
         <button type="button" class="btn btn-outline-light button-footer main-d">Bace Info</button>
 
-        <button type="button" class="btn btn-outline-primary button-footer main-d">Legal</button>
-
+        <button routerLink="/legal" type="button" class="btn btn-outline-primary button-footer main-d">Legal</button>
     </div>
     </div>
   <!-- </div> -->
