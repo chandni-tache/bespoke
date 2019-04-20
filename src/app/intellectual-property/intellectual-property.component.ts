@@ -17,7 +17,6 @@ export class IntellectualPropertyComponent implements OnInit {
   }
 
   changeStatus(col){
-    alert(col);
     if(col=='trademark'&& this.trademark_show){
       this.trademark_show =false;
     }else if(col=='trademark'&& !this.trademark_show){
