@@ -1,0 +1,35 @@
+<div class="component-starts">
+    <div class="main-face oily" [class.show]='oily_Show'>
+      <div class="main-con">
+        <div class="center_face">
+          <img class="face-first" src="assets\img\Asset 26@4x.png">
+        </div>
+        <div class="heading-face">
+          <p class="h_face">How <b>pigmented</b> is your skin?</p>
+        </div>
+      </div>
+  
+      <div class="main-con ">
+        <div class="face">
+          <img [@fade]="state" (@fade.done)="onDone()" class="face_img" [src]="selected_cat.img">
+        </div>
+        <div class="progressbar">
+          <h4 class="progressbar_h">{{selected_cat.title}}</h4>
+        </div>
+        <div class="main_prog">
+  
+          <div class="slidecontainer">
+              <input (change)="onClick()" [(ngModel)]=sliderVal type="range" min="0" max="2" class="slider"
+              id="myRange">
+           <a> <i  class="	fa fa-angle-right"></i></a>
+           
+            <p class="footer-face-p">Bace cannot view or share your<br>
+              personal Faceprint information.
+            </p>
+          </div>
+  
+        </div>
+  
+      </div>
+    </div>
+  </div>

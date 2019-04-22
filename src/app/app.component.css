@@ -307,6 +307,49 @@
 	height: 100%;
 }
 
+
+.feature1 .feature-inner {
+	padding: 20px 25px;
+	display: -ms-flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	height: 100%;
+}
+.feature2 .feature-inner {
+	padding: 20px 25px;
+	display: -ms-flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	height: 100%;
+}
+.feature3 .feature-inner {
+	padding: 20px 25px;
+	display: -ms-flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	height: 100%;
+}
 .feature .feature-icon {
 
 }
@@ -502,7 +545,7 @@
 
 .button-footer{
 	text-align: center;
-	margin-left: 15px;
+	margin-left: 2%;
 	margin-top: 20px;
 	border-radius: 20px;
 	text-align: right;
@@ -545,18 +588,23 @@
 .features-section{
   position: relative;
   width: 100%;
-  top: 65px;
+  /* top:85px!important; */
+  top:85px;;
   z-index: 1;
 }
 
   .feature-image {
     position: absolute;
     height: 27px;
-    top: 10px;
+    top: 22px;
     width:auto;
+	}
 
-
-  }
+	.v_image_feature{
+		position: absolute;
+		left: 52%;
+		width: 23px;
+	}
 
   nav.navbar{
     position: fixed!important;
@@ -567,18 +615,22 @@
    z-index: 2;
     }
 
-    .made_in_aus{color: #3F4D60!important;font-size: 20px;}
+  .made_in_aus{color: #3F4D60!important;font-size: 20px;}
 
 @media only screen and (max-width:480px){
-	.main-a {	width: 40%;text-align: center; min-width: 150px;font-size:14px;}
+	.main-a {	width: 40%;text-align: center; font-size:14px;}
   .chatbot{    width: 15px;}
 	.responsibility-mention-button{width:100%;}
 	.support-bace-legal-button{width:100%;}
-	.main-b{width:55%; margin-left:2.5%; margin-right:2.5%;text-align: center;font-size:14px;}
-	.main-c{width:35%; margin-left:2.5%; margin-right:2.5%;text-align: center;font-size:14px;}
-	.main-d{width: 30%; text-align: center; margin-left: 1.5%; margin-right: 1.5%; font-size:14px;}
-  .menu-bar{    	font-size: 9px!important;}
-  .features-section{top:62px;}
+	.main-b{width:55%;text-align: center;font-size:14px;}
+	.main-c{width:35%; text-align: center;font-size:14px;}
+	.main-d{width: 30%; text-align: center; font-size:14px;}
+  .menu-bar{ font-size: 9px!important;}
+	.features-section{top:74px;}
+
+  .feature1 .feature-inner h3 {margin-top: 30px;}
+  .feature2 .feature-inner h3 {margin-top: 30px;}
+  .feature3 .feature-inner h3 {margin-top: 30px;}
 }
 
 /* find skincare ends */
@@ -601,11 +653,21 @@
 	.main-c{width:32%; margin-left:4%; margin-right:4%;text-align: center;    font-size: 26px;}
 	.main-d{width: 30%; text-align: center; margin-left: 1.5%; margin-right: 1.5%;    font-size: 26px;}
   /* .chatbot{width: :33px} */
-  .feature .feature-inner h3 {margin-top: 30px;}
+  .feature .feature-inner h3 {margin-top: 60px;}
+  .feature1 .feature-inner h3 {margin-top: 30px;}
+  .feature2 .feature-inner h3 {margin-top: 30px;}
+  .feature3 .feature-inner h3 {margin-top: 30px;}
+
+
   .middle-section .bespoke_header_text{font-size: 20px;}
   .user-panel img{ left: 70px; position: relative; top: 6px; width:50px;}
   .user-panel .cart_header_text{font-size: 20px; position: relative; left: 60px;}
-  .user-panel span {  position: relative;  left: 40px;  font-size: 25px;  top: 15px;}
+	.user-panel span {  position: relative;  left: 40px;  font-size: 25px;  top: 15px;}
+	
+	.features-section{top:126px;}
+	.v_image_feature{left:49.5%;}
+	.feature-image {height: 45px;}
+
 }
 
 @media only screen and (min-width: 992px) {
@@ -663,7 +725,7 @@
 
      }
 
-     .nav.navbar-nav img {
+     .nav.navbar-right img {
        width: 34px;
        height: 32px;
      }
@@ -700,30 +762,40 @@
 
 
 
-.nav.navbar-nav img {
+.nav.navbar-right img {
   width: 34px;
   height: 32px;
 }
 
-/* .nav.navbar-nav img {
+/* .nav.navbar-right img {
   width: 50%;
   height: 50%;
 } */
 
 .nav.navbar-nav .bace_logo_img{
-   width: 70px;
-   height: 20px;
-   position: relative;
-   right: 20px;
+	width: 70px;
+	height: 20px;
+	position: relative;
+	right: 20px;
 }
 .nav .navbar-left img{
   width: 23px;
- height: 29px;
+ 	height: 29px;
 
 }
 
 .navbar span{
   font-size: 9px;
+}
+
+.navbar-center .header_center_bespoke_logo{
+  width:33px;
+  height:31px;
+}
+
+.navbar-center .header_center_skin_logo {
+  width:15px;
+  height:45px;
 }
 
 /* .footer-section{

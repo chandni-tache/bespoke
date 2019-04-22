@@ -1,0 +1,155 @@
+<div class="component-starts">
+	<div class="back_button" routerLink="/legal">
+		<i class="fa fa-angle-left"></i>Legal
+	</div>
+
+	<div class="main_box">
+		<p class="main_h">BACE</p>
+		<h3 class="heading_property">Intellectual Property</h3>
+	</div>
+	<div class="button_group">
+
+		<div class="button_one">
+			<button type="button"  class="block" (click)="changeStatus('patent')">
+				<div class="left">
+					<h2 class="pri_h">Patents</h2>
+
+				</div>
+				<div class="right">
+					<i class="fa fa-angle-down"></i>
+				</div>
+			</button>
+
+
+				<table class="table" *ngIf="patent_show" class="block">
+					<thead>
+						<tr>
+							<th>Title</th>
+							<th>Status</th>
+							<th>Valid In</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Hydroponic apparatus</td>
+							<td class="status">Patent Pending (Provisional)<br>AU2019901308</td>
+							<td>Australia & other countries</td>
+						</tr>
+						<tr>
+							<td>Hydroponic apparatus</td>
+							<td class="status">Patent Pending (Design)<br>AU2019901308</td>
+							<td>Australia & other countries</td>
+						</tr>
+
+					</tbody>
+
+				</table>
+		</div>
+
+		<div class="button_one">
+			<button type="button"  class="block" (click)="changeStatus('trademark')">
+				<div class="left">
+					<h2 class="pri_h">Trademarks</h2>
+
+				</div>
+				<div class="right">
+					<i class="fa fa-angle-down"></i>
+				</div>
+			</button>
+
+
+				<table class="table" *ngIf="trademark_show" class="block">
+					<thead>
+						<tr>
+							<th>Item</th>
+							<th>Type</th>
+							<th>Registered In</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Bace</td>
+							<td class="status">Word (Class 3, 42, 44)</td>
+							<td>Australia & other countries</td>
+						</tr>
+						<tr>
+							<td>Faceprint</td>
+							<td class="status">Word (Class 3, 42, 44)</td>
+							<td>Australia & other countries</td>
+						</tr>
+						<tr>
+							<td>Rotofarm</td>
+							<td class="status">Word (Class 1, 6, 7, 9, 11, 20, 21)</td>
+							<td>Australia & other countries</td>
+						</tr>
+						<tr>
+							<td><img class="table_img" src="assets\img\table_4.png"></td>
+							<td class="status">igure (Class 3, 42, 44)</td>
+							<td>Australia & other countries</td>
+						</tr>
+						<tr>
+							<td><img class="table_img" src="assets\img\table_5.png"></td>
+							<td class="status">Figure (Class 3, 42, 44)</td>
+							<td>Australia & other countries</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+
+					</tbody>
+
+				</table>
+		</div>
+
+		<div class="button_one">
+			<button type="button"  class="block" (click)="changeStatus('property')" class="block">
+				<div class="left">
+					<h2 class="pri_h">Online Property</h2>
+
+				</div>
+				<div class="right">
+					<i class="fa fa-angle-down"></i>
+				</div>
+			</button>
+
+				<table class="table" *ngIf="property_show" class="block">
+					<thead>
+						<tr>
+							<th>Items</th>
+							<th>Type</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>bace.corotofarm.com roto.farm bacebespoke.com</td>
+							<td class="type">Domain Name</td>
+						</tr>
+						<tr>
+							<td>bacebespoke bacerotofarm</td>
+							<td class="type">Verified Username (Instagram, Twitter, Facebook, Snapchat, Reddit, YouTube)</td>
+						</tr>
+					</tbody>
+				</table>
+		</div>
+
+		<div class="footer_box">
+		<ul>
+			<li >Bace Australia Pty Ltd</li>
+			<li>ABN: 89 612 025 608</li>
+			<li style="color: #60A1C4;">legal@bace.co</li>
+			<li>171 La Trobe St<br> Melbourne VIC 3000 <br>Australia</li>
+		</ul>
+	</div>
+
+
+
+
+
+
+
+	</div>
+
+
+</div>

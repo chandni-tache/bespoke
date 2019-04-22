@@ -1,6 +1,6 @@
 <header class="header-section">
 </header>
-  <!-- <nav class="navbar" style="width:100%; position: fixed!important; height: 100px;">
+<!-- <nav class="navbar" style="width:100%; position: fixed!important; height: 100px;">
     <a routerLink="/home" class="navbar-brand site-logo"  style="width:33.3%">
       <h3>BACE</h3>
     </a>
@@ -20,64 +20,58 @@
     </div>
   </nav> -->
 
-  <nav class="navbar navbar-default navbar-fixed-top">
-     <div class="container">
-       <div class="nav navbar-nav navbar-left">
-           <a routerLink="/home"><img class="bace_logo_img" src="assets/img/bace_logo.png" alt="" /></a>
-       </div>
-         <div class="nav navbar-nav navbar-center">
-             <a (clickOutside)="onClickedOutside_middle()" (click)=show_hide_features()><img src="assets/img/bespoke_logo.png" alt="" height="80"></a>
-             <span>Bespoke</span>
-         </div>
-         <div style="padding-left: 30px;" class="nav navbar-nav navbar-right">
-             <a routerLink="/cart" class="navbar-left">  <img  src="assets/img/cart.png"  height="80" /></a>
-             <span>Cart</span>
-         </div>
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="nav navbar-nav navbar-left">
+      <a routerLink="/home"><img class="bace_logo_img" src="assets/img/bace_logo.png" alt="" /></a>
+    </div>
+    <div class="nav navbar-nav navbar-center">
+      <a (clickOutside)="onClickedOutside_middle()" (click)=show_hide_features()><img
+          src="../../assets/img/shop_skincare_active.png" class="header_center_skin_logo"></a>
+      <!-- [ngClass]="header_center_logo()" -->
+      <span>{{center_header_text}}</span>
+    </div>
+    <div style="padding-left: 30px;" class="nav navbar-nav navbar-right">
+      <a routerLink="/cart" class="navbar-left"> <img src="assets/img/cart.png" height="80" /></a>
+      <span>Cart</span>
+    </div>
 
-     </div>
-  </nav>
+  </div>
+</nav>
 
 <!-- feature section -->
-  <section [class.show]='show'  class="features-section">
-    <div class="container-fluid">
-      <div class="row">
-        <img src="../assets/img/v_header_feature.png" style="position: absolute;left: 49%;width: 23px;" />
-        <div class="p-0 feature">
-          <div (click)="navigate_to_feature('shop_skincare')" class="feature-inner">
-            <!-- <div class="feature-icon-icon"> -->
-              <img class="feature-image" src="../assets/img/shop_skincare_.png" alt="#">
-            <!-- </div> -->
-            <h3 class="menu-bar">Shop Skincare</h3>
-          </div>
+<section [class.show]='show' class="features-section">
+  <div class="container-fluid">
+    <div class="row">
+      <img src="../assets/img/v_header_feature.png" class="v_image_feature" />
+      <div class="p-0 feature">
+        <div (click)="navigate_to_feature('shop_skincare')" class="feature-inner">
+          <!-- <div class="feature-icon-icon"> -->
+          <img class="feature-image" src="../assets/img/shop_skincare_.png" alt="#">
+          <!-- </div> -->
+          <h3 class="menu-bar">Shop Skincare</h3>
         </div>
-        <div class=" p-0 feature">
-          <div (click)="navigate_to_feature('custom_skincare')" class="feature-inner">
-            <!--<div class="feature-icon">-->
-            <img class="feature-image" src="assets/img/custom_skincare.png" alt="#">
-            <!-- <div class="feature-image custom_skincare"></div> -->
+      </div>
+
+      <div class=" p-0 feature">
+        <div (click)="navigate_to_feature('faceprint')" class="feature-inner">
+          <!--<div class="feature-icon">-->
+          <img class="feature-image" src="../assets/img/faceprints.png" alt="#">
           <!--  </div>-->
-            <h3 class="menu-bar">Custom Skincare</h3>
-          </div>
+          <h3 class="menu-bar">Faceprint</h3>
         </div>
-        <div class=" p-0 feature">
-          <div (click)="navigate_to_feature('faceprint')" class="feature-inner">
-            <!--<div class="feature-icon">-->
-            <img class="feature-image" src="../assets/img/faceprints.png" alt="#">
+      </div>
+      <div class=" p-0 feature">
+        <div (click)="navigate_to_feature('ingredients')" class="feature-inner">
+          <!--<div class="feature-icon">-->
+          <img class="feature-image" src="../assets/img/ingredients.png" alt="#">
           <!--  </div>-->
-            <h3 class="menu-bar">Faceprint</h3>
-          </div>
-        </div>
-        <div class=" p-0 feature">
-          <div (click)="navigate_to_feature('ingredients')" class="feature-inner">
-            <!--<div class="feature-icon">-->
-              <img class="feature-image" src="../assets/img/ingredients.png" alt="#">
-          <!--  </div>-->
-            <h3 class="menu-bar">Ingredients</h3>
-          </div>
+          <h3 class="menu-bar">Ingredients</h3>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 <!-- feature section -->
 
 
@@ -86,42 +80,42 @@
 <!-- Footer section -->
 <section *ngIf="footer" class="footer-section clear mt-20">
   <!-- <div class="container"> -->
-    <!-- <div class="footer-logo text-center ">
+  <!-- <div class="footer-logo text-center ">
       <a href="index.html">
 
 
       </a>
     </div> -->
-    <div class="row col-sm-10" style="text-align:center; margin: auto;">
-      <div class="col-sm-12 col-xl-2 " style="text-align:center; ">
-        <button type="button" class="btn btn-outline-primary button-footer main-a" id="my" >
-            <img class="chatbot" src="../assets/img/chatbot.png" alt="#">&nbsp;Live chat
-        </button>
-        </div>
-      <div class="responsibility-mention-button">
-        <button type="button" class="btn btn-outline-primary button-footer main-b">Bace's Responsibility</button>
+  <div style="text-align:center; margin: auto;">
+  <div class="col-sm-12 " style="text-align:center; ">
+    <button type="button" class="btn btn-outline-primary button-footer main-a" id="my">
+      <img class="chatbot" src="../assets/img/chatbot.png" alt="#">&nbsp;Live chat
+    </button>
+  </div>
+  <div class="col-sm-12">
+    <button type="button" class="btn btn-outline-primary button-footer main-b">Bace's Responsibility</button>
 
-        <button type="button" class="btn btn-outline-success button-footer main-c">Mentions</button>
-        </div>
-      <div class="support-bace-legal-button">
+    <button type="button" class="btn btn-outline-success button-footer main-c">Mentions</button>
+  </div>
+  <div class="col-sm-12">
 
-        <button type="button" class="btn btn-outline-danger button-footer main-d">Support</button>
+    <button type="button" class="btn btn-outline-danger button-footer main-d">Support</button>
 
-        <button type="button" class="btn btn-outline-light button-footer main-d">Bace Info</button>
+    <button type="button" class="btn btn-outline-light button-footer main-d">Bace Info</button>
 
-        <button type="button" class="btn btn-outline-primary button-footer main-d">Legal</button>
-
-    </div>
-    </div>
+    <button routerLink="/legal" type="button" class="btn btn-outline-primary button-footer main-d">Legal</button>
+  </div>
+  </div>
   <!-- </div> -->
   <div class="social-links-warp">
 
 
-  <div class="col-sm-10" style="margin:auto">
-    <h4 class="text-black text-center mt-5 " ><a href="#"  class="made_in_aus"> Made in Australia <br> &copy; 2019 Bace Australia Pty Ltd  </a></h4>
-  </div>
-
+    <div class="col-sm-10" style="margin:auto">
+      <h4 class="text-black text-center mt-5 "><a href="#" class="made_in_aus"> Made in Australia <br> &copy; 2019 Bace
+          Australia Pty Ltd </a></h4>
     </div>
+
+  </div>
 
 
 </section>

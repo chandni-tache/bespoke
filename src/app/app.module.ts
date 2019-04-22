@@ -4,6 +4,7 @@ import { RouterModule } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 
+
 // packages
 import { ClickOutsideModule } from 'ng-click-outside';
 
@@ -24,6 +25,16 @@ import { CheckoutCartComponent } from './checkout-cart/checkout-cart.component';
 import { LoginComponent } from './login/login.component';
 import { ShippingAddressComponent } from './shipping-address/shipping-address.component';
 import { ProdcuctDetailsComponent } from './prodcuct-details/prodcuct-details.component';
+import { AddAddressComponent } from './add-address/add-address.component';
+import { ShippingComponent } from './shipping/shipping.component';
+import { IntellectualPropertyComponent } from './intellectual-property/intellectual-property.component';
+import { LegalComponent } from './legal/legal.component';
+import { TermsConditionsComponent } from './terms-conditions/terms-conditions.component';
+import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
+import { FaceprintOilyComponent } from './faceprint-oily/faceprint-oily.component';
+import { FaceprintSensitiveComponent } from './faceprint-sensitive/faceprint-sensitive.component';
+import { FaceprintLineComponent } from './faceprint-line/faceprint-line.component';
+import { FaceprintPigmentedComponent } from './faceprint-pigmented/faceprint-pigmented.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +49,17 @@ import { ProdcuctDetailsComponent } from './prodcuct-details/prodcuct-details.co
     CheckoutCartComponent,
     LoginComponent,
     ShippingAddressComponent,
-    ProdcuctDetailsComponent
+    ProdcuctDetailsComponent,
+    AddAddressComponent,
+    ShippingComponent,
+    IntellectualPropertyComponent,
+    LegalComponent,
+    TermsConditionsComponent,
+    PrivacyPolicyComponent,
+    FaceprintOilyComponent,
+    FaceprintSensitiveComponent,
+    FaceprintLineComponent,
+    FaceprintPigmentedComponent
   ],
   imports: [
     BrowserModule,
@@ -47,8 +68,7 @@ import { ProdcuctDetailsComponent } from './prodcuct-details/prodcuct-details.co
     MaterialModuleModule,
     ClickOutsideModule,
     RouterModule,
-    FormsModule
-  ],
+    FormsModule  ],
   providers: [],
   bootstrap: [AppComponent]
 })

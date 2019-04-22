@@ -1,23 +1,23 @@
-/* .component-starts{
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: auto;
-    height: auto;;
-} */
+/* .face-first{
 
-.face-first{
-   
     display: block;
   margin-left: auto;
   margin-right: auto;
   width: 15%;
 
 }
+
+.begin_div{
+  color:#60A1C4;
+  font-size: 30px;
+  text-align: center;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
 .heading-face{
     text-align: center;
     color:#000!important;
-    
     width: 100%;;
 }
 .center_face{
@@ -63,7 +63,7 @@
   .slidecontainer {
     width: 100%;
   }
-  
+
   .slider {
     -webkit-appearance: none;
     width: 90%;
@@ -76,17 +76,17 @@
     transition: opacity .2s;
     margin-bottom: 25px;
   }
-  
+
   .slider:hover {
     opacity: 1;
   }
-  
+
   .slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
     width: 40px;
     height: 40px;
-   
+
     border-radius: 50%;
     background:#fff;
     background-image: url("../../assets/img/faceprint-pdrop.png");
@@ -94,10 +94,9 @@
     background-position: center  ;
     background-repeat: no-repeat ;
     background-size:15px;
-   
-    /* padding:10px; */
+
   }
-  
+
   .slider::-moz-range-thumb {
     width: 25px;
     height: 25px;
@@ -122,10 +121,10 @@
       text-align: center;
   }
 
-  /* .lined , .sensitive , .pigmented{
+  .lined  , .sensitive, .pigmented{
       display: none;
-  } */
+  }
 
   .show{
       display: block;
-  }
+  } */

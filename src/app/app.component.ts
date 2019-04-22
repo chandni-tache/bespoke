@@ -10,6 +10,10 @@ export class AppComponent {
   title = 'bespoke';
   show = false;
   footer = true;
+  center_skin = true;
+  center_size;
+  center_header_text = 'Skin';
+  center_header_img;
 
   constructor(public route:Router){
         this.getting_route();
@@ -44,19 +48,54 @@ export class AppComponent {
           case('/cart_checkout') :
           case('/cart'):
             this.footer=false;
+
+            this.center_skin = false;
+            // this.center_header_text = 'Bespoke';
             break;
           case('/shipping_address') :
             this.footer = false;
+            this.center_skin = false;
+            // this.center_header_text = 'Bespoke';
             break;
           case('/home') :
             console.log( 'dashboard');
+
+            this.center_skin = true;
+            // this.center_header_text = 'Skin';
             break;
           default:
             this.footer = true;
+            // this.center_skin = false;
+          
         }
+        // console.log('this.center_skin',this.center_skin);
+        // this.header_center_logo_details( this.center_skin )
       }
     });
   }
 
+  // header_center_logo_details(CENTER_SKIN){
+
+  //   if(CENTER_SKIN) {
+  //     this.center_header_text = 'Skin';
+  //     this.center_header_img = '../../assets/img/shop_skincare_active.png';
+  //   }else{
+  //     this.center_header_text = 'Bespoke';
+  //     this.center_header_img = '../../assets/img/bespoke_logo.png';
+  //   }
+
+  // }
+
+  // // changing center logo and their text
+  // header_center_logo(){
+  //   if(this.center_skin){
+  //     this.center_size = { header_center_skin_logo : true, header_center_bespoke_logo : false };
+     
+  //   }else{
+  //     this.center_size = { header_center_skin_logo : false, header_center_bespoke_logo : true };
+      
+  //   }
+  //   return this.center_size;
+  // }
 
 }
