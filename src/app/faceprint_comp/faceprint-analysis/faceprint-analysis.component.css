@@ -1,0 +1,51 @@
+
+.faceprint_anlys_cate{
+    margin: auto;
+    text-align: center
+}
+
+.faceprint_anlys_cate_img{
+    border-radius: 50%;
+    width: 25%;
+    margin: auto;
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+}
+
+.faceprint_anlys_cate_text{
+    display: inline-block;
+    width: 25%;
+    margin:auto;
+    font-size: 11px;
+}
+
+.faceprint_analys_head_imag{
+    text-align: center;
+
+}
+
+.faceprint_analys_head_imag img{
+    width: 48px;
+    height: 47px;
+    width: 48px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.faceprint_analys_head_face{
+    width: 92px;
+    height: 137px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+.faceprint_anlys_heading{
+    text-align: center;
+    font-size: 26px;
+}
+.faceprint_anlys_login_{
+    text-align: center;
+    font-size: 11px;
+    color: #60a1ca;
+}
