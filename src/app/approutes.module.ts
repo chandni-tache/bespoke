@@ -26,7 +26,7 @@ const approutes : Routes = [
   {path : 'cart_checkout', component : CheckoutCartComponent},
   {path : 'login', component : LoginComponent},
   {path : 'shipping_address', component : ShippingAddressComponent},
-  {path : 'prodcuct_details', component : ProdcuctDetailsComponent},
+  {path : 'product_details', component : ProdcuctDetailsComponent},
 ];
 
 @NgModule({
