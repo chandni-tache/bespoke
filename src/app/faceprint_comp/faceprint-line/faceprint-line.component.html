@@ -1,11 +1,11 @@
 <div class="component-starts">
-    <div class="main-face oily">
+    <div class="main-face oily" >
       <div class="main-con">
         <div class="center_face">
           <img class="face-first" src="assets\img\Asset 26@4x.png">
         </div>
         <div class="heading-face">
-          <p class="h_face">How <b>pigmented</b> is your skin?</p>
+          <p class="h_face">How <b>lined</b> is your skin?</p>
         </div>
       </div>
   
@@ -20,9 +20,9 @@
   
           <div class="slidecontainer">
               <input (change)="onClick()" [(ngModel)]=sliderVal type="range" min="0" max="2" class="slider"
-              id="myRange">
-           <a> <i  class="	fa fa-angle-right"></i></a>
-           
+              [ngClass]="selected_cat.classe" id="myRange">
+           <a routerLink="../pigmented"> <i  class="	fa fa-angle-right"></i></a>
+            
             <p class="footer-face-p">Bace cannot view or share your<br>
               personal Faceprint information.
             </p>

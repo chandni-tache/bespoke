@@ -3,13 +3,14 @@
     appearance: none;
     width: 40px;
     height: 40px;
-  
     border-radius: 50%;
     background:#fff;
-    background-image: url("../../assets/img/faceprint-pdrop.png");
     cursor: pointer;
+}
+
+.deep_lines_::-webkit-slider-thumb {
+    background-image: url("../../../assets/img/lines.png");
     background-position: center  ;
     background-repeat: no-repeat ;
-    background-size:15px;
-  
-  }
+    background-size: 15px;
+}

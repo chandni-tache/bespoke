@@ -2,9 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { trigger, state, style, transition, animate, group, query, stagger, keyframes } from '@angular/animations';
 
 @Component({
-  selector: 'app-faceprint-pigmented',
-  templateUrl: './faceprint-pigmented.component.html',
-  styleUrls: ['./faceprint-pigmented.component.css'],
+  selector: 'app-faceprint-sensitive',
+  templateUrl: './faceprint-sensitive.component.html',
+  styleUrls: ['./faceprint-sensitive.component.css'],
   animations: [
     trigger('fade', [
       state('in', style({ 'opacity': '1' })),
@@ -15,7 +15,7 @@ import { trigger, state, style, transition, animate, group, query, stagger, keyf
     ])
   ]
 })
-export class FaceprintPigmentedComponent implements OnInit {
+export class FaceprintSensitiveComponent implements OnInit {
 
   choice = 2;
   state = 'in';
@@ -25,10 +25,10 @@ export class FaceprintPigmentedComponent implements OnInit {
   sliderVal;
   selected_cat;
 
-  pigmented = [
-    { title: 'No Sun Damage;Even Tone',  img: 'assets/img/faceprint/no-sun-damage.png' },
-    { title: 'Slight Sun Damage',  img: 'assets/img/faceprint/slight-sun-damage.png' },
-    { title: 'Extensive Sun Damage', img: 'assets/img/faceprint/ex-sun-damage.png' }
+  sensitive = [
+    { title: 'Normal', img: 'assets/img/faceprint/normal.png', classe:'normal'},
+    { title: 'Sensitive', img: 'assets/img/faceprint/sensitive.png', classe:'sensitive_s' },
+    { title: 'Very Sensitive', img: 'assets/img/faceprint/v-sensitive.png', classe:'v_sensitive' }
   ]
 
   constructor() { }
@@ -40,8 +40,8 @@ export class FaceprintPigmentedComponent implements OnInit {
 
   slider_change_val() {
     console.log( 'slider_change_val' ,this.sliderVal); 
-    console.log( 'oily' ,this.pigmented); 
-    this.selected_cat = this.pigmented[this.sliderVal];
+    console.log( 'oily' ,this.sensitive); 
+    this.selected_cat = this.sensitive[this.sliderVal];
   }
 
   //animation functions starts--------------------

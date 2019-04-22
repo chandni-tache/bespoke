@@ -2,9 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { trigger, state, style, transition, animate, group, query, stagger, keyframes } from '@angular/animations';
 
 @Component({
-  selector: 'app-faceprint-sensitive',
-  templateUrl: './faceprint-sensitive.component.html',
-  styleUrls: ['./faceprint-sensitive.component.css'],
+  selector: 'app-faceprint-oily',
+  templateUrl: './faceprint-oily.component.html',
+  styleUrls: ['./faceprint-oily.component.css'],
   animations: [
     trigger('fade', [
       state('in', style({ 'opacity': '1' })),
@@ -15,7 +15,7 @@ import { trigger, state, style, transition, animate, group, query, stagger, keyf
     ])
   ]
 })
-export class FaceprintSensitiveComponent implements OnInit {
+export class FaceprintOilyComponent implements OnInit {
 
   choice = 2;
   state = 'in';
@@ -25,11 +25,13 @@ export class FaceprintSensitiveComponent implements OnInit {
   sliderVal;
   selected_cat;
 
-  sensitive = [
-    { title: 'Normal', img: 'assets/img/faceprint/normal.png' },
-    { title: 'Sensitive', img: 'assets/img/faceprint/sensitive.png' },
-    { title: 'Very Sensitive', img: 'assets/img/faceprint/v-sensitive.png' }
-  ]
+  oily = [
+    { title: 'Dry', img: 'assets/img/faceprint/dry.png' , classe:'dry'},
+    { title: 'Very Dry',  img: 'assets/img/faceprint/v-dry.png' , classe:'dry'},
+    { title: 'Normal', img: 'assets/img/faceprint_normal.png' , classe:'normal'},
+    { title: 'Oily',  img: 'assets/img/faceprint/oily.png' , classe:'normal'},
+    { title: 'Very Oily;Acne-prone', img: 'assets/img/faceprint/v-oily.png' , classe:'normal'},
+  ];
 
   constructor() { }
 
@@ -40,8 +42,8 @@ export class FaceprintSensitiveComponent implements OnInit {
 
   slider_change_val() {
     console.log( 'slider_change_val' ,this.sliderVal); 
-    console.log( 'oily' ,this.sensitive); 
-    this.selected_cat = this.sensitive[this.sliderVal];
+    console.log( 'oily' ,this.oily); 
+    this.selected_cat = this.oily[this.sliderVal];
   }
 
   //animation functions starts--------------------
@@ -71,5 +73,6 @@ export class FaceprintSensitiveComponent implements OnInit {
   }
 
   //animation functions ends--------------------
+
 
 }

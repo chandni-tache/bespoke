@@ -1,0 +1,41 @@
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background:#fff;
+  cursor: pointer;
+}
+
+.ext_sun::-webkit-slider-thumb {
+  background-size:20px;
+  background-image: url("../../../assets/img/pigmented_slider.png");
+  background-position: center  ;
+  background-repeat: no-repeat ;
+}
+  
+
+.create_skin_face_loading{
+  text-align: center;
+  font-size: 25px;
+}
+
+.loading_image_{
+  height: 315px;
+  position: relative;
+  left: 30px;
+  margin-top: 70px;
+}
+
+.face_load{
+  text-align: center;
+}
+
+.hide, .face_loading_screen{
+  display:none;
+}
+
+.show{
+  display:block;
+}

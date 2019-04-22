@@ -20,7 +20,7 @@
 
         <div class="slidecontainer">
             <input (change)="onClick()" [(ngModel)]=sliderVal type="range" min="0" max="2" class="slider"
-            id="myRange">
+            [ngClass]="selected_cat.classe"  id="myRange">
          <a routerLink="../lined"> <i class="	fa fa-angle-right"></i></a>
           
           <p class="footer-face-p">Bace cannot view or share your<br>

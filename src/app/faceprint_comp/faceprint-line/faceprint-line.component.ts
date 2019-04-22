@@ -2,9 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { trigger, state, style, transition, animate, group, query, stagger, keyframes } from '@angular/animations';
 
 @Component({
-  selector: 'app-faceprint-oily',
-  templateUrl: './faceprint-oily.component.html',
-  styleUrls: ['./faceprint-oily.component.css'],
+  selector: 'app-faceprint-line',
+  templateUrl: './faceprint-line.component.html',
+  styleUrls: ['./faceprint-line.component.css'],
   animations: [
     trigger('fade', [
       state('in', style({ 'opacity': '1' })),
@@ -15,7 +15,7 @@ import { trigger, state, style, transition, animate, group, query, stagger, keyf
     ])
   ]
 })
-export class FaceprintOilyComponent implements OnInit {
+export class FaceprintLineComponent implements OnInit {
 
   choice = 2;
   state = 'in';
@@ -25,13 +25,11 @@ export class FaceprintOilyComponent implements OnInit {
   sliderVal;
   selected_cat;
 
-  oily = [
-    { title: 'Dry', img: 'assets/img/faceprint/dry.png' },
-    { title: 'Very Dry',  img: 'assets/img/faceprint/v-dry.png' },
-    { title: 'Normal', img: 'assets/img/faceprint_normal.png' },
-    { title: 'Oily',  img: 'assets/img/faceprint/oily.png' },
-    { title: 'Very Oily;Acne-prone', img: 'assets/img/faceprint/v-oily.png' },
-  ];
+  lined = [
+    { title: 'Almost No Lines', img: 'assets/img/faceprint/almost-no-lines.png', classe:'normal' },
+    { title: 'Fine Lines', img: 'assets/img/faceprint/fine-lines.png' , classe:'normal'},
+    { title: 'Deep Lines', img: 'assets/img/faceprint/deep-lines.png', classe:'deep_lines_' }
+  ]
 
   constructor() { }
 
@@ -42,8 +40,8 @@ export class FaceprintOilyComponent implements OnInit {
 
   slider_change_val() {
     console.log( 'slider_change_val' ,this.sliderVal); 
-    console.log( 'oily' ,this.oily); 
-    this.selected_cat = this.oily[this.sliderVal];
+    console.log( 'oily' ,this.lined); 
+    this.selected_cat = this.lined[this.sliderVal];
   }
 
   //animation functions starts--------------------
@@ -73,6 +71,5 @@ export class FaceprintOilyComponent implements OnInit {
   }
 
   //animation functions ends--------------------
-
 
 }

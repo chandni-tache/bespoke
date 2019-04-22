@@ -17,7 +17,7 @@ import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ShopSkincareComponent } from './shop-skincare/shop-skincare.component';
 import { CustomSkincareComponent } from './custom-skincare/custom-skincare.component';
-import { FaceprintComponent } from './faceprint/faceprint.component';
+import { FaceprintComponent } from './faceprint_comp/faceprint/faceprint.component';
 import { IngredientsComponent } from './ingredients/ingredients.component';
 import { CartComponent } from './cart/cart.component';
 import { CartDetailsComponent } from './cart-details/cart-details.component';
@@ -31,10 +31,11 @@ import { IntellectualPropertyComponent } from './intellectual-property/intellect
 import { LegalComponent } from './legal/legal.component';
 import { TermsConditionsComponent } from './terms-conditions/terms-conditions.component';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
-import { FaceprintOilyComponent } from './faceprint-oily/faceprint-oily.component';
-import { FaceprintSensitiveComponent } from './faceprint-sensitive/faceprint-sensitive.component';
-import { FaceprintLineComponent } from './faceprint-line/faceprint-line.component';
-import { FaceprintPigmentedComponent } from './faceprint-pigmented/faceprint-pigmented.component';
+import { FaceprintOilyComponent } from './faceprint_comp/faceprint-oily/faceprint-oily.component';
+import { FaceprintSensitiveComponent } from './faceprint_comp/faceprint-sensitive/faceprint-sensitive.component';
+import { FaceprintLineComponent } from './faceprint_comp/faceprint-line/faceprint-line.component';
+import { FaceprintPigmentedComponent } from './faceprint_comp/faceprint-pigmented/faceprint-pigmented.component';
+import { FaceprintAnalysisComponent } from './faceprint_comp/faceprint-analysis/faceprint-analysis.component';
 
 @NgModule({
   declarations: [
@@ -59,7 +60,8 @@ import { FaceprintPigmentedComponent } from './faceprint-pigmented/faceprint-pig
     FaceprintOilyComponent,
     FaceprintSensitiveComponent,
     FaceprintLineComponent,
-    FaceprintPigmentedComponent
+    FaceprintPigmentedComponent,
+    FaceprintAnalysisComponent
   ],
   imports: [
     BrowserModule,

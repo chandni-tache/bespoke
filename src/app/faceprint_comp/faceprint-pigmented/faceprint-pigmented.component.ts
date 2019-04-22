@@ -1,10 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { trigger, state, style, transition, animate, group, query, stagger, keyframes } from '@angular/animations';
+import { Router, NavigationEnd } from "@angular/router";
+// import { setTimeout } from 'timers';
+
 
 @Component({
-  selector: 'app-faceprint-line',
-  templateUrl: './faceprint-line.component.html',
-  styleUrls: ['./faceprint-line.component.css'],
+  selector: 'app-faceprint-pigmented',
+  templateUrl: './faceprint-pigmented.component.html',
+  styleUrls: ['./faceprint-pigmented.component.css'],
   animations: [
     trigger('fade', [
       state('in', style({ 'opacity': '1' })),
@@ -15,7 +18,7 @@ import { trigger, state, style, transition, animate, group, query, stagger, keyf
     ])
   ]
 })
-export class FaceprintLineComponent implements OnInit {
+export class FaceprintPigmentedComponent implements OnInit {
 
   choice = 2;
   state = 'in';
@@ -25,13 +28,15 @@ export class FaceprintLineComponent implements OnInit {
   sliderVal;
   selected_cat;
 
-  lined = [
-    { title: 'Almost No Lines', img: 'assets/img/faceprint/almost-no-lines.png' },
-    { title: 'Fine Lines', img: 'assets/img/faceprint/fine-lines.png' },
-    { title: 'Deep Lines', img: 'assets/img/faceprint/deep-lines.png' }
+  loading_screen=false;
+
+  pigmented = [
+    { title: 'No Sun Damage;Even Tone',  img: 'assets/img/faceprint/no-sun-damage.png' , classe:'no_sun'},
+    { title: 'Slight Sun Damage',  img: 'assets/img/faceprint/slight-sun-damage.png', classe:'slight_sun' },
+    { title: 'Extensive Sun Damage', img: 'assets/img/faceprint/ex-sun-damage.png', classe:'ext_sun' }
   ]
 
-  constructor() { }
+  constructor(public router:Router) { }
 
   ngOnInit() {
     this.sliderVal = 2;
@@ -40,8 +45,8 @@ export class FaceprintLineComponent implements OnInit {
 
   slider_change_val() {
     console.log( 'slider_change_val' ,this.sliderVal); 
-    console.log( 'oily' ,this.lined); 
-    this.selected_cat = this.lined[this.sliderVal];
+    console.log( 'oily' ,this.pigmented); 
+    this.selected_cat = this.pigmented[this.sliderVal];
   }
 
   //animation functions starts--------------------
@@ -71,5 +76,17 @@ export class FaceprintLineComponent implements OnInit {
   }
 
   //animation functions ends--------------------
+
+
+  showloader(){
+    if(!this.loading_screen) {
+      this.loading_screen = true;
+
+      setTimeout(() =>{
+        this.router.navigate(['/faceprint/analysis'])
+      }, 5000);
+    } 
+
+  }
 
 }
