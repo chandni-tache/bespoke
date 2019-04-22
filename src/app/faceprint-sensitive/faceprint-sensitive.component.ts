@@ -28,8 +28,7 @@ export class FaceprintSensitiveComponent implements OnInit {
   sensitive = [
     { title: 'Normal', img: 'assets/img/faceprint/normal.png' },
     { title: 'Sensitive', img: 'assets/img/faceprint/sensitive.png' },
-    { title: 'Very Sensitive', img: 'assets/img/faceprint/v-sensitive.png' },
-    // { title: 'Rosacea-prone', img: 'assets/img/faceprint/sensitive.png' }
+    { title: 'Very Sensitive', img: 'assets/img/faceprint/v-sensitive.png' }
   ]
 
   constructor() { }
