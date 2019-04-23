@@ -6,8 +6,18 @@
   margin-top: 125px;
 } */
 
+@font-face {
+  font-family: 'Okomito';
+  src: url('./assets/icon-fonts/Okomito-Medium.eot'); /* IE9 Compat Modes */
+  src: url('./assets/icon-fonts/Okomito-Medium.eot') format('embedded-opentype'), /* IE6-IE8 */
+       url('./assets/icon-fonts/Okomito-Medium.woff2') format('woff2'), /* Super Modern Browsers */
+       url('./assets/icon-fonts/Okomito-Medium.woff') format('woff'), /* Pretty Modern Browsers */
+       url('./assets/icon-fonts/Okomito-Medium.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('./assets/icon-fonts/Okomito-Medium.svg') format('svg'); /* Legacy iOS */
+}
+
 .component-starts{
-  margin-top: 70px;
+  margin-top: 75px;
 }
 
 *{
@@ -488,7 +498,7 @@ margin-bottom: auto;
   .find_skincare div span {font-size: 10px;}
   .find_skincare div{ padding: 20px 10px;}
   .find_skincare .fa-angle-left, .find_skincare .fa-angle-right{bottom:20px; font-size: 30px;}
-  .component-starts{	    margin-top: 72px;}
+  .component-starts{	    margin-top: 75px;}
   .discover_create{font-size: 22px;}
   .right_discover .fa{left:20%;}
   .face_img{  width: 215px; height: 315px;}
