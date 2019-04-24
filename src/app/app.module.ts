@@ -9,6 +9,7 @@ import { FormsModule } from '@angular/forms';
 import { ClickOutsideModule } from 'ng-click-outside';
 // import { EmbedVideo } from 'ngx-embed-video';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
+import 'hammerjs';
 
 
 // modules
@@ -20,7 +21,7 @@ import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ShopSkincareComponent } from './shop-skincare/shop-skincare.component';
 import { FaceprintComponent } from './faceprint_comp/faceprint/faceprint.component';
-import { IngredientsComponent } from './ingredients/ingredients.component';
+import { IngredientsComponent } from './ingredient_comp/ingredients/ingredients.component';
 import { CartComponent } from './cart/cart.component';
 import { CartDetailsComponent } from './cart-details/cart-details.component';
 import { CheckoutCartComponent } from './checkout-cart/checkout-cart.component';
@@ -39,8 +40,9 @@ import { FaceprintLineComponent } from './faceprint_comp/faceprint-line/faceprin
 import { FaceprintPigmentedComponent } from './faceprint_comp/faceprint-pigmented/faceprint-pigmented.component';
 import { FaceprintAnalysisComponent } from './faceprint_comp/faceprint-analysis/faceprint-analysis.component';
 import { BlogComponent } from './blog/blog.component';
-import { IngredientItemsComponent } from './ingredient-items/ingredient-items.component';
+import { IngredientItemsComponent } from './ingredient_comp/ingredient-items/ingredient-items.component';
 import { ToggleButtonComponent } from './toggle-button.component';
+import { IngredientItemSourcesComponent } from './ingredient_comp/ingredient-item-sources/ingredient-item-sources.component';
 // import ToggleButton from '@material-ui/lab/ToggleButton';
 
 
@@ -70,7 +72,8 @@ import { ToggleButtonComponent } from './toggle-button.component';
     FaceprintAnalysisComponent,
     BlogComponent,
     IngredientItemsComponent,
-    ToggleButtonComponent
+    ToggleButtonComponent,
+    IngredientItemSourcesComponent
   ],
   imports: [
     BrowserModule,

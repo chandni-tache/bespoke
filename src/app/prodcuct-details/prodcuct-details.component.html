@@ -70,27 +70,58 @@
     <!-- review-ingredient-how to use box ends -->
     <div class="review_ingredient_htu_box">
       <div class="review_ingredient_htu_items">
-        <span>Reviews</span>
+        <span class="review_ingredient_htu_box_tit">Reviews</span>
         <img class="star_image" src="assets/img/star.png" />
-        <span class="reviews_icons">
-          <i class="fa fa-angle-right"></i>
-        </span>
+        <span class="reviews_icons"></span>
+        <i *ngIf="!reviews_open" (click)="show_hide_info('reviews', 'open')" class="fa fa-angle-right"> </i>
+        <i *ngIf="reviews_open" (click)="show_hide_info('reviews' , 'close')" class="fa fa-angle-down"> </i>
       </div>
+
     </div>
+    <!-- dropdown of reviews  starts -->
+    <div *ngIf="reviews_open" class="block-drop">
+      <button class="btn btn-info reviews_button">Write a Review</button>
+
+      <div class="reviews_div" *ngFor="let item of reviews">
+
+        <img class="reviews_star_image" src="assets/img/star.png" />
+        <div class="reviews_title">{{item.title}}</div>
+        <div class="reviews_title_info">{{item.info}}</div>
+        <div class="reviews_title_details">{{item.details}}</div>
+      </div>
+
+      <button class="btn btn-dark reviews_show_button">Show 4 more</button>
+
+    </div>
+    <!-- dropdown of reviews ends -->
 
     <div class="review_ingredient_htu_box">
       <div class="review_ingredient_htu_items">
-        <span>Ingredients</span>
-        <i class="fa fa-angle-right"></i>
+        <span  class="review_ingredient_htu_box_tit">Ingredients</span>
+        <i *ngIf="!ingredients_open" (click)="show_hide_info('ingredients', 'open')" class="fa fa-angle-right"> </i>
+        <i *ngIf="ingredients_open" (click)="show_hide_info('ingredients' , 'close')" class="fa fa-angle-down"> </i>
       </div>
     </div>
+    <!-- dropdown of ingredients starts -->
+    <div *ngIf="ingredients_open" class="block-drop text_center">
+      <p>ingredients_open</p>
+
+    </div>
+    <!-- dropdown of ingredients ends -->
 
     <div class="review_ingredient_htu_box">
       <div class="review_ingredient_htu_items">
-        <span>How to Use</span>
-        <i class="fa fa-angle-right"></i>
+        <span  class="review_ingredient_htu_box_tit">How to Use</span>
+        <i *ngIf="!how_to_use_open" (click)="show_hide_info('how_to_use', 'open')" class="fa fa-angle-right"> </i>
+        <i *ngIf="how_to_use_open" (click)="show_hide_info('how_to_use' , 'close')" class="fa fa-angle-down"> </i>
       </div>
     </div>
+    <!-- dropdown of how_to_use starts -->
+    <div *ngIf="how_to_use_open" class="block-drop text_center">
+      <p>how_to_use_open</p>
+
+    </div>
+    <!-- dropdown of how_to_use ends -->
     <!-- review-ingredient-how to use box ends -->
 
     <!-- buyers_also_liked starts -->
@@ -166,10 +197,6 @@
         <h2 class="new-thing-h">or new thing container e.g. social</h2>
       </div>
     </div>
-    <!-- <div class="jumbotron clear new_new_thing">
-      <div class="banner set-bg" data-setbg="#">
-        <h2 class="new-thing-h">New Thing Container</h2>
-      </div>
-    </div> -->
+
 
   </div>

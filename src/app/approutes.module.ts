@@ -6,8 +6,9 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { ShopSkincareComponent } from './shop-skincare/shop-skincare.component';
 import { ProdcuctDetailsComponent } from './prodcuct-details/prodcuct-details.component';
 
-import { IngredientsComponent } from './ingredients/ingredients.component';
-import { IngredientItemsComponent } from './ingredient-items/ingredient-items.component';
+import { IngredientsComponent } from './ingredient_comp/ingredients/ingredients.component';
+import { IngredientItemsComponent } from './ingredient_comp/ingredient-items/ingredient-items.component';
+import { IngredientItemSourcesComponent } from './ingredient_comp/ingredient-item-sources/ingredient-item-sources.component';
 
 import { CartComponent } from './cart/cart.component';
 import { CartDetailsComponent } from './cart-details/cart-details.component';
@@ -31,8 +32,6 @@ import { FaceprintAnalysisComponent } from './faceprint_comp/faceprint-analysis/
 
 import { BlogComponent } from './blog/blog.component';
 
-
-
 const approutes : Routes = [
   {path : '', redirectTo : 'home', pathMatch: 'full'},
   {path : 'home', component : DashboardComponent},
@@ -41,6 +40,7 @@ const approutes : Routes = [
   {path : 'faceprint', component : FaceprintComponent},
   {path : 'bespoke/ingredients', component : IngredientsComponent},
   {path : 'bespoke/ingredients/ingredientname', component : IngredientItemsComponent},
+  {path : 'bespoke/ingredients/ingredientname/sources', component : IngredientItemSourcesComponent},
   {path : 'cart', component : CartComponent},
   {path : 'cart_details', component : CartDetailsComponent},
   {path : 'cart_checkout', component : CheckoutCartComponent},

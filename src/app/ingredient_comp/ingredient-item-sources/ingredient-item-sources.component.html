@@ -1,0 +1,137 @@
+<div class="component-starts">
+  <div class="back_to_ingredients"> <a routerLink="../"><i class="fa fa-angle-left"></i> Back to Ingredients</a></div>
+
+  <div class="top_section_ingre_sources">
+    <div class="top_section_ingre_sources_head">BACE</div>
+    <div class="top_section_ingre_sources_title">Vitamin C Sources</div>
+    <div class="top_section_ingre_sources_info">Acsorbyl Tetraisopalmitate (Certified Organic)</div>
+
+    <img class="allantoin_ingre_sources" src="assets/img/allantoin_ing.png" /><br>
+    <img class="aus_organic_ingre_sources" src="assets/img/aus_organic.png" />
+  </div>
+
+  <div class="button_group">
+
+    <!-- scientific block starts -->
+    <div class="button_one">
+      <button type="button" class="block" >
+        <div class="left">
+          <h2 class="pri_h">Scientific References</h2>
+          <p class="pri_p">Research that proves effectiveness</p>
+        </div>
+        <div class="right">
+          <i *ngIf="!scientific_open" (click)="show_hide_info('scientific', 'open')" class="fa fa-angle-right"> </i>
+          <i *ngIf="scientific_open" (click)="show_hide_info('scientific' , 'close')"  class="fa fa-angle-down"> </i>
+        </div>
+      </button>
+
+      <!-- dropdown of scientific starts -->
+      <div *ngIf="scientific_open" class="block text_center">
+        <p class="block_last_update">Last Updated 30/3/2019</p>
+        <div class="block_source_head_button">Country of Origin</div>
+        <div class="block_country">New Zealand</div>       
+        <div class="block_source_head_button">Chemical Analysis</div>
+
+        <table class="table table_igre_sources">
+          <thead>
+            <th>Test</th>
+            <th>Result</th>
+            <th>Pass?</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Appearence</td>
+              <td>Clear viscous liquid</td>
+              <td>
+                <img class="tick_table_right" src="assets/img/tick_table_right.png" />
+              </td>
+            </tr>
+            
+            <tr>
+              <td>Odour</td>
+              <td>Characteristic</td>
+              <td><img class="tick_table_right" src="assets/img/tick_table_right.png" /></td>
+            </tr>
+
+            <tr>
+              <td>pH</td>
+              <td>4.0 to 6.0 @ 25<sup>o</sup>C</td>
+              <td><img class="tick_table_right" src="assets/img/tick_table_right.png" /></td>
+            </tr>
+
+            <tr>
+              <td>Specific Gravity</td>
+              <td>1.140 to 1.180 @ 25<sup>o</sup>C</td>
+              <td><img class="tick_table_right" src="assets/img/tick_table_right.png" /></td>
+            </tr>
+
+          </tbody>
+        </table>
+
+      </div>
+       <!-- dropdown of scientific ends -->
+    </div>
+    <!-- scientific block ends -->
+
+    <!-- Supplier block starts -->
+    <div class="button_one">
+      <button type="button" class="block">
+        <div class="left">
+          <h2 class="pri_h">Supplier Information</h2>
+          <p class="pri_p">Chemical Analysis & Country of Origin</p>
+        </div>
+        <div class="right">
+            <i *ngIf="!supplier_open" (click)="show_hide_info('supplier', 'open')" class="fa fa-angle-right"> </i>
+            <i *ngIf="supplier_open" (click)="show_hide_info('supplier' , 'close')"  class="fa fa-angle-down"> </i>  
+        </div>
+      </button>
+
+      <!-- dropdown of scientific starts -->
+      <div *ngIf="supplier_open" class="block text_center">
+          <p class="block_last_update">Last Updated 30/3/2019</p>
+          <div class="block_source_head_button">Country of Origin</div>
+          <div class="block_country">New Zealand</div>       
+          <div class="block_source_head_button">Chemical Analysis</div>
+  
+          <table class="table table_igre_sources">
+            <thead>
+              <th>Test</th>
+              <th>Result</th>
+              <th>Pass?</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Appearence</td>
+                <td>Clear viscous liquid</td>
+                <td>
+                  <img class="tick_table_right" src="assets/img/tick_table_right.png" />
+                </td>
+              </tr>
+              
+              <tr>
+                <td>Odour</td>
+                <td>Characteristic</td>
+                <td><img class="tick_table_right" src="assets/img/tick_table_right.png" /></td>
+              </tr>
+  
+              <tr>
+                <td>pH</td>
+                <td>4.0 to 6.0 @ 25<sup>o</sup>C</td>
+                <td><img class="tick_table_right" src="assets/img/tick_table_right.png" /></td>
+              </tr>
+  
+              <tr>
+                <td>Specific Gravity</td>
+                <td>1.140 to 1.180 @ 25<sup>o</sup>C</td>
+                <td><img class="tick_table_right" src="assets/img/tick_table_right.png" /></td>
+              </tr>
+  
+            </tbody>
+          </table>
+  
+        </div>
+         <!-- dropdown of scientific ends -->
+    </div>
+      <!-- Supplier block ends -->
+  </div>
+</div>

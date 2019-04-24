@@ -1,0 +1,188 @@
+.back_to_ingredients{
+    padding-top: 20px;
+    font-size: 20px;
+    padding-left: 10px;
+    text-align: left;
+}
+
+.back_to_ingredients i{
+    margin-right: 10px;
+    font-size: 26px;
+    top: 2px;
+    position: relative;
+}
+
+.top_section_ingre_sources{
+    text-align: center
+}
+
+.top_section_ingre_sources_head{
+    color: #8E8E8E;
+    font-size: 30px;
+    margin: 10px;
+}
+
+.top_section_ingre_sources_title{
+    font-size: 25px;
+}
+
+.top_section_ingre_sources_info{
+    font-size: 14px;
+    color: #878787;
+}
+
+.allantoin_ingre_sources{
+    height: 60px;
+    width: 60px;
+    margin: 20px;
+}
+
+.aus_organic_ingre_sources{
+    height: 90px;
+    width: auto;
+}
+
+.button_one{
+    margin-bottom: 10px;
+    width: 100%;
+    background-color: #EAEAEA;
+}
+
+.block{
+    background-color: #EAEAEA;
+}
+
+.button_one button{
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 20px;
+}
+.left{
+	float: left;
+    text-align: left;
+    width: 80%;
+}
+.right{
+	float: right;
+    
+}
+.pri_h{
+	font-size: 16px;
+	color: #000!important;
+}
+.pri_p{
+	font-size: 11px;
+	color: #000;
+}
+.fa-angle-right, .fa-angle-down{
+	color: #000;
+	font-size: 30px;
+	display: block;
+    text-align: center;
+    padding: 8px;
+    transition: all 0.3s ease;
+	
+}
+.footer_box{
+	width: 100%;
+	text-align: center;
+	font-size: 11px;
+}
+.footer_box ul li {
+	margin-top: 10px;
+}
+
+.tick_table_right{
+    width: auto;
+    height: 20px;;
+}
+
+
+
+.block_source_head_button{
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 30px;
+}
+
+.block_last_update{
+    color: #919191;
+    font-size: 11px;
+}
+
+.block_country{
+    font-size: 14px;
+    color: #7b7575;
+}
+
+.block .table_igre_sources thead{
+    font-size: 14px;
+    color: #4a4a4a;
+}
+
+.block .table_igre_sources tbody{
+    font-size: 11px;
+    color: #919191;
+}
+
+@media only screen and (max-width : 329px) {
+    .back_to_ingredients{font-size: 13px;}
+    .back_to_ingredients i{font-size: 20px;top: 0px;}
+
+}
+
+@media only screen and (min-width : 330px) and (max-width : 660px) {
+    .back_to_ingredients{font-size: 13px;}
+    .back_to_ingredients i{font-size: 20px;}
+    .top_section_ingre_sources_head{  margin: 20px; }
+
+}
+
+@media only screen and (min-width : 661px) and (max-width:759px){
+
+
+}
+
+@media only screen and (min-width : 760px) and (max-width : 1023px) {
+    .back_to_ingredients{font-size: 25px;}
+    .back_to_ingredients i{ font-size: 35px;}      
+    .top_section_ingre_sources_head{ font-size: 22px;}
+    .top_section_ingre_sources_head{ font-size: 40px; }
+    .top_section_ingre_sources_title{  font-size: 30px; }    
+    .top_section_ingre_sources_info{  font-size: 20px;   }  
+    .allantoin_ingre_sources{  height: 90px; width: 90px;    margin-top: 30px; }  
+    .aus_organic_ingre_sources{ height: 125px; margin-bottom: 20px; }  
+    .pri_h{font-size: 28px;} 
+    .pri_p{font-size: 22px;} 
+    .fa-angle-right, .fa-angle-down{position: relative; top: 10px; font-size: 50px;}
+    .button_one button{padding:30px;}
+
+    .block_source_head_button{font-size: 28px;}
+    .block_country{font-size: 20px;}
+    .block_last_update{font-size: 20px;}
+    .block .table_igre_sources thead{font-size: 22px; }  
+    .block .table_igre_sources tbody{font-size: 18px; }
+    .tick_table_right{height: 28px;}
+}
+
+@media only screen and (min-width : 1024px) and (max-width : 1920px) {
+    .back_to_ingredients{font-size: 25px;}
+    .back_to_ingredients i{ font-size: 35px;}    
+    .top_section_ingre_sources_head{ font-size: 46px; }
+    .top_section_ingre_sources_title{  font-size: 40px; }    
+    .top_section_ingre_sources_info{  font-size: 28px;   }  
+    .allantoin_ingre_sources{  height: 120px; width: 120px; margin-top: 40px; }  
+    .aus_organic_ingre_sources{ height: 160px; margin-bottom: 20px; }  
+    .pri_h{font-size: 34px;} 
+    .pri_p{font-size: 28px;} 
+    .fa-angle-right, .fa-angle-down{position: relative; top: 10px; font-size: 62px;}
+    .button_one button{padding:40px;}
+
+    .block_source_head_button{font-size: 34px;}
+    .block_country{font-size: 25px;}
+    .block_last_update{font-size: 25px;}
+    .block .table_igre_sources thead{font-size: 30px; }  
+    .block .table_igre_sources tbody{font-size: 27px; }
+    .tick_table_right{height: 35px;}
+} 
