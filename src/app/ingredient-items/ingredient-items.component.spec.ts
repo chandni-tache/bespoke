@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CustomSkincareComponent } from './custom-skincare.component';
+import { IngredientItemsComponent } from './ingredient-items.component';
 
-describe('CustomSkincareComponent', () => {
-  let component: CustomSkincareComponent;
-  let fixture: ComponentFixture<CustomSkincareComponent>;
+describe('IngredientItemsComponent', () => {
+  let component: IngredientItemsComponent;
+  let fixture: ComponentFixture<IngredientItemsComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CustomSkincareComponent ]
+      declarations: [ IngredientItemsComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(CustomSkincareComponent);
+    fixture = TestBed.createComponent(IngredientItemsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

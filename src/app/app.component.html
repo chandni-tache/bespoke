@@ -1,36 +1,25 @@
 <header class="header-section">
 </header>
-<!-- <nav class="navbar" style="width:100%; position: fixed!important; height: 100px;">
-    <a routerLink="/home" class="navbar-brand site-logo"  style="width:33.3%">
-      <h3>BACE</h3>
-    </a>
-    <div class="middle-section" style="width:33.3%" >
-      <a (clickOutside)="onClickedOutside_middle()" (click)=show_hide_features()>
-        <img src="../assets/img/bespoke_logo.png" width="80px;" />
-        <p class="bespoke_header_text"> Bespoke</p>
-      </a>
-    </div>
-    <div routerLink="/cart" class="user-panel" style="width:33.3%; outline:none;">
-      <div class="up-item">
 
-          <img  src="assets/img/cart.png" /><span>0</span>
-        </div>
-        <p class="cart_header_text"> Cart</p>
-
-    </div>
-  </nav> -->
 
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
     <div class="nav navbar-nav navbar-left">
       <a routerLink="/home"><img class="bace_logo_img" src="assets/img/bace_logo.png" alt="" /></a>
     </div>
-    <div class="nav navbar-nav navbar-center">
+    
+    <div class="nav navbar-nav navbar-center-left">
       <a (clickOutside)="onClickedOutside_middle()" (click)=show_hide_features()><img
           src="../../assets/img/shop_skincare_active.png" class="header_center_skin_logo"></a>
-      <!-- [ngClass]="header_center_logo()" -->
-      <span>{{center_header_text}}</span>
+      <span>Skin</span>
     </div>
+
+    <div class="nav navbar-nav navbar-center-right">
+      <a ><img
+          src="../assets/img/body_icon.png" class="header_center_skin_logo"></a>
+      <span>Body</span>
+    </div>
+
     <div style="padding-left: 30px;" class="nav navbar-nav navbar-right">
       <a routerLink="/cart" class="navbar-left"> <img src="assets/img/cart.png" height="80" /></a>
       <span>Cart</span>
@@ -45,28 +34,32 @@
     <div class="row">
       <img src="../assets/img/v_header_feature.png" class="v_image_feature" />
       <div class="p-0 feature">
-        <div (click)="navigate_to_feature('shop_skincare')" class="feature-inner">
-          <!-- <div class="feature-icon-icon"> -->
-          <img class="feature-image" src="../assets/img/shop_skincare_.png" alt="#">
-          <!-- </div> -->
-          <h3 class="menu-bar">Shop Skincare</h3>
+        <div routerLinkActive="menu-active" routerLink="/bespoke"  class="feature-inner">
+          <img *ngIf="shop_skincare_active" class="feature-image" src="../assets/img/shop_skincare_active.png" alt="#">
+          <img *ngIf="!shop_skincare_active"  class="feature-image" src="../assets/img/shop_skincare_.png" alt="#">
+          <h3 class="menu-bar" >Shop Skincare</h3>
         </div>
       </div>
 
       <div class=" p-0 feature">
-        <div (click)="navigate_to_feature('faceprint')" class="feature-inner">
-          <!--<div class="feature-icon">-->
-          <img class="feature-image" src="../assets/img/faceprints.png" alt="#">
-          <!--  </div>-->
+        <div  routerLinkActive="menu-active" routerLink="/faceprint"   class="feature-inner">
+          <img  *ngIf="faceprint_active" class="feature-image" src="../assets/img/faceprint_active.png" alt="#">
+          <img  *ngIf="!faceprint_active" class="feature-image" src="../assets/img/faceprints.png" alt="#">
           <h3 class="menu-bar">Faceprint</h3>
         </div>
       </div>
       <div class=" p-0 feature">
-        <div (click)="navigate_to_feature('ingredients')" class="feature-inner">
-          <!--<div class="feature-icon">-->
-          <img class="feature-image" src="../assets/img/ingredients.png" alt="#">
-          <!--  </div>-->
+        <div  routerLinkActive="menu-active" routerLink="/blog/skin" (click)="navigate_to_feature_active('blog')" class="feature-inner">
+          <img  *ngIf="blog_active" class="feature-image" src="../assets/img/blog.png" alt="#">
+          <img  *ngIf="!blog_active" class="feature-image" src="../assets/img/blog.png" alt="#">
+          <h3 class="menu-bar">Blog</h3>
+        </div>
+      </div>
+      <div class=" p-0 feature">
+        <div routerLinkActive="menu-active" routerLink="/bespoke/ingredients" class="feature-inner">
           <h3 class="menu-bar">Ingredients</h3>
+          <img *ngIf="ingredients_active" class="feature-image" src="../assets/img/ingredients_active.png" alt="#">
+          <img *ngIf="!ingredients_active" class="feature-image" src="../assets/img/ingredients.png" alt="#">
         </div>
       </div>
     </div>
@@ -74,39 +67,36 @@
 </section>
 <!-- feature section -->
 
+<!--  <li (mouseover)="type[i] = true"  (mouseout)="type[i] = false" (click)=change_html(type.value) class="ques_type_list" *ngFor="let type of ques_type; let i=index">
+            <img class="ques_type_preview_image" [src]="type[i] ? type.hoverIcon  : type.icon "  
+            />  {{type.title}}
+          </li> -->
+
 
 <router-outlet></router-outlet>
 
 <!-- Footer section -->
 <section *ngIf="footer" class="footer-section clear mt-20">
-  <!-- <div class="container"> -->
-  <!-- <div class="footer-logo text-center ">
-      <a href="index.html">
-
-
-      </a>
-    </div> -->
   <div style="text-align:center; margin: auto;">
-  <div class="col-sm-12 " style="text-align:center; ">
-    <button type="button" class="btn btn-outline-primary button-footer main-a" id="my">
-      <img class="chatbot" src="../assets/img/chatbot.png" alt="#">&nbsp;Live chat
-    </button>
-  </div>
-  <div class="col-sm-12">
-    <button type="button" class="btn btn-outline-primary button-footer main-b">Bace's Responsibility</button>
+    <div class="col-sm-12 " style="text-align:center; ">
+      <button type="button" class="btn btn-outline-primary button-footer main-a" id="my">
+        <img class="chatbot" src="../assets/img/chatbot.png" alt="#">&nbsp;Live chat
+      </button>
+    </div>
+    <div class="col-sm-12">
+      <button type="button" class="btn btn-outline-primary button-footer main-b">Bace's Responsibility</button>
 
-    <button type="button" class="btn btn-outline-success button-footer main-c">Mentions</button>
-  </div>
-  <div class="col-sm-12">
+      <button type="button" class="btn btn-outline-success button-footer main-c">Mentions</button>
+    </div>
+    <div class="col-sm-12">
 
-    <button type="button" class="btn btn-outline-danger button-footer main-d">Support</button>
+      <button type="button" class="btn btn-outline-danger button-footer main-d">Support</button>
 
-    <button type="button" class="btn btn-outline-light button-footer main-d">Bace Info</button>
+      <button type="button" class="btn btn-outline-light button-footer main-d">Bace Info</button>
 
-    <button routerLink="/legal" type="button" class="btn btn-outline-primary button-footer main-d">Legal</button>
+      <button routerLink="/legal" type="button" class="btn btn-outline-primary button-footer main-d">Legal</button>
+    </div>
   </div>
-  </div>
-  <!-- </div> -->
   <div class="social-links-warp">
 
 

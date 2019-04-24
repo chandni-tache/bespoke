@@ -15,6 +15,11 @@ export class AppComponent {
   center_header_text = 'Skin';
   center_header_img;
 
+  shop_skincare_active;
+  blog_active;
+  faceprint_active;
+  ingredients_active;
+
   constructor(public route:Router){
         this.getting_route();
   }
@@ -31,12 +36,37 @@ export class AppComponent {
     this.show = false;
   }
 
-  navigate_to_feature(value){
+  navigate_to_feature_active(value){
 
-    if (value === 'shop_skincare') this.route.navigate(['/bespoke']);
-    else if (value === 'custom_skincare') this.route.navigate(['/bespoke/create']);
-    else if (value === 'faceprint') this.route.navigate(['/faceprint']);
-    else if (value === 'ingredients') this.route.navigate(['/bespoke/ingredients']);
+    if (value === 'shop_skincare') {
+      this.shop_skincare_active = true;
+      this.blog_active = false;
+      this.faceprint_active = false;
+      this.ingredients_active = false;
+    }
+    else if (value === 'blog_skincare') {
+      this.shop_skincare_active = false;
+      this.blog_active = true;
+      this.faceprint_active = false;
+      this.ingredients_active = false;
+    }
+    else if (value === 'faceprint') {
+      this.shop_skincare_active = false;
+      this.blog_active = false;
+      this.faceprint_active = true;
+      this.ingredients_active = false;
+    }
+    else if (value === 'ingredients') {
+      this.shop_skincare_active = false;
+      this.blog_active = false;
+      this.faceprint_active = false;
+      this.ingredients_active = true;
+    }else{
+      this.shop_skincare_active = false;
+      this.blog_active = false;
+      this.faceprint_active = false;
+      this.ingredients_active = false;
+    }
   }
 
   getting_route(){
@@ -48,28 +78,39 @@ export class AppComponent {
           case('/cart_checkout') :
           case('/cart'):
             this.footer=false;
-
+            this.navigate_to_feature_active('none');
             this.center_skin = false;
-            // this.center_header_text = 'Bespoke';
             break;
           case('/shipping_address') :
             this.footer = false;
             this.center_skin = false;
-            // this.center_header_text = 'Bespoke';
+            this.navigate_to_feature_active('none');
             break;
           case('/home') :
-            console.log( 'dashboard');
-
             this.center_skin = true;
-            // this.center_header_text = 'Skin';
+            this.navigate_to_feature_active('none');
+            break;
+          case('/bespoke') :
+            this.center_skin = true;
+            this.navigate_to_feature_active('shop_skincare')
+            break;
+          case('/bespoke/create') :
+            this.center_skin = true;
+            this.navigate_to_feature_active('blog_skincare')
+            break;
+          case('/faceprint') :
+            this.center_skin = true;
+            this.navigate_to_feature_active('faceprint')
+            break;
+          case('/bespoke/ingredients') :
+          case('/bespoke/ingredients/ingredientname') :
+            this.center_skin = true;
+            this.navigate_to_feature_active('ingredients')
             break;
           default:
             this.footer = true;
-            // this.center_skin = false;
-          
+            this.navigate_to_feature_active('none');
         }
-        // console.log('this.center_skin',this.center_skin);
-        // this.header_center_logo_details( this.center_skin )
       }
     });
   }

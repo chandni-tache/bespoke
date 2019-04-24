@@ -1,0 +1,107 @@
+.component-starts{
+    text-align: center;
+}
+
+.back_to_ingredients{
+    font-size: 20px;
+    padding-left: 10px;
+    text-align: left;
+}
+
+.back_to_ingredients i{
+    margin-right: 10px;
+    font-size: 26px;
+    top: 2px;
+    position: relative;
+}
+
+.vit_c_heading{
+    color: #FFB427;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.main_b_heading{
+    text-align: center;
+    font-size: 20px;
+}
+iframe{
+    width: 100%;
+    height: 250px;
+}
+
+.container-fluid{
+    padding:0;
+    margin:0;
+}
+
+.card{ border:none;}
+
+.find_skincare div img {
+    width: auto;
+    height: auto;
+}
+
+.find_skincare div{
+    background: inherit;
+    width: 23%;
+}
+
+.main_benfits{
+    text-align: center;
+}
+
+.main_benfits .main_benfits_head{
+    font-size: 16px;
+
+}
+
+.new-thing-h{
+    font-size: 15px
+}
+
+@media only screen and (max-width : 329px) {
+    .back_to_ingredients{font-size: 13px;}
+    .back_to_ingredients i{font-size: 20px;top: 0px;}
+    div.card span {font-size: 9px;}
+    .main_benfits .main_benfits_head { font-size: 20px;}
+    .vit_c_heading { font-size: 30px;}
+
+}
+
+@media only screen and (min-width : 330px) and (max-width : 660px) {
+    .back_to_ingredients{font-size: 13px;}
+    .back_to_ingredients i{font-size: 20px;top: 0px;}
+    div.card span {font-size: 11px;}
+    .main_benfits .main_benfits_head { font-size: 22px;}
+    .new-thing-h{font-size: 20px;}
+
+}
+
+@media only screen and (min-width : 661px) and (max-width:759px){
+    iframe{  height: 350px;}
+    .main_benfits .main_benfits_head { font-size: 26px;}
+    .new-thing-h{font-size: 26px;}
+
+}
+
+@media only screen and (min-width : 760px) and (max-width : 1023px) {
+    iframe{  height: 450px;}
+    .main_benfits .main_benfits_head { font-size: 30px;}
+    .vit_c_heading { font-size: 50px;}
+    .new-thing-h{font-size: 33px;}
+
+}
+
+@media only screen and (min-width : 1024px) and (max-width : 1920px) {
+    iframe{  height: 550px;}
+    .find_skincare div span {  font-size: 24px;}
+    .main_benfits .main_benfits_head { font-size: 38px;}
+    .vit_c_heading { font-size: 57px;}
+    .new-thing-h{font-size: 40px;}
+
+} 
+.card-img{
+    width: 65px;
+    height: 64px;
+    margin: auto;
+}

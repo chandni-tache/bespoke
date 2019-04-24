@@ -4,27 +4,6 @@
     <p class="ingre_title_filter">Filter by Skin Benefit</p>
   </div>
 
-  <!-- <div class="col-md-12 find_skincare container-fluid">
-    <i class="fa fa-angle-left"></i>
-    <div class="col-md-3 col-sm-3">
-      <img src=" assets/img/lines.png" />
-      <span>Lines</span>
-    </div>
-    <div class="col-md-3 col-sm-3">
-      <img src=" assets/img/strength.png" />
-      <span>Strength</span>
-    </div>
-    <div class="col-md-3 col-sm-3">
-      <img src=" assets/img/antioxidant.png" />
-      <span>Antioxidants</span>
-    </div>
-    <div class="col-md-3 col-sm-3">
-      <img src=" assets//img/brightening.png" />
-      <span>Brightening</span>
-    </div>
-    <i class="fa fa-angle-right"></i>
-  </div> -->
-
   <div class="find_skincare ">
     <i class="fa fa-angle-left"></i>
 
@@ -61,7 +40,7 @@
 
   <div class="image_box_box">
     <div class="popular_image_box" *ngFor="let item of images" >
-      <img src="assets/img/allantoin_2.png"/>
+      <a routerLink="/bespoke/ingredients/ingredientname" ><img src="assets/img/allantoin_2.png"/></a>
       <span class="popular_title">Allantoin</span>
       <div class="add_anchor"><a >Add to Bespoke</a><i class="fa fa-angle-right"></i></div>
     </div>
@@ -76,7 +55,7 @@
     <div class="right_discover_ing">
       <span class="faceprint_head_ing">FACEPRINT</span><br>
       <span class="faceprint_head_info_ing">Allow Faceprint to intelligently create custom skincare for you.</span><br>
-      <button class="btn btn-dark discover_begin">Begin <i class="fa fa-angle-right "></i>
+      <button routerLink="/faceprint" class="btn btn-dark discover_begin">Begin <i class="fa fa-angle-right "></i>
       </button><br>
       <button class="btn discover_discover">Discover More</button>
     </div>

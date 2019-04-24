@@ -5,8 +5,9 @@ import { Routes, RouterModule } from "@angular/router";
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ShopSkincareComponent } from './shop-skincare/shop-skincare.component';
 import { ProdcuctDetailsComponent } from './prodcuct-details/prodcuct-details.component';
-import { CustomSkincareComponent } from './custom-skincare/custom-skincare.component';
+
 import { IngredientsComponent } from './ingredients/ingredients.component';
+import { IngredientItemsComponent } from './ingredient-items/ingredient-items.component';
 
 import { CartComponent } from './cart/cart.component';
 import { CartDetailsComponent } from './cart-details/cart-details.component';
@@ -28,15 +29,18 @@ import { FaceprintLineComponent } from './faceprint_comp/faceprint-line/faceprin
 import { FaceprintPigmentedComponent } from './faceprint_comp/faceprint-pigmented/faceprint-pigmented.component';
 import { FaceprintAnalysisComponent } from './faceprint_comp/faceprint-analysis/faceprint-analysis.component';
 
+import { BlogComponent } from './blog/blog.component';
+
 
 
 const approutes : Routes = [
   {path : '', redirectTo : 'home', pathMatch: 'full'},
   {path : 'home', component : DashboardComponent},
   {path : 'bespoke', component : ShopSkincareComponent},
-  {path : 'bespoke/create', component : CustomSkincareComponent},
+  {path : 'blog/skin', component : BlogComponent },
   {path : 'faceprint', component : FaceprintComponent},
   {path : 'bespoke/ingredients', component : IngredientsComponent},
+  {path : 'bespoke/ingredients/ingredientname', component : IngredientItemsComponent},
   {path : 'cart', component : CartComponent},
   {path : 'cart_details', component : CartDetailsComponent},
   {path : 'cart_checkout', component : CheckoutCartComponent},

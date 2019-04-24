@@ -102,11 +102,7 @@ h2{
   z-index: 100;
 
 } */
-.menu-bar{
-	font-weight: normal!important;
-	text-transform: capitalize;
-	font-size: 15px;
-}
+
 .feature {
 	background-color: #EDEDED!important;
 	width: 33.33%;
@@ -366,7 +362,7 @@ margin-bottom: auto;
   color:#60A1C4;
   font-size: 30px;
   text-align: center;
-  font-weight: 600;
+  font-weight: 500;
   margin-top: 20px;
 }
 
@@ -516,3 +512,36 @@ margin-bottom: auto;
 /* @media only screen and (min-width:3px) and (max-width: 468px){
   .find_skincare div span {font-size: 10px;}
 } */
+
+@media only screen and (min-width : 760px) and (max-width : 1023px) {
+
+   /* faceprint screens css starts */
+  .footer-face-p {   font-size: 24px;}
+  .begin_face_div { font-size: 55px;}
+  .begin_face_div .fa-angle-right {  font-size: 74px;  margin-left: 4%;}
+  .heading-face p{font-size: 36px;}
+  .face-first{width: 20%;}
+  .face_img{width: 320px; height: 470px;}
+  .progressbar_h { font-size: 40px;}
+  .slider{height: 22px;}
+  .main_prog .fa-angle-right {font-size: 60px;} 
+  .begin_face_div .fa-angle-right{font-size: 90px;}
+  /* faceprint screens css ends */
+}
+
+@media only screen and (min-width : 1024px) and (max-width : 1920px) {
+
+  /* faceprint screens css starts */
+  .footer-face-p {   font-size: 28px;}
+  .begin_face_div { font-size: 75px;}
+  .begin_face_div .fa-angle-right {  font-size: 90px;  margin-left: 3%;}
+  .heading-face p{font-size: 48px;}
+  .face-first{width: 26%;}
+  .face_img{width: 410px; height: 580px;}
+  .progressbar_h { font-size: 45px;}
+  .slider{height: 22px;}
+  .main_prog .fa-angle-right {font-size: 60px;} 
+  .begin_face_div .fa-angle-right{font-size: 90px;}
+
+  /* faceprint screens css ends */
+}

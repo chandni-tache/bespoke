@@ -7,6 +7,9 @@ import { FormsModule } from '@angular/forms';
 
 // packages
 import { ClickOutsideModule } from 'ng-click-outside';
+import { EmbedVideo } from 'ngx-embed-video';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+
 
 // modules
 import { ApproutesModule } from './approutes.module';
@@ -16,7 +19,6 @@ import { MaterialModuleModule } from './app-material.module';
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ShopSkincareComponent } from './shop-skincare/shop-skincare.component';
-import { CustomSkincareComponent } from './custom-skincare/custom-skincare.component';
 import { FaceprintComponent } from './faceprint_comp/faceprint/faceprint.component';
 import { IngredientsComponent } from './ingredients/ingredients.component';
 import { CartComponent } from './cart/cart.component';
@@ -36,13 +38,14 @@ import { FaceprintSensitiveComponent } from './faceprint_comp/faceprint-sensitiv
 import { FaceprintLineComponent } from './faceprint_comp/faceprint-line/faceprint-line.component';
 import { FaceprintPigmentedComponent } from './faceprint_comp/faceprint-pigmented/faceprint-pigmented.component';
 import { FaceprintAnalysisComponent } from './faceprint_comp/faceprint-analysis/faceprint-analysis.component';
+import { BlogComponent } from './blog/blog.component';
+import { IngredientItemsComponent } from './ingredient-items/ingredient-items.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
     ShopSkincareComponent,
-    CustomSkincareComponent,
     FaceprintComponent,
     IngredientsComponent,
     CartComponent,
@@ -61,7 +64,9 @@ import { FaceprintAnalysisComponent } from './faceprint_comp/faceprint-analysis/
     FaceprintSensitiveComponent,
     FaceprintLineComponent,
     FaceprintPigmentedComponent,
-    FaceprintAnalysisComponent
+    FaceprintAnalysisComponent,
+    BlogComponent,
+    IngredientItemsComponent
   ],
   imports: [
     BrowserModule,
@@ -70,7 +75,10 @@ import { FaceprintAnalysisComponent } from './faceprint_comp/faceprint-analysis/
     MaterialModuleModule,
     ClickOutsideModule,
     RouterModule,
-    FormsModule  ],
+    FormsModule,
+    EmbedVideo.forRoot(),
+    HttpClientModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

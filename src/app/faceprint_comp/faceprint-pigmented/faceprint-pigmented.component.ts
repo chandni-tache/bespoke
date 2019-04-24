@@ -80,6 +80,8 @@ export class FaceprintPigmentedComponent implements OnInit {
 
   showloader(){
     if(!this.loading_screen) {
+      window.scroll(0,0);
+      
       this.loading_screen = true;
 
       setTimeout(() =>{

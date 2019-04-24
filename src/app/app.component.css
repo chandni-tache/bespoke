@@ -353,6 +353,9 @@
 .feature .feature-icon {
 
 }
+.feature {
+	background-color: #EDEDED!important;
+	width: 25%!important;}
 
 .feature h2 {
 	font-size: 24px;
@@ -593,29 +596,36 @@
   z-index: 1;
 }
 
-  .feature-image {
-    position: absolute;
-    height: 27px;
-    top: 22px;
-    width:auto;
-	}
+.feature-image {
+	position: absolute;
+	height: 27px;
+	top: 22px;
+	width:auto;
+}
 
-	.v_image_feature{
-		position: absolute;
-		left: 52%;
-		width: 23px;
-	}
+.v_image_feature{
+	position: absolute;
+	left: 37%;
+	width: 23px;
+}
 
-  nav.navbar{
-    position: fixed!important;
-   width: 100%;
-   top: 0;
-   background: #fff;
+nav.navbar{
+	position: fixed!important;
+	width: 100%;
+	top: 0;
+	background: #fff;
+	z-index: 2;
+}
 
-   z-index: 2;
-    }
+.menu-bar{
+	font-weight: normal!important;
+	text-transform: capitalize;
+	font-size: 22px;
+}
 
-  .made_in_aus{color: #3F4D60!important;font-size: 20px;}
+.made_in_aus{color: #3F4D60!important;font-size: 20px;}
+
+.menu-active h3{font-weight: 600!important;}
 
 @media only screen and (max-width:480px){
 	.main-a {	width: 40%;text-align: center; font-size:14px;}
@@ -625,7 +635,7 @@
 	.main-b{width:55%;text-align: center;font-size:14px;}
 	.main-c{width:35%; text-align: center;font-size:14px;}
 	.main-d{width: 30%; text-align: center; font-size:14px;}
-  .menu-bar{ font-size: 9px!important;}
+  .menu-bar{ font-size: 12px!important;}
 	.features-section{top:74px;}
 
   .feature1 .feature-inner h3 {margin-top: 30px;}
@@ -653,7 +663,7 @@
 	.main-c{width:32%; margin-left:4%; margin-right:4%;text-align: center;    font-size: 26px;}
 	.main-d{width: 30%; text-align: center; margin-left: 1.5%; margin-right: 1.5%;    font-size: 26px;}
   /* .chatbot{width: :33px} */
-  .feature .feature-inner h3 {margin-top: 60px;}
+  .feature .feature-inner h3 {margin-top: 90px;}
   .feature1 .feature-inner h3 {margin-top: 30px;}
   .feature2 .feature-inner h3 {margin-top: 30px;}
   .feature3 .feature-inner h3 {margin-top: 30px;}
@@ -665,8 +675,8 @@
 	.user-panel span {  position: relative;  left: 40px;  font-size: 25px;  top: 15px;}
 	
 	.features-section{top:126px;}
-	.v_image_feature{left:49.5%;}
-	.feature-image {height: 45px;}
+	.v_image_feature{left:36%;}
+	.feature-image {height: 70px;}
 
 }
 
@@ -674,7 +684,8 @@
   	.main-a {width: 40%;text-align: center;    font-size: 34px;}
   .main-b{width:52%; margin-left:4%; margin-right:4%;text-align: center;    font-size: 30px;}
   .main-c{width:32%; margin-left:4%; margin-right:4%;text-align: center;    font-size: 30px;}
-  .main-d{width: 30%; text-align: center; margin-left: 1.5%; margin-right: 1.5%;    font-size: 30px;}
+	.main-d{width: 30%; text-align: center; margin-left: 1.5%; margin-right: 1.5%;    font-size: 30px;}
+	nav.navbar{ height: 125px;}
 }
 
 @media (min-width: 768px) {
@@ -692,22 +703,21 @@
 @media (max-width: 768px) {
    .nav.navbar-nav {
        float:left;
-       width: 30%!important;
+       width: 25%!important;
        text-align:center;
 
 
    }
 
-   nav.navbar{
-
-    height: 125px;}
+   nav.navbar{ height: 125px;}
 
    }
    .nav.navbar-nav a {
        margin: 0 auto;
    }
    .nav.navbar-nav span{
-     font-size: 9px;
+		 font-size: 9px;
+		 font-weight: bold;
    }
 
 
@@ -720,7 +730,7 @@
 @media (max-width: 468px) {
    .nav.navbar-nav {
        float:left;
-       width: 30%!important;
+       width: 25%!important;
        text-align:center;
 
      }
@@ -739,14 +749,20 @@
        width: 23px;
       height: 29px;
 
-     }
+		 }
+		 
+		 .nav .navbar-left img{
+			width: 23px;
+		 height: 20px;
+
+		}
 
      .navbar span{
        font-size: 9px;
      }
 
-       .navbar-right{position: relative; left: 35px;}
-       .navbar-center{  position: relative;  left: 20px;}
+       .navbar-right{position: relative; left: 5px;}
+       /* .navbar-center-left{  position: relative;  left: 20px;} */
 
 }
 
@@ -755,7 +771,7 @@
 }
 
 @media only screen and (min-width: 992px){
-  .feature-inner .menu-bar{ font-size: 9px!important;}
+  .feature-inner .menu-bar{ font-size: 25px!important;}
   .made_in_aus{font-size: 28px}
 }
 
@@ -788,14 +804,24 @@
   font-size: 9px;
 }
 
-.navbar-center .header_center_bespoke_logo{
+.navbar-center-left .header_center_bespoke_logo{
   width:33px;
   height:31px;
 }
 
-.navbar-center .header_center_skin_logo {
+.navbar-center-right .header_center_bespoke_logo{
+  width:33px;
+  height:31px;
+}
+
+.navbar-center-left .header_center_skin_logo {
   width:15px;
-  height:45px;
+  height:30px;
+}
+
+.navbar-center-right .header_center_skin_logo {
+  width: 28px;
+  height:auto;
 }
 
 /* .footer-section{

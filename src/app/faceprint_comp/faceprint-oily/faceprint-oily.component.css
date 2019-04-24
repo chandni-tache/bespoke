@@ -3,7 +3,6 @@
   appearance: none;
   width: 40px;
   height: 40px;
-
   border-radius: 50%;
   background:#fff;
   background-image: url("../../../assets/img/faceprint-pdrop.png");
@@ -19,4 +18,17 @@
 
 .dry::-webkit-slider-thumb {
   background-size:10px;
+}
+
+
+@media only screen and (min-width : 760px) and (max-width : 1023px) {
+  .normal::-webkit-slider-thumb { background-size:25px;}
+  .dry::-webkit-slider-thumb {  background-size:20px;}
+  .slider::-webkit-slider-thumb {  width: 60px; height: 60px;}
+}
+
+@media only screen and (min-width : 1024px) and (max-width : 1920px) {
+  .normal::-webkit-slider-thumb { background-size:25px;}
+  .dry::-webkit-slider-thumb {  background-size:20px;}
+  .slider::-webkit-slider-thumb {  width: 60px; height: 60px;}
 }
