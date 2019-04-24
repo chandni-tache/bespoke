@@ -8,8 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IngredientItemsComponent implements OnInit {
 
-  youtubeUrl = 'https://www.youtube.com/watch?v=iHhcHTlGtRs';
-  youtubeId = 'iHhcHTlGtRs';
+  // youtubeUrl = 'https://www.youtube.com/watch?v=iHhcHTlGtRs';
+  // youtubeId = 'iHhcHTlGtRs';
+
+  irritationVal;
+  oilinessVal;
 
   constructor() { 
     // private embedService: EmbedVideoService
@@ -17,6 +20,9 @@ export class IngredientItemsComponent implements OnInit {
   }
 
   ngOnInit() {
+
+    this.irritationVal = 5;
+    this.oilinessVal = 2;
   }
 
 }

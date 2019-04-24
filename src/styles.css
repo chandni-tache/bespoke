@@ -476,6 +476,20 @@ margin-bottom: auto;
 
 /* faceprint screens css ends */
 
+/* slider starts */
+
+.mat-slider-horizontal .mat-slider-track-wrapper { height: 40px!important;  border-radius: 20px; border: 1px solid #B4B4B4; outline: none;}
+.mat-slider-horizontal .mat-slider-track-background { height: 40px!important;}
+.mat-slider-horizontal .mat-slider-track-fill { height: 40px!important;}
+.mat-slider-horizontal {  width: 60%;}
+.mat-slider-thumb {  width: 26px!important; height: 40px!important; right: -8px!important; bottom: -39px!important; outline: none;     transition: none!important;     transform: none!important;}
+.mat-slider-min-value:not(.mat-slider-thumb-label-showing).cdk-focused .mat-slider-thumb, .mat-slider-min-value:not(.mat-slider-thumb-label-showing):hover .mat-slider-thumb { border-color: transparent!important; outline: none;}
+.mat-slider-disabled .mat-slider-thumb, .mat-slider-disabled .mat-slider-track-fill { background-color: #B4B4B4}
+.mat-slider-disabled .mat-slider-track-background{background-color: white;}
+.mat-slider-disabled:hover .mat-slider-track-background {background-color: transparent;}
+
+/* slider ends */
+
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
   .bach_button_cart_account{ font-size: 29px!important;}
   .cart_heading{font-size: 60px; top: -33px;  }
@@ -527,6 +541,11 @@ margin-bottom: auto;
   .main_prog .fa-angle-right {font-size: 60px;} 
   .begin_face_div .fa-angle-right{font-size: 90px;}
   /* faceprint screens css ends */
+
+  .mat-slider-horizontal .mat-slider-track-wrapper { height: 50px!important;}
+  .mat-slider-horizontal .mat-slider-track-background { height: 50px!important;}
+  .mat-slider-horizontal .mat-slider-track-fill { height: 50px!important;}
+  .mat-slider-thumb {  width: 28px!important;  height: 50px!important; bottom: -48px!important;}
 }
 
 @media only screen and (min-width : 1024px) and (max-width : 1920px) {
@@ -544,4 +563,9 @@ margin-bottom: auto;
   .begin_face_div .fa-angle-right{font-size: 90px;}
 
   /* faceprint screens css ends */
+
+  .mat-slider-horizontal .mat-slider-track-wrapper { height: 60px!important;}
+  .mat-slider-horizontal .mat-slider-track-background { height: 60px!important;}
+  .mat-slider-horizontal .mat-slider-track-fill { height: 60px!important;}
+  .mat-slider-thumb {  width: 28px!important;  height: 60px!important; bottom: -58px!important;}
 }

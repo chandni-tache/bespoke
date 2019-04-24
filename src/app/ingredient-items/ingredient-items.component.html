@@ -28,49 +28,94 @@
         <span>Brightening</span>
       </div>
     </div>
-    <!--main_benfits ends  -->
+  </div>
+  <!--main_benfits ends  -->
 
-    <div class="jumbotron clear new_new_thing">
-      <div class="banner set-bg" data-setbg="#">
-        <h2 class="new-thing-h">Ingredient HTML Container</h2>
-      </div>
-    </div>
-
-    <div class="space"></div>
-
-    <div class="">
-      <span>Irritation Potential</span><br>
-      <!-- <toggle-button (changed)="checked=$event"></toggle-button> -->
+  <div class="jumbotron clear new_new_thing">
+    <div class="banner set-bg" data-setbg="#">
+      <h2 class="new-thing-h">Ingredient HTML Container</h2>
     </div>
   </div>
-  <div class="container">
 
-    <div class='row'>
+  <div class="space"></div>
 
-      <div class="card " style="width: 33%;">
+  <!-- irritation slider starts -->
+  <div class="sliderSection">
+    <div class="section_title_ing_item irritation_heading">Irritation Potential</div><br>
+    <!-- <toggle-button (changed)="checked=$event"></toggle-button> -->
+    <mat-slider min="0" max="10" step="1" [value]="irritationVal" disabled></mat-slider>
+    <div class="sliderLow">Low</div>
+    <div class="sliderHigh">High</div>
+
+    <div class="bottom_first_slider">May cause minor irritation for those with sensitive skin. Consider trying at a low
+      concentration.</div>
+  </div>
+  <!-- irritation slider ends -->
+
+  <!-- Oiliness slider starts -->
+  <div class="sliderSection mt-20 mb-20">
+    <div class="section_title_ing_item oiliness_heading">Oiliness</div><br>
+    <!-- <toggle-button (changed)="checked=$event"></toggle-button> -->
+    <mat-slider min="0" max="10" step="1" [value]="oilinessVal" disabled></mat-slider>
+    <div class="sliderLow">Low</div>
+    <div class="sliderHigh">High</div>
+
+    <img class="white_drop_ing_item" src="../../assets/img/drop_white.png" />
+    <img class="grey_drop_ing_item" src="../../assets/img/faceprint-pdrop.png" />
+
+    <div class="bottom_first_slider">Water-soluble. Unlikely to congest pores or stimulate sebum production.</div>
+  </div>
+  <!-- Oiliness slider ends -->
+
+
+  <div class="container mt-20 complementary_section">
+    <div class="section_title_ing_item mb-20">Complementary Ingredients</div>
+
+    <div class='row mt-20'>
+
+      <a ><i class="fa fa-angle-left"></i></a>
+
+      <div class="card allantoin_card">
+        <img class="card-img" src="assets/img/allantoin_ing.png">
+        <div class="card-body">
+          <p>Allantoin</p>
+        </div>
+      </div>
+      <div class="card allantoin_card">
         <img class="card-img" src="assets/img/allantoin_ing.png">
         <div class="card-body">
           <p>Allantoin</p>
 
         </div>
       </div>
-      <div class="card" style="width: 33%;">
+      <div class="card allantoin_card">
         <img class="card-img" src="assets/img/allantoin_ing.png">
         <div class="card-body">
           <p>Allantoin</p>
 
         </div>
       </div>
-      <div class="card" style="width: 33%;">
-        <img class="card-img" src="assets/img/allantoin_ing.png">
-        <div class="card-body">
-          <p>Allantoin</p>
 
-        </div>
-      </div>
-      <a data-slide="prev" href="#media" class="left carousel-control">‹</a>
-      <a data-slide="next" href="#media" class="right carousel-control">›</a>
+      <a><i class="fa fa-angle-right"></i></a>
 
+    </div>
+  </div>
+
+  <div class="INCI_section">
+    <div class="section_title_ing_item">INCI</div><br>
+    <p>Acsorbyl Tetraisopalmitate (Vitamin C)</p>
+  </div>
+
+  <!-- Sources starts -->
+  <div class="sources_section mb-20 ">
+    <img src="assets/img/sources-ingredient-item.png" />
+    <span>Sources</span> <i class="fa fa-angle-right"></i>
+  </div>
+  <!-- Sources ends -->
+
+  <div class="jumbotron clear new_new_thing">
+    <div class="banner set-bg" data-setbg="#">
+      <h2 class="new-thing-h">Relevant Post Container</h2>
     </div>
   </div>
 </div>

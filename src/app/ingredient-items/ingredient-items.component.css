@@ -3,6 +3,7 @@
 }
 
 .back_to_ingredients{
+    padding-top: 20px;
     font-size: 20px;
     padding-left: 10px;
     text-align: left;
@@ -59,6 +60,138 @@ iframe{
     font-size: 15px
 }
 
+.sliderSection{
+    height: 200px;
+    position: relative;
+}
+
+.sliderLow, .sliderHigh{
+    position: absolute;
+    margin-top: 14px;
+    color:#514D4E;
+}
+
+.sliderLow{
+    left: 21%;
+}
+
+.sliderHigh{
+    right: 21%;
+}
+
+.bottom_first_slider{
+    color: #686666;
+    width: 70%;
+    display: block;
+    margin: auto;
+    margin-top: 48px;
+}
+
+.section_title_ing_item{
+    font-size: 18px;
+}
+
+.irritation_heading{
+    margin-top: 300px;
+}
+
+.oiliness_heading{
+    padding-top: 40px;
+    margin-bottom: -20px;
+}
+
+.white_drop_ing_item, .grey_drop_ing_item{
+    position: absolute;
+    z-index: 2;
+    width: 15px;
+    height: 21px;
+    top: 50%;
+}
+
+.grey_drop_ing_item{
+    position: absolute;
+    right: 27%;
+}
+
+.white_drop_ing_item{
+    left: 27%;
+}
+
+.INCI_section p{
+    font-size: 16px;
+    color: #878787;
+}
+
+.sources_section{
+    color: #fff;
+    font-size: 22px;
+    background-color: #84D1BC;
+    padding: 40px 25px;
+    text-align: left;
+    margin-top: 40px;
+}
+
+.sources_section i{
+    font-size: 35px;
+    float: right;
+    position: relative;
+    top: 5px;
+}
+
+.sources_section img{
+    height: 50px;
+    margin-right: 10px;
+    position: relative;
+    bottom: 2px;
+}
+
+.allantoin_card{
+    width: 30%;
+}
+
+.allantoin_card{
+    width: 30%;
+}
+
+.row{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.card-body {
+    padding: 5px;
+}
+
+
+
+.complementary_section{
+    margin-bottom: 20px;
+    margin-top: 60px;
+}
+
+.complementary_section .fa{
+    top: 25px;
+    position: relative;
+    font-size: 28px;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.complementary_section .fa-angle-left{
+    color: #E0E0E0;
+}
+
+.complementary_section .fa-angle-right{
+    color: #60A1C4;
+}
+
+.card-img{
+    width: 65px;
+    height: 64px;
+    margin: auto;
+}
+
+
 @media only screen and (max-width : 329px) {
     .back_to_ingredients{font-size: 13px;}
     .back_to_ingredients i{font-size: 20px;top: 0px;}
@@ -66,14 +199,18 @@ iframe{
     .main_benfits .main_benfits_head { font-size: 20px;}
     .vit_c_heading { font-size: 30px;}
 
+    .bottom_first_slider {  margin-top: 50px;  font-size: 15px;}
+    .irritation_heading {  margin-top: 240px;}
 }
 
 @media only screen and (min-width : 330px) and (max-width : 660px) {
     .back_to_ingredients{font-size: 13px;}
-    .back_to_ingredients i{font-size: 20px;top: 0px;}
+    .back_to_ingredients i{font-size: 20px;}
     div.card span {font-size: 11px;}
     .main_benfits .main_benfits_head { font-size: 22px;}
     .new-thing-h{font-size: 20px;}
+
+
 
 }
 
@@ -81,27 +218,53 @@ iframe{
     iframe{  height: 350px;}
     .main_benfits .main_benfits_head { font-size: 26px;}
     .new-thing-h{font-size: 26px;}
+    .find_skincare div img{  height: 50px;}
 
 }
 
 @media only screen and (min-width : 760px) and (max-width : 1023px) {
+    .back_to_ingredients{font-size: 25px;}
+    .back_to_ingredients i{ font-size: 35px;}      
     iframe{  height: 450px;}
     .main_benfits .main_benfits_head { font-size: 30px;}
     .vit_c_heading { font-size: 50px;}
     .new-thing-h{font-size: 33px;}
 
+    .find_skincare div img{  height: 70px;}
+    .bottom_first_slider{ padding: 12px;  width: 55%; font-size: 20px; }
+    .section_title_ing_item{ font-size: 27px;}
+    .sliderLow, .sliderHigh { font-size: 21px;     margin-top: 23px;}
+    .oiliness_heading {  padding-top: 60px;}
+    .complementary_section {margin-top: 110px;}
+    .white_drop_ing_item, .grey_drop_ing_item { top: 69%; width: 19px; height: 26px;}
+    .sources_section img { height: 85px;    bottom: 4px;}
+    .sources_section{     font-size: 35px; padding:44px 25px 40px;}
+    .sources_section i{ font-size: 48px; top:12px;}
+    .card-img { width: 115px;  height: 115px;}
+    .card-body p{font-size: 23px;}
+    .INCI_section p{font-size: 22px;}
 }
 
 @media only screen and (min-width : 1024px) and (max-width : 1920px) {
+    .back_to_ingredients{font-size: 25px;}
+    .back_to_ingredients i{ font-size: 35px;}    
     iframe{  height: 550px;}
     .find_skincare div span {  font-size: 24px;}
     .main_benfits .main_benfits_head { font-size: 38px;}
     .vit_c_heading { font-size: 57px;}
     .new-thing-h{font-size: 40px;}
 
+    .find_skincare div img{  height: 80px;}
+    .bottom_first_slider{     padding: 20px 12px 12px; width: 55%; font-size: 28px; }
+    .section_title_ing_item{ font-size: 34px;}
+    .sliderLow, .sliderHigh { font-size: 26px;     margin-top: 32px;}
+    .oiliness_heading {  padding-top: 140px;}
+    .complementary_section {margin-top: 245px;}
+    .white_drop_ing_item, .grey_drop_ing_item {  top: 114%; width: 23px;   height: 30px;}
+    .sources_section img {     height: 100px; bottom: 5px; margin-right: 26px;}
+    .sources_section{    font-size: 45px; padding: 65px 45px;}
+    .sources_section i{ font-size: 60px; top:14px;}
+    .card-img { width: 115px;  height: 115px;}
+    .card-body p{font-size: 23px;}
+    .INCI_section p{font-size: 24px;}
 } 
-.card-img{
-    width: 65px;
-    height: 64px;
-    margin: auto;
-}
