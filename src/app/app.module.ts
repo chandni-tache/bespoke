@@ -7,7 +7,7 @@ import { FormsModule } from '@angular/forms';
 
 // packages
 import { ClickOutsideModule } from 'ng-click-outside';
-import { EmbedVideo } from 'ngx-embed-video';
+// import { EmbedVideo } from 'ngx-embed-video';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 
 
@@ -40,6 +40,9 @@ import { FaceprintPigmentedComponent } from './faceprint_comp/faceprint-pigmente
 import { FaceprintAnalysisComponent } from './faceprint_comp/faceprint-analysis/faceprint-analysis.component';
 import { BlogComponent } from './blog/blog.component';
 import { IngredientItemsComponent } from './ingredient-items/ingredient-items.component';
+import { ToggleButtonComponent } from './toggle-button.component';
+// import ToggleButton from '@material-ui/lab/ToggleButton';
+
 
 @NgModule({
   declarations: [
@@ -66,7 +69,8 @@ import { IngredientItemsComponent } from './ingredient-items/ingredient-items.co
     FaceprintPigmentedComponent,
     FaceprintAnalysisComponent,
     BlogComponent,
-    IngredientItemsComponent
+    IngredientItemsComponent,
+    ToggleButtonComponent
   ],
   imports: [
     BrowserModule,
@@ -76,8 +80,8 @@ import { IngredientItemsComponent } from './ingredient-items/ingredient-items.co
     ClickOutsideModule,
     RouterModule,
     FormsModule,
-    EmbedVideo.forRoot(),
-    HttpClientModule
+    HttpClientModule,
+    // EmbedVideo,
     ],
   providers: [],
   bootstrap: [AppComponent]

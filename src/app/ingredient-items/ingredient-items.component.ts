@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { EmbedVideoService } from 'ngx-embed-video';
+// import { EmbedVideoService } from 'ngx-embed-video';
 
 @Component({
   selector: 'app-ingredient-items',
@@ -11,8 +11,9 @@ export class IngredientItemsComponent implements OnInit {
   youtubeUrl = 'https://www.youtube.com/watch?v=iHhcHTlGtRs';
   youtubeId = 'iHhcHTlGtRs';
 
-  constructor(private embedService: EmbedVideoService) { 
-    console.log(this.embedService.embed(this.youtubeUrl));
+  constructor() { 
+    // private embedService: EmbedVideoService
+    // console.log(this.embedService.embed(this.youtubeUrl));
   }
 
   ngOnInit() {
