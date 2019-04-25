@@ -10,7 +10,6 @@ export class AppComponent {
   title = 'bespoke';
   show = false;
   footer = true;
-  center_skin = true;
   center_size;
   center_header_text = 'Skin';
   center_header_img;
@@ -36,6 +35,7 @@ export class AppComponent {
     this.show = false;
   }
 
+  //to replace the main menu images with active images
   navigate_to_feature_active(value){
 
     if (value === 'shop_skincare') {
@@ -79,32 +79,26 @@ export class AppComponent {
           case('/cart'):
             this.footer=false;
             this.navigate_to_feature_active('none');
-            this.center_skin = false;
             break;
           case('/shipping_address') :
             this.footer = false;
-            this.center_skin = false;
             this.navigate_to_feature_active('none');
             break;
           case('/home') :
-            this.center_skin = true;
             this.navigate_to_feature_active('none');
             break;
           case('/bespoke') :
-            this.center_skin = true;
+          case('/product_details') :
             this.navigate_to_feature_active('shop_skincare')
             break;
           case('/bespoke/create') :
-            this.center_skin = true;
             this.navigate_to_feature_active('blog_skincare')
             break;
           case('/faceprint') :
-            this.center_skin = true;
             this.navigate_to_feature_active('faceprint')
             break;
           case('/bespoke/ingredients') :
           case('/bespoke/ingredients/ingredientname') :
-            this.center_skin = true;
             this.navigate_to_feature_active('ingredients')
             break;
           default:

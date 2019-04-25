@@ -22,6 +22,7 @@ import { IntellectualPropertyComponent } from './intellectual-property/intellect
 import { LegalComponent } from './legal/legal.component';
 import { TermsConditionsComponent } from './terms-conditions/terms-conditions.component';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
+import { BaceInfoComponent } from './bace-info/bace-info.component';
 
 import { FaceprintComponent } from './faceprint_comp/faceprint/faceprint.component';
 import { FaceprintOilyComponent } from './faceprint_comp/faceprint-oily/faceprint-oily.component';
@@ -52,6 +53,7 @@ const approutes : Routes = [
   {path : 'ip', component : IntellectualPropertyComponent},
   {path : 'legal', component : LegalComponent},
   {path : 't&c', component : TermsConditionsComponent},
+  {path : 'info', component : BaceInfoComponent},
   {path : 'privacy_policy', component : PrivacyPolicyComponent},
   {path : 'faceprint/oily', component : FaceprintOilyComponent},
   {path : 'faceprint/sensitive', component : FaceprintSensitiveComponent},

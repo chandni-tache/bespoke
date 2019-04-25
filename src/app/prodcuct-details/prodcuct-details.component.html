@@ -80,123 +80,227 @@
     </div>
     <!-- dropdown of reviews  starts -->
     <div *ngIf="reviews_open" class="block-drop">
-      <button class="btn btn-info reviews_button">Write a Review</button>
-
-      <div class="reviews_div" *ngFor="let item of reviews">
-
-        <img class="reviews_star_image" src="assets/img/star.png" />
-        <div class="reviews_title">{{item.title}}</div>
-        <div class="reviews_title_info">{{item.info}}</div>
-        <div class="reviews_title_details">{{item.details}}</div>
+      <button *ngIf="!write_review && !enter_email" (click)="write_review_button()" class="btn btn-info reviews_button">Write a Review</button>
+     
+      <div *ngIf="enter_email"  class="col-sm-12">
+        <img class="close_icon" (click)="close_review('enter_email')" src="assets/img/close_icon.png">
       </div>
 
-      <button class="btn btn-dark reviews_show_button">Show 4 more</button>
+      <div *ngIf="enter_email" class="write_review text_center">
 
-    </div>
-    <!-- dropdown of reviews ends -->
-
-    <div class="review_ingredient_htu_box">
-      <div class="review_ingredient_htu_items">
-        <span  class="review_ingredient_htu_box_tit">Ingredients</span>
-        <i *ngIf="!ingredients_open" (click)="show_hide_info('ingredients', 'open')" class="fa fa-angle-right"> </i>
-        <i *ngIf="ingredients_open" (click)="show_hide_info('ingredients' , 'close')" class="fa fa-angle-down"> </i>
-      </div>
-    </div>
-    <!-- dropdown of ingredients starts -->
-    <div *ngIf="ingredients_open" class="block-drop text_center">
-      <p>ingredients_open</p>
-
-    </div>
-    <!-- dropdown of ingredients ends -->
-
-    <div class="review_ingredient_htu_box">
-      <div class="review_ingredient_htu_items">
-        <span  class="review_ingredient_htu_box_tit">How to Use</span>
-        <i *ngIf="!how_to_use_open" (click)="show_hide_info('how_to_use', 'open')" class="fa fa-angle-right"> </i>
-        <i *ngIf="how_to_use_open" (click)="show_hide_info('how_to_use' , 'close')" class="fa fa-angle-down"> </i>
-      </div>
-    </div>
-    <!-- dropdown of how_to_use starts -->
-    <div *ngIf="how_to_use_open" class="block-drop text_center">
-      <p>how_to_use_open</p>
-
-    </div>
-    <!-- dropdown of how_to_use ends -->
-    <!-- review-ingredient-how to use box ends -->
-
-    <!-- buyers_also_liked starts -->
-    <div class="buyers_also_liked">
-      <span class="buyers_also_liked_head">Buyers Also Liked</span>
-
-      <div>
-        <i style="float:left;" class="fa fa-angle-left"></i>
-
-        <div class="creations_items_div">
-          <i class="fa fa-plus"></i>
-          <img src="assets/img/bottle_cart.png" alt="image" />
-          <div class="prduct_div_info" style="padding:10px;">5% Hyaluronic Acid +3% Acetyl Glucosmaine</div>
-          <div class="item_div_title">Serum</div>
-          <div class="prduct_div_price">$399.99</div>
-          <img class="green_tick" src="assets/img/curated_by_Bruce.png" />
-        </div>
-
-        <div class="creations_items_div mb-20">
-          <i class="fa fa-plus"></i>
-          <img src="assets/img/bottle_cart.png" alt="image" />
-          <div class="prduct_div_info" style="padding:10px;">5% Hyaluronic Acid +3% Acetyl Glucosmaine</div>
-          <div class="item_div_title">Serum</div>
-          <div class="prduct_div_price">$399.99</div>
-        </div>
-
-        <i style="float:right; color:#007bff;" class="fa fa-angle-right"></i>
-      </div>
-    </div>
-    <!-- buyers_also_liked ends -->
-
-    <!-- green section -->
-    <div class="bace_responsibility_green clear mt-20">
-      <div class="mb-20">
-        <img src="assets/img/created_by_bruce_white.png" alt="image" />
-        <span>No animal testing, fragrance, alcohol, silicone, nuts, volatile plant oils & known irritants</span>
-      </div>
-
-      <div class="mb-20">
-        <img src="assets/img/created_by_bruce_white.png" alt="image" />
-        <span>Contains Australian Certified Organic plant extracts</span>
-      </div>
-
-      <div class="mb-20">
-        <img src="assets/img/created_by_bruce_white.png" alt="image" />
-        <span>Highly-recyclable air-tight glass packaging, preventing early product expiry</span>
-      </div>
-
-      <div style="text-align:center;"><button class="btn btn-success bace_Responsibilty">Bace's Responsibilty</button>
-      </div>
-    </div>
-    <!--  green section  -->
-
-    <!-- add to cart at bottom starts -->
-    <div class="add_to_cart_bottom mt-20">
-      <div class="add_to_cart_bottom_left">
-        <img src="assets/img/product_detail_image.png" alt="image" />
-      </div>
-
-      <div class="add_to_cart_bottom_right">
-        <div class="prduct_div_info">3% Hyaluronic Acid +3% Acetyl Glucosmaine</div>
-        <div class="item_div_title">30 ml Serum</div>
-        <div class="prduct_div_price">$34.99</div>
-        <div style="text-align:center;"><button class="mt-20 btn btn-info add_to_cart_product">Add to Cart</button>
+        <p>Enter your email address <br>to write a review</p>
+        <div class="write_review_email">
+          <input class="form-control " type="text" value="your@example.com" [(ngModel)]="review_email" /> <i
+            (click)="show_write_rev()" class="fa fa-angle-right"></i>
         </div>
       </div>
-    </div>
-    <!-- add to cart at bottom ends-->
 
-    <div class="jumbotron clear new_new_thing">
-      <div class="banner set-bg" data-setbg="#">
-        <h2 class="new-thing-h">Relevant Post Container</h2>
-        <h2 class="new-thing-h">or new thing container e.g. social</h2>
+      <div *ngIf="write_review" class="col-sm-12">
+        <img class="close_icon" (click)="close_review('write_review')" src="assets/img/close_icon.png">
+
       </div>
+
+      <div *ngIf="write_review" class="write_review text_center">
+
+        <star-rating value="4" checkedcolor="#FFB427" uncheckedcolor="#c1c1c1" [size]="star_main_size"  readonly="false" (rate)="onRate($event)"></star-rating>
+
+        <div class="write_review_title">
+          <input type="text" placeholder="Title" class="form-control">
+        </div>
+        <div class="write_review_review">
+          <textarea  placeholder="Write Review" rows="4"></textarea>
+          <i (click)="complete_write_rev()" class="fa fa-angle-right"></i>
+        </div>
+      </div>
+
+    
+    <p  *ngIf="thnkyou_write_review" class="centered">
+      Thank you for your review.<br>
+      We appreciate your feedback.
+    </p>
+    <div class="reviews_div" *ngFor="let item of reviews; let last = last" [class.last-item]="last">
+
+      <!-- <img class="reviews_star_image" src="assets/img/star.png" /> -->
+      <star-rating [value]="item.rating" checkedcolor="#FFB427" uncheckedcolor="#c1c1c1" [size]="star_dynamic_size"  readonly="true" ></star-rating>
+      <div class="reviews_title">{{item.title}}</div>
+      <div class="reviews_title_info">{{item.info}}</div>
+      <div class="reviews_title_details">{{item.details}}</div>
     </div>
 
+    <button class="btn btn-dark reviews_show_button">Show 4 more</button>
 
   </div>
+  <!-- dropdown of reviews ends -->
+
+  <div class="review_ingredient_htu_box">
+    <div class="review_ingredient_htu_items">
+      <span class="review_ingredient_htu_box_tit">Ingredients</span>
+      <i *ngIf="!ingredients_open" (click)="show_hide_info('ingredients', 'open')" class="fa fa-angle-right"> </i>
+      <i *ngIf="ingredients_open" (click)="show_hide_info('ingredients' , 'close')" class="fa fa-angle-down"> </i>
+    </div>
+  </div>
+  <!-- dropdown of ingredients starts -->
+  <div *ngIf="ingredients_open" class="block-drop text_center">
+    <div class="select_more_ingre_PD">Select any ingredient to discover more.</div>
+
+    <div class="colour_drop_pd">
+      <img class="colour_drop_pd_image" src="assets/img/colour_drop_pd.png" />
+      <div> Serum</div>
+    </div>
+
+
+    <!-- Liquorice Root starts -->
+
+    <div class='some-page-wrapper'>
+      <div class='row'>
+        <div *ngFor="let item of arr4" class='column'>
+          <div class='blue-column'>
+            <img class="card-image" src="assets/img/2_percent_ingre_drop_pd.png">
+          </div>
+          <div class="card-body">
+            <p class="card-text">Liquorice Root</p>
+
+          </div>
+        </div>
+      </div>
+
+      <div class='row padding_12_5'>
+        <div *ngFor="let item of arr3" class='column'>
+          <div class='blue-column'>
+            <img class="card-image" src="assets/img/2_percent_ingre_drop_pd.png">
+          </div>
+          <div class="card-body">
+            <h5 class="card-text">Liquorice Root</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class='row'>
+        <div *ngFor="let item of arr4" class='column'>
+          <div class='blue-column'>
+            <img class="card-image" src="assets/img/2_percent_ingre_drop_pd.png">
+          </div>
+          <div class="card-body">
+            <h5 class="card-text">Liquorice Root</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class='row padding_12_5'>
+        <div *ngFor="let item of arr3" class='column'>
+          <div class='blue-column'>
+            <img class="card-image" src="assets/img/2_percent_ingre_drop_pd.png">
+          </div>
+          <div class="card-body">
+            <h5 class="card-text">Liquorice Root</h5>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Liquorice Root ends -->
+
+    <p class="full_ingre_pd_drop">Full Ingredient List</p>
+
+  </div>
+  <!-- dropdown of ingredients ends -->
+
+  <div class="review_ingredient_htu_box">
+    <div class="review_ingredient_htu_items">
+      <span class="review_ingredient_htu_box_tit">How to Use</span>
+      <i *ngIf="!how_to_use_open" (click)="show_hide_info('how_to_use', 'open')" class="fa fa-angle-right"> </i>
+      <i *ngIf="how_to_use_open" (click)="show_hide_info('how_to_use' , 'close')" class="fa fa-angle-down"> </i>
+    </div>
+  </div>
+  <!-- dropdown of how_to_use starts -->
+  <div *ngIf="how_to_use_open" class="block-drop text_center">
+    <p class="how_to_use_open">Contains Vitamin C, Niacinamide &
+      Superoxide Dismutase, which may cause
+      delayed irritation in some individuals. Use
+      once every other day, then slowly increase
+      frequency as skin builds tolerance. If
+      irritation persists, discontinue use.<br><br>
+      Always wear SPF during the day, as the last
+      step in your skincare routine and before
+      makeup.</p>
+
+  </div>
+  <!-- dropdown of how_to_use ends -->
+  <!-- review-ingredient-how to use box ends -->
+
+  <!-- buyers_also_liked starts -->
+  <div class="buyers_also_liked">
+    <span class="buyers_also_liked_head">Buyers Also Liked</span>
+
+    <div>
+      <i style="float:left;" class="fa fa-angle-left"></i>
+
+      <div class="creations_items_div">
+        <i class="fa fa-plus"></i>
+        <img src="assets/img/bottle_cart.png" alt="image" />
+        <div class="prduct_div_info" style="padding:10px;">5% Hyaluronic Acid +3% Acetyl Glucosmaine</div>
+        <div class="item_div_title">Serum</div>
+        <div class="prduct_div_price">$399.99</div>
+        <img class="green_tick" src="assets/img/curated_by_Bruce.png" />
+      </div>
+
+      <div class="creations_items_div mb-20">
+        <i class="fa fa-plus"></i>
+        <img src="assets/img/bottle_cart.png" alt="image" />
+        <div class="prduct_div_info" style="padding:10px;">5% Hyaluronic Acid +3% Acetyl Glucosmaine</div>
+        <div class="item_div_title">Serum</div>
+        <div class="prduct_div_price">$399.99</div>
+      </div>
+
+      <i style="float:right; color:#007bff;" class="fa fa-angle-right"></i>
+    </div>
+  </div>
+  <!-- buyers_also_liked ends -->
+
+  <!-- green section -->
+  <div class="bace_responsibility_green clear mt-20">
+    <div class="mb-20">
+      <img src="assets/img/created_by_bruce_white.png" alt="image" />
+      <span>No animal testing, fragrance, alcohol, silicone, nuts, volatile plant oils & known irritants</span>
+    </div>
+
+    <div class="mb-20">
+      <img src="assets/img/created_by_bruce_white.png" alt="image" />
+      <span>Contains Australian Certified Organic plant extracts</span>
+    </div>
+
+    <div class="mb-20">
+      <img src="assets/img/created_by_bruce_white.png" alt="image" />
+      <span>Highly-recyclable air-tight glass packaging, preventing early product expiry</span>
+    </div>
+
+    <div style="text-align:center;"><button class="btn btn-success bace_Responsibilty">Bace's Responsibilty</button>
+    </div>
+  </div>
+  <!--  green section  -->
+
+  <!-- add to cart at bottom starts -->
+  <div class="add_to_cart_bottom mt-20">
+    <div class="add_to_cart_bottom_left">
+      <img src="assets/img/product_detail_image.png" alt="image" />
+    </div>
+
+    <div class="add_to_cart_bottom_right">
+      <div class="prduct_div_info">3% Hyaluronic Acid +3% Acetyl Glucosmaine</div>
+      <div class="item_div_title">30 ml Serum</div>
+      <div class="prduct_div_price">$34.99</div>
+      <div style="text-align:center;"><button class="mt-20 btn btn-info add_to_cart_product">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+  <!-- add to cart at bottom ends-->
+
+  <div class="jumbotron clear new_new_thing">
+    <div class="banner set-bg" data-setbg="#">
+      <h2 class="new-thing-h">Relevant Post Container</h2>
+      <h2 class="new-thing-h">or new thing container e.g. social</h2>
+    </div>
+  </div>
+
+
+</div>

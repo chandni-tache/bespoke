@@ -40,6 +40,11 @@
 	height: 350px;
 	width: 100%;
 }
+
+button{
+  outline:none!important;
+  cursor:pointer;
+}
 .recent-post{
 
 	background-color: #f2f2f2;

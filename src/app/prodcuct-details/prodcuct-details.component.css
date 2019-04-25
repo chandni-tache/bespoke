@@ -165,8 +165,16 @@
   width: 45%;
 }
 
-.reviews_title_details{
+.reviews_div .reviews_title_details{
   margin-top: 30px;
+  border-bottom: 1px solid #d5d5d5;
+  padding-bottom: 20px;
+}
+
+ .reviews_div.last-item div.reviews_title_details {
+
+  border-bottom: none;
+  padding-bottom: 5px;
 }
 
 .reviews_title_info{
@@ -205,13 +213,70 @@
   background-color: #EAEAEA;
 }
 
+.write_review_review textarea{
+  text-indent: 10px;
+}
+
+.write_review_review {
+  position: relative;
+}
+
+.write_review_review i{
+  position: absolute;
+  top: 29%;
+  font-size: 36px;
+  right: 5%;
+  color: #60A1C4;
+}
+
 .reviews_button{
   border-radius: 32px;
   width: 45%;
   margin: auto;
+  margin-bottom: 20px;
+}
+.star_rew{
+  width: 70%;
+  margin-bottom: 25px;
+}
+.reviews_star_image { width: 210px;}
+
+.write_review {
+  padding: 50px 60px 70px;
+  background: #f4f4f4;
+}
+textarea
+{
+  border:1px solid #999999;
+  width:100%;
+  margin:5px 0;
+  padding:3px;
+}
+.write_review p{
+  font-weight: 600;
+  font-size: 14px;
 }
 
-.reviews_star_image { width: 210px;}
+.write_review_email input{
+  display: inline-block;
+  width: 90%;
+  border: none;
+  outline: none;
+}
+
+.write_review_email i{
+  position: relative;
+  right: 7%;
+  display: inline-block;
+  font-size: 30px;
+  color: #000;
+  top: 3px;
+}
+
+.select_more_ingre_PD{
+  color: #565656;
+  font-size: 18px;
+}
 
 .review_ingredient_htu_items{
   position: relative;
@@ -220,7 +285,9 @@
 
 .buyers_also_liked{
   font-size: 35px;
-  text-align: center;;
+  text-align: center;
+  padding-top: 20px;
+
 }
 
 .buyers_also_liked i{
@@ -339,9 +406,80 @@ text-align: left;
 }
 
 
+.some-page-wrapper {
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.padding_12_5{
+  padding: 0 12.5%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  width: 25%;
+}
+
+.blue-column {
+  height: auto;
+  padding: 6px;
+  
+}
+
+.card-image{
+  height: auto;
+  width: auto;
+}
+
+.card-text{
+  font-size: 9px;
+}
+
+.card-body{
+  padding:0;
+}
+
+.colour_drop_pd_image{
+  height: 90px;
+  margin-top: 25px;
+}
+
+.full_ingre_pd_drop{
+  font-size: 10px;
+  color: #60a1c4;
+  padding: 20px;
+}
+
+.some-page-wrapper{padding: 0 20px;}
 
 .card{ border:none;}
 
+.how_to_use_open{
+  font-size: 14px;
+  padding: 20px;
+  margin: auto;
+  text-align: left;
+  padding-bottom: 40px;
+} 
+.write_review_email .fa-angle-right{
+  color: #60A1C4;
+}
+.close_icon{
+  height: 30px;
+  width: 30px;
+  float: right;
+  margin-top: 10px;
+}
 @media only screen and (max-width : 329px) {
 
   .back_to_bespoke{ font-size: 13px;}
@@ -353,6 +491,7 @@ text-align: left;
   .add_to_cart_product { width: 80%;  font-size: 20px;}
   .customize_product_btn_box {font-size: 20px;width: 65%; }
   .customize_product_btn_box img {width: 20px; height: 20px}
+  .customize_product_btn_box i{ top:0;}
   .created_by_bruce img { width: 20px; height: 20px;}
   .created_by_bruce{ width: 80%; font-size: 14px;}
   .bruce_gurantee {  font-size: 11px;  width: 80%;}
@@ -388,6 +527,10 @@ text-align: left;
   .review_ingredient_htu_items{top:40px;}
 
   .add_to_cart_bottom .add_to_cart_bottom_right button{ font-size: 15px;}
+
+  .colour_drop_pd_image{height: 40px;}
+  .colour_drop_pd div{font-size: 12px;}
+  .select_more_ingre_PD {font-size: 13px;}
 }
 
 @media only screen and (min-width : 330px) and (max-width : 660px) {
@@ -402,6 +545,7 @@ text-align: left;
   .add_to_cart_product { width: 80%;  font-size: 20px;}
   .customize_product_btn_box {font-size: 20px;width: 65%; }
   .customize_product_btn_box img {width: 20px; height: 20px}
+  .customize_product_btn_box i{ top:0;}
   .created_by_bruce img { width: 20px; height: 20px;}
   .created_by_bruce{ width: 80%; font-size: 18px;}
   .bruce_gurantee {  font-size: 11px;  width: 80%;}
@@ -434,11 +578,20 @@ text-align: left;
   .star_image { width: 115px; margin-left: 34%;}
   .reviews_star_image { width: 115px;}
   .add_to_cart_bottom .add_to_cart_bottom_right button{ font-size: 15px;}
+
+  .colour_drop_pd_image{height: 50px;}
+  .colour_drop_pd div{font-size: 12px;}
 }
 
 @media only screen and (min-width : 661px) and (max-width:759px){}
 
-@media only screen and (min-width : 760px) and (max-width : 1022px) {}
+@media only screen and (min-width : 760px) and (max-width : 1022px) {
+  .card-image{ height: auto; width: auto;}
+  .card-text { font-size: 12px;}
+  .full_ingre_pd_drop {  font-size: 14px;}
+  .how_to_use_open { font-size: 20px;}
+  .write_review_review i{right: 3%;}
+}
 
 @media only screen and (min-width : 1023px) and (max-width : 1920px) {
   .product_box img.pro_bottle { width: 22%; height: 600px;}
@@ -452,8 +605,9 @@ text-align: left;
   .star_image { margin-left: 52%}
   .bace_responsibility_green div.mb-20{margin-bottom:45px!important;}
   /* .bace_responsibility_green img { width: 42px;} */
-  .add_to_cart_bottom .add_to_cart_bottom_left img{
-height: 501px;}
+  .add_to_cart_bottom .add_to_cart_bottom_left img{height: 501px;}
+  .how_to_use_open { font-size: 20px;}
+  .write_review_review i{right: 3%;}
 }
 /*
 @media only screen and (max-width : 320px) {}
@@ -465,3 +619,7 @@ height: 501px;}
 @media only screen and (min-width : 760px) and (max-width : 1024px) {}
 
 @media only screen and (min-width : 1025px) and (max-width : 1920px) {} */
+
+
+
+  

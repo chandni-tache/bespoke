@@ -3,13 +3,13 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
-
+import { HttpClientModule, HttpClient } from '@angular/common/http';
 
 // packages
 import { ClickOutsideModule } from 'ng-click-outside';
 // import { EmbedVideo } from 'ngx-embed-video';
-import { HttpClientModule, HttpClient } from '@angular/common/http';
 import 'hammerjs';
+import { RatingModule } from 'ng-starrating';
 
 
 // modules
@@ -43,6 +43,8 @@ import { BlogComponent } from './blog/blog.component';
 import { IngredientItemsComponent } from './ingredient_comp/ingredient-items/ingredient-items.component';
 import { ToggleButtonComponent } from './toggle-button.component';
 import { IngredientItemSourcesComponent } from './ingredient_comp/ingredient-item-sources/ingredient-item-sources.component';
+import { BaceInfoComponent } from './bace-info/bace-info.component';
+import { BodySkincareComponent } from './body-skincare/body-skincare.component';
 // import ToggleButton from '@material-ui/lab/ToggleButton';
 
 
@@ -73,7 +75,9 @@ import { IngredientItemSourcesComponent } from './ingredient_comp/ingredient-ite
     BlogComponent,
     IngredientItemsComponent,
     ToggleButtonComponent,
-    IngredientItemSourcesComponent
+    IngredientItemSourcesComponent,
+    BaceInfoComponent,
+    BodySkincareComponent
   ],
   imports: [
     BrowserModule,
@@ -84,6 +88,7 @@ import { IngredientItemSourcesComponent } from './ingredient_comp/ingredient-ite
     RouterModule,
     FormsModule,
     HttpClientModule,
+    RatingModule
     // EmbedVideo,
     ],
   providers: [],

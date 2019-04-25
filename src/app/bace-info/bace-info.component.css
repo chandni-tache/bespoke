@@ -1,0 +1,112 @@
+.bace_info_top_head{
+    text-align: center;
+}
+.bace_info_top_info{
+    text-align: center;
+}
+.jumbotron{
+    margin-bottom: 0rem!important;
+}
+.button_one{
+	margin-top: 20px;
+}
+.left{
+	float: left;
+	text-align: left;
+	width: 80%;
+}
+.right{
+	float: right;
+    
+}
+.pri_h{
+	font-size: 16px;
+	color: #000!important;
+}
+.pri_p{
+	font-size: 11px;
+	color: #000;
+}
+.fa-angle-right{
+	color: #000;
+	font-size: 30px;
+	display: block;
+    text-align: center;
+    padding: 8px;
+    transition: all 0.3s ease;
+	
+}
+.block {
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: #EAEAEA;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+
+.bace_info_top{
+    background-color: #F4F4F4;
+}
+
+.bace_info_about_bace{
+    background-color: #EAEAEA;
+}
+
+.press_releases_head{
+    font-size: 20px;
+}
+
+.press_release_box_left{
+    width: 40%;
+    float:left;
+}
+
+.press_release_box_left img{
+    padding: 15px 10px;
+}
+
+.press_release_box_right{
+    width: 60%;
+    float:right;
+}
+
+.press_release_box_right .press_release_box_right_left{
+    width: 80%;
+    float:left;
+    padding: 10px 0px;
+}
+
+.press_release_box_right_left .press_release_box_right_left_details{
+    font-size: 13px;
+}
+
+
+
+.press_release_box_right .press_release_box_right_right{
+    width: 20%;
+    float: right;
+    text-align: center;
+}
+
+.press_release_box_right .press_release_box_right_right i{
+    position: relative;
+    top: 60px;
+}
+
+.press_releases hr{
+    width: 95%;
+    background-color: #DBDBDB;
+    margin:auto;
+}
+
+.pressroom_btn{
+    border-radius: 32px;
+    background-color: #A8A8A8;
+    border: none;
+    width: 50%;
+    clear: both;
+    margin: auto;
+}
